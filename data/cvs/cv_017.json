@@ -1,0 +1,74 @@
+{
+  "id": "cv_017",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Leo Calloway",
+    "email": "leo.calloway@example.org",
+    "phone": "+447700900832",
+    "location": "Madrid, Spain",
+    "current_title": "Finance Manager",
+    "years_experience": 11,
+    "skills": [
+      "Treasury",
+      "SAP FI",
+      "Audit",
+      "Month-end Close",
+      "Excel"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C1"
+      },
+      {
+        "name": "Italian",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Bluepeak Software",
+        "title": "Finance Manager",
+        "start": "2023-05",
+        "end": null
+      },
+      {
+        "company": "Copperleaf Health",
+        "title": "Senior Accountant",
+        "start": "2019-06",
+        "end": "2023-02"
+      },
+      {
+        "company": "Brightlane Media",
+        "title": "Accountant",
+        "start": "2017-05",
+        "end": "2019-03"
+      },
+      {
+        "company": "Northwind Analytics",
+        "title": "Accounts Assistant",
+        "start": "2015-03",
+        "end": "2017-02"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Bristol",
+        "degree": "BSc Accounting and Finance"
+      },
+      {
+        "institution": "University of Leeds",
+        "degree": "BSc Physics"
+      }
+    ]
+  }
+}

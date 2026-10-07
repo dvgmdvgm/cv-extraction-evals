@@ -1,0 +1,59 @@
+{
+  "id": "cv_038",
+  "meta": {
+    "lang": "es",
+    "format": "docx",
+    "layout": "two_col",
+    "edge_cases": [
+      "two_phones",
+      "year_only_dates",
+      "no_headline"
+    ]
+  },
+  "cv": {
+    "name": "Irene Martínez García",
+    "email": "irene.martinez@example.org",
+    "phone": "+34614963364",
+    "location": "Bilbao, España",
+    "current_title": "Desarrolladora Backend Senior",
+    "years_experience": 5,
+    "skills": [
+      "PostgreSQL",
+      "Go",
+      "gRPC",
+      "GCP",
+      "Spring Boot",
+      "Redis"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Banca Mirador",
+        "title": "Desarrolladora Backend Senior",
+        "start": "2025",
+        "end": null
+      },
+      {
+        "company": "Logística Sorolla",
+        "title": "Desarrolladora Backend",
+        "start": "2021",
+        "end": "2025"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Complutense de Madrid",
+        "degree": "Grado en Ingeniería Informática"
+      }
+    ]
+  }
+}

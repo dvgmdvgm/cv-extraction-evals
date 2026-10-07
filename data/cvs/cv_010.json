@@ -1,0 +1,64 @@
+{
+  "id": "cv_010",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "no_headline"
+    ]
+  },
+  "cv": {
+    "name": "Lucía Soler Cortés",
+    "email": "lucia.soler@example.net",
+    "phone": "+34655743241",
+    "location": "Bilbao, España",
+    "current_title": "Ingeniera de Datos",
+    "years_experience": 3,
+    "skills": [
+      "Kafka",
+      "Python",
+      "Apache Spark",
+      "Airflow",
+      "Tableau"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "C2"
+      },
+      {
+        "name": "French",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Logística Sorolla",
+        "title": "Ingeniera de Datos",
+        "start": "2025-05",
+        "end": null
+      },
+      {
+        "company": "Banca Mirador",
+        "title": "Analista de Datos",
+        "start": "2023-04",
+        "end": "2025-05"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Complutense de Madrid",
+        "degree": "Máster en Ciencia de Datos"
+      },
+      {
+        "institution": "Universidad del País Vasco",
+        "degree": "Grado en Matemáticas"
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "cv_035",
+  "meta": {
+    "lang": "en",
+    "format": "docx",
+    "layout": "one_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Amelia Harland",
+    "email": "amelia.harland@example.org",
+    "phone": "+447700900904",
+    "location": "Madrid, Spain",
+    "current_title": "Head of Product",
+    "years_experience": 5,
+    "skills": [
+      "Amplitude",
+      "Jira",
+      "User Research",
+      "Roadmapping",
+      "Stakeholder Management"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C1"
+      },
+      {
+        "name": "French",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Bluepeak Software",
+        "title": "Head of Product",
+        "start": "2023-10",
+        "end": null
+      },
+      {
+        "company": "Quantel Systems",
+        "title": "Senior Product Manager",
+        "start": "2021-10",
+        "end": "2023-09"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Glasgow",
+        "degree": "BA Business Administration"
+      },
+      {
+        "institution": "University of Leeds",
+        "degree": "BA Economics"
+      }
+    ]
+  }
+}

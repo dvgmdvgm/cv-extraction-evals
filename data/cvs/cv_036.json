@@ -1,0 +1,68 @@
+{
+  "id": "cv_036",
+  "meta": {
+    "lang": "es",
+    "format": "docx",
+    "layout": "two_col",
+    "edge_cases": [
+      "no_email"
+    ]
+  },
+  "cv": {
+    "name": "Sergio Lozano Navarro",
+    "email": null,
+    "phone": "+34629671867",
+    "location": "Valencia, España",
+    "current_title": "Product Manager Junior",
+    "years_experience": 3,
+    "skills": [
+      "A/B Testing",
+      "OKRs",
+      "Roadmapping",
+      "SQL",
+      "Stakeholder Management"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "Catalan",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "C2"
+      },
+      {
+        "name": "Italian",
+        "level": "A2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Grupo Alcorza",
+        "title": "Product Manager Junior",
+        "start": "2025-09",
+        "end": null
+      },
+      {
+        "company": "Soluciones Turia",
+        "title": "Analista de Negocio",
+        "start": "2023-04",
+        "end": "2025-08"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Sevilla",
+        "degree": "Grado en Administración y Dirección de Empresas"
+      },
+      {
+        "institution": "Universidad de Zaragoza",
+        "degree": "Grado en Economía"
+      }
+    ]
+  }
+}

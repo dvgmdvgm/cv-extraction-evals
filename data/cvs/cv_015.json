@@ -1,0 +1,61 @@
+{
+  "id": "cv_015",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Harry Whitcombe",
+    "email": "harry.whitcombe@example.com",
+    "phone": "+447700900531",
+    "location": "Manchester, UK",
+    "current_title": "Digital Marketing Manager",
+    "years_experience": 10,
+    "skills": [
+      "Meta Ads",
+      "Copywriting",
+      "Email Marketing",
+      "Google Ads",
+      "Looker Studio",
+      "SEO"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Lumen Mobility",
+        "title": "Digital Marketing Manager",
+        "start": "2023-02",
+        "end": null
+      },
+      {
+        "company": "Harbor & Finch",
+        "title": "Digital Marketing Specialist",
+        "start": "2020-07",
+        "end": "2022-11"
+      },
+      {
+        "company": "Brightlane Media",
+        "title": "Marketing Executive",
+        "start": "2016-10",
+        "end": "2020-04"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Glasgow",
+        "degree": "BA Marketing"
+      }
+    ]
+  }
+}

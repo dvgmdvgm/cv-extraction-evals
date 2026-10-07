@@ -1,0 +1,65 @@
+{
+  "id": "cv_024",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Sergio Lozano Beltrán",
+    "email": "sergio.lozano@example.org",
+    "phone": "+34643425994",
+    "location": "Málaga, España",
+    "current_title": "Desarrollador Frontend Senior",
+    "years_experience": 7,
+    "skills": [
+      "Figma",
+      "Accessibility",
+      "CSS",
+      "GraphQL",
+      "TypeScript",
+      "Storybook"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Soluciones Turia",
+        "title": "Desarrollador Frontend Senior",
+        "start": "2023-11",
+        "end": null
+      },
+      {
+        "company": "Viñedos Altamar",
+        "title": "Desarrollador Frontend",
+        "start": "2020-06",
+        "end": "2023-08"
+      },
+      {
+        "company": "Editorial Maranta",
+        "title": "Desarrollador Web",
+        "start": "2018-12",
+        "end": "2020-04"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Sevilla",
+        "degree": "Grado en Ingeniería del Software"
+      },
+      {
+        "institution": "Universidad de Sevilla",
+        "degree": "Grado en Matemáticas"
+      }
+    ]
+  }
+}

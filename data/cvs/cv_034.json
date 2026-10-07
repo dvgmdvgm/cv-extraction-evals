@@ -1,0 +1,74 @@
+{
+  "id": "cv_034",
+  "meta": {
+    "lang": "es",
+    "format": "scanned",
+    "layout": "two_col",
+    "edge_cases": [
+      "no_headline"
+    ]
+  },
+  "cv": {
+    "name": "Elena Cortés Martínez",
+    "email": "elena.cortes@example.net",
+    "phone": "+34657416183",
+    "location": "Sevilla, España",
+    "current_title": "Líder Técnico de ML",
+    "years_experience": 8,
+    "skills": [
+      "scikit-learn",
+      "Vertex AI",
+      "NLP",
+      "Pandas",
+      "Python",
+      "LLM Evaluation",
+      "MLflow"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "Catalan",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "C2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Logística Sorolla",
+        "title": "Líder Técnico de ML",
+        "start": "2025-01",
+        "end": null
+      },
+      {
+        "company": "Grupo Alcorza",
+        "title": "Ingeniera de Machine Learning Senior",
+        "start": "2023-06",
+        "end": "2024-12"
+      },
+      {
+        "company": "Soluciones Turia",
+        "title": "Ingeniera de Machine Learning",
+        "start": "2020-04",
+        "end": "2023-05"
+      },
+      {
+        "company": "Movilidad Ebro",
+        "title": "Asistente de Investigación",
+        "start": "2018-06",
+        "end": "2020-04"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Politécnica de Valencia",
+        "degree": "Máster en Inteligencia Artificial"
+      }
+    ]
+  }
+}

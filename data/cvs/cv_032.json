@@ -1,0 +1,68 @@
+{
+  "id": "cv_032",
+  "meta": {
+    "lang": "es",
+    "format": "scanned",
+    "layout": "two_col",
+    "edge_cases": [
+      "not_currently_employed"
+    ]
+  },
+  "cv": {
+    "name": "Javier García Iglesias",
+    "email": "javier.garcia@example.net",
+    "phone": "+34652133582",
+    "location": "Málaga, España",
+    "current_title": "Líder Técnico de ML",
+    "years_experience": 7,
+    "skills": [
+      "Vertex AI",
+      "Docker",
+      "PyTorch",
+      "scikit-learn",
+      "NLP",
+      "Pandas",
+      "LLM Evaluation"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B2"
+      },
+      {
+        "name": "French",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Banca Mirador",
+        "title": "Líder Técnico de ML",
+        "start": "2023-03",
+        "end": "2026-08"
+      },
+      {
+        "company": "Clínica Levante",
+        "title": "Ingeniero de Machine Learning Senior",
+        "start": "2021-10",
+        "end": "2023-01"
+      },
+      {
+        "company": "Soluciones Turia",
+        "title": "Ingeniero de Machine Learning",
+        "start": "2019-08",
+        "end": "2021-07"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Sevilla",
+        "degree": "Máster en Inteligencia Artificial"
+      }
+    ]
+  }
+}

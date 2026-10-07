@@ -1,0 +1,77 @@
+{
+  "id": "cv_005",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "not_currently_employed"
+    ]
+  },
+  "cv": {
+    "name": "Chloe Kesteven",
+    "email": "chloe.kesteven@example.org",
+    "phone": "+447700900991",
+    "location": "London, UK",
+    "current_title": "Frontend Tech Lead",
+    "years_experience": 6,
+    "skills": [
+      "Accessibility",
+      "TypeScript",
+      "CSS",
+      "GraphQL",
+      "Jest",
+      "Figma"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B2"
+      },
+      {
+        "name": "Italian",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Quantel Systems",
+        "title": "Frontend Tech Lead",
+        "start": "2024-07",
+        "end": "2026-04"
+      },
+      {
+        "company": "Copperleaf Health",
+        "title": "Senior Frontend Developer",
+        "start": "2023-01",
+        "end": "2024-05"
+      },
+      {
+        "company": "Northwind Analytics",
+        "title": "Frontend Developer",
+        "start": "2021-12",
+        "end": "2022-12"
+      },
+      {
+        "company": "Stonebridge Capital",
+        "title": "Web Developer",
+        "start": "2020-10",
+        "end": "2021-11"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Bristol",
+        "degree": "BSc Software Engineering"
+      },
+      {
+        "institution": "King's College London",
+        "degree": "BSc Mathematics"
+      }
+    ]
+  }
+}

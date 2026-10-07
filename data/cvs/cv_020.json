@@ -1,0 +1,73 @@
+{
+  "id": "cv_020",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": [
+      "no_email"
+    ]
+  },
+  "cv": {
+    "name": "Lucía Ferrer Cortés",
+    "email": null,
+    "phone": "+34687294925",
+    "location": "Bilbao, España",
+    "current_title": "Desarrolladora Backend Senior",
+    "years_experience": 9,
+    "skills": [
+      "Go",
+      "gRPC",
+      "Java",
+      "Terraform",
+      "Kubernetes",
+      "REST APIs"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "C1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Banca Mirador",
+        "title": "Desarrolladora Backend Senior",
+        "start": "2024-06",
+        "end": null
+      },
+      {
+        "company": "Soluciones Turia",
+        "title": "Desarrolladora Backend",
+        "start": "2022-01",
+        "end": "2024-05"
+      },
+      {
+        "company": "Editorial Maranta",
+        "title": "Desarrolladora de Software",
+        "start": "2019-03",
+        "end": "2022-01"
+      },
+      {
+        "company": "Datanova Ibérica",
+        "title": "Desarrolladora Junior",
+        "start": "2017-09",
+        "end": "2018-12"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Zaragoza",
+        "degree": "Grado en Ingeniería Informática"
+      },
+      {
+        "institution": "Universidad Politécnica de Valencia",
+        "degree": "Grado en Economía"
+      }
+    ]
+  }
+}

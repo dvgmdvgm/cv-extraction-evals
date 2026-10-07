@@ -1,0 +1,60 @@
+{
+  "id": "cv_021",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Noah Kesteven",
+    "email": "noah.kesteven@example.net",
+    "phone": "+447700900507",
+    "location": "Bristol, UK",
+    "current_title": "Senior Backend Engineer",
+    "years_experience": 6,
+    "skills": [
+      "Spring Boot",
+      "REST APIs",
+      "Go",
+      "PostgreSQL",
+      "gRPC",
+      "Redis",
+      "Java"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Harbor & Finch",
+        "title": "Senior Backend Engineer",
+        "start": "2023-11",
+        "end": null
+      },
+      {
+        "company": "Meridian Retail Group",
+        "title": "Backend Engineer",
+        "start": "2019-11",
+        "end": "2023-08"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Manchester",
+        "degree": "BSc Computer Science"
+      },
+      {
+        "institution": "University of Manchester",
+        "degree": "BSc Physics"
+      }
+    ]
+  }
+}

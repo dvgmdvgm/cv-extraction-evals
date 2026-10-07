@@ -1,0 +1,66 @@
+{
+  "id": "cv_002",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "no_headline"
+    ]
+  },
+  "cv": {
+    "name": "Álvaro Martínez Soler",
+    "email": "alvaro.martinez@example.com",
+    "phone": "+34642544707",
+    "location": "Bilbao, España",
+    "current_title": "Product Manager",
+    "years_experience": 8,
+    "skills": [
+      "SQL",
+      "A/B Testing",
+      "Jira",
+      "Amplitude",
+      "Roadmapping"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B2"
+      },
+      {
+        "name": "French",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Soluciones Turia",
+        "title": "Product Manager",
+        "start": "2022-10",
+        "end": null
+      },
+      {
+        "company": "Viñedos Altamar",
+        "title": "Product Manager Junior",
+        "start": "2021-06",
+        "end": "2022-09"
+      },
+      {
+        "company": "Movilidad Ebro",
+        "title": "Analista de Negocio",
+        "start": "2017-11",
+        "end": "2021-06"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Zaragoza",
+        "degree": "Grado en Administración y Dirección de Empresas"
+      }
+    ]
+  }
+}

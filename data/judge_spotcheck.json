@@ -1,0 +1,12 @@
+[
+  {"reference": "Senior Backend Engineer", "extracted": "Backend Engineer (Senior)", "human": true},
+  {"reference": "Ingeniera de Datos", "extracted": "Data Engineer", "human": true},
+  {"reference": "Product Manager", "extracted": "Product Owner", "human": false},
+  {"reference": "Lead Data Engineer", "extracted": "Data Engineering Lead", "human": true},
+  {"reference": "Software Developer", "extracted": "Senior Software Developer", "human": false},
+  {"reference": "Responsable de Marketing Digital", "extracted": "Digital Marketing Manager", "human": true},
+  {"reference": "Frontend Developer", "extracted": "Full-Stack Developer", "human": false},
+  {"reference": "Contable Senior", "extracted": "Senior Accountant", "human": true},
+  {"reference": "Machine Learning Engineer", "extracted": "ML Engineer", "human": true},
+  {"reference": "Head of Product", "extracted": "Product Analyst", "human": false}
+]

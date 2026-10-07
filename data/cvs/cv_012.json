@@ -1,0 +1,74 @@
+{
+  "id": "cv_012",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "no_email"
+    ]
+  },
+  "cv": {
+    "name": "Irene Lozano Cortés",
+    "email": null,
+    "phone": "+34697373642",
+    "location": "Málaga, España",
+    "current_title": "Controller Financiera",
+    "years_experience": 8,
+    "skills": [
+      "Budgeting",
+      "Power BI",
+      "SAP FI",
+      "Excel",
+      "Audit"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "Catalan",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B1"
+      },
+      {
+        "name": "Italian",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Clínica Levante",
+        "title": "Controller Financiera",
+        "start": "2024-11",
+        "end": null
+      },
+      {
+        "company": "Editorial Maranta",
+        "title": "Responsable Financiera",
+        "start": "2021-06",
+        "end": "2024-11"
+      },
+      {
+        "company": "Banca Mirador",
+        "title": "Contable Senior",
+        "start": "2018-04",
+        "end": "2021-04"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Politécnica de Valencia",
+        "degree": "Grado en Finanzas y Contabilidad"
+      },
+      {
+        "institution": "Universidad de Sevilla",
+        "degree": "Grado en Física"
+      }
+    ]
+  }
+}

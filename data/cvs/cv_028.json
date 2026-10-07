@@ -1,0 +1,65 @@
+{
+  "id": "cv_028",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": [
+      "no_email",
+      "year_only_dates"
+    ]
+  },
+  "cv": {
+    "name": "Lucía Soler Cortés",
+    "email": null,
+    "phone": "+34689179638",
+    "location": "Sevilla, España",
+    "current_title": "Desarrolladora de Software",
+    "years_experience": 7,
+    "skills": [
+      "Terraform",
+      "GCP",
+      "Kubernetes",
+      "PostgreSQL",
+      "gRPC"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "C1"
+      },
+      {
+        "name": "Italian",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Movilidad Ebro",
+        "title": "Desarrolladora de Software",
+        "start": "2023",
+        "end": null
+      },
+      {
+        "company": "Soluciones Turia",
+        "title": "Desarrolladora Junior",
+        "start": "2019",
+        "end": "2023"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Politécnica de Valencia",
+        "degree": "Grado en Ingeniería Informática"
+      },
+      {
+        "institution": "Universidad Politécnica de Valencia",
+        "degree": "Grado en Física"
+      }
+    ]
+  }
+}

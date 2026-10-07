@@ -1,0 +1,75 @@
+{
+  "id": "cv_025",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Noah Calloway",
+    "email": "noah.calloway@example.com",
+    "phone": "+447700900104",
+    "location": "Madrid, Spain",
+    "current_title": "Senior Product Manager",
+    "years_experience": 10,
+    "skills": [
+      "Roadmapping",
+      "A/B Testing",
+      "OKRs",
+      "Jira",
+      "SQL",
+      "Stakeholder Management"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C2"
+      },
+      {
+        "name": "Italian",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Brightlane Media",
+        "title": "Senior Product Manager",
+        "start": "2023-11",
+        "end": null
+      },
+      {
+        "company": "Stonebridge Capital",
+        "title": "Product Manager",
+        "start": "2022-02",
+        "end": "2023-08"
+      },
+      {
+        "company": "Copperleaf Health",
+        "title": "Associate Product Manager",
+        "start": "2019-01",
+        "end": "2022-01"
+      },
+      {
+        "company": "Tidewater Logistics",
+        "title": "Business Analyst",
+        "start": "2015-11",
+        "end": "2019-01"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Glasgow",
+        "degree": "BA Business Administration"
+      },
+      {
+        "institution": "University of Manchester",
+        "degree": "BSc Physics"
+      }
+    ]
+  }
+}

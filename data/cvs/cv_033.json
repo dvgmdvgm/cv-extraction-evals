@@ -1,0 +1,70 @@
+{
+  "id": "cv_033",
+  "meta": {
+    "lang": "en",
+    "format": "scanned",
+    "layout": "one_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Noah Pennock",
+    "email": "noah.pennock@example.net",
+    "phone": "+447700900834",
+    "location": "Edinburgh, UK",
+    "current_title": "Senior Frontend Developer",
+    "years_experience": 5,
+    "skills": [
+      "Vite",
+      "React",
+      "Jest",
+      "TypeScript",
+      "CSS",
+      "Storybook",
+      "Accessibility"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C2"
+      },
+      {
+        "name": "Italian",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Brightlane Media",
+        "title": "Senior Frontend Developer",
+        "start": "2025-07",
+        "end": null
+      },
+      {
+        "company": "Meridian Retail Group",
+        "title": "Frontend Developer",
+        "start": "2024-04",
+        "end": "2025-05"
+      },
+      {
+        "company": "Quantel Systems",
+        "title": "Web Developer",
+        "start": "2021-08",
+        "end": "2024-03"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Glasgow",
+        "degree": "BSc Software Engineering"
+      },
+      {
+        "institution": "University of Manchester",
+        "degree": "BSc Physics"
+      }
+    ]
+  }
+}

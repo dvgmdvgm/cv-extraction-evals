@@ -1,0 +1,60 @@
+{
+  "id": "cv_023",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": [
+      "not_currently_employed"
+    ]
+  },
+  "cv": {
+    "name": "Ruby Calloway",
+    "email": "ruby.calloway@example.net",
+    "phone": "+447700900993",
+    "location": "Bristol, UK",
+    "current_title": "Data Analyst",
+    "years_experience": 6,
+    "skills": [
+      "Apache Spark",
+      "Tableau",
+      "Python",
+      "AWS",
+      "Kafka"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Copperleaf Health",
+        "title": "Data Analyst",
+        "start": "2023-02",
+        "end": "2026-05"
+      },
+      {
+        "company": "Quantel Systems",
+        "title": "Junior Data Analyst",
+        "start": "2020-09",
+        "end": "2023-02"
+      }
+    ],
+    "education": [
+      {
+        "institution": "King's College London",
+        "degree": "MSc Data Science"
+      },
+      {
+        "institution": "University of Leeds",
+        "degree": "BA Economics"
+      }
+    ]
+  }
+}

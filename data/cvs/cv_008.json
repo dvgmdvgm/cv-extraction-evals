@@ -1,0 +1,82 @@
+{
+  "id": "cv_008",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "year_only_dates"
+    ]
+  },
+  "cv": {
+    "name": "Paula Lozano Navarro",
+    "email": "paula.lozano@example.com",
+    "phone": "+34652684431",
+    "location": "Madrid, España",
+    "current_title": "Product Manager Senior",
+    "years_experience": 10,
+    "skills": [
+      "Stakeholder Management",
+      "Roadmapping",
+      "Amplitude",
+      "User Research",
+      "A/B Testing",
+      "Jira",
+      "SQL"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "Catalan",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B1"
+      },
+      {
+        "name": "French",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Logística Sorolla",
+        "title": "Product Manager Senior",
+        "start": "2024",
+        "end": null
+      },
+      {
+        "company": "Editorial Maranta",
+        "title": "Product Manager",
+        "start": "2021",
+        "end": "2024"
+      },
+      {
+        "company": "Grupo Alcorza",
+        "title": "Product Manager Junior",
+        "start": "2020",
+        "end": "2021"
+      },
+      {
+        "company": "Viñedos Altamar",
+        "title": "Analista de Negocio",
+        "start": "2016",
+        "end": "2020"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Zaragoza",
+        "degree": "Grado en Administración y Dirección de Empresas"
+      },
+      {
+        "institution": "Universidad de Sevilla",
+        "degree": "Grado en Física"
+      }
+    ]
+  }
+}

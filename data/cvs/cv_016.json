@@ -1,0 +1,66 @@
+{
+  "id": "cv_016",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Sergio Soler Beltrán",
+    "email": "sergio.soler@example.net",
+    "phone": "+34624169361",
+    "location": "Bilbao, España",
+    "current_title": "Desarrollador Backend Senior",
+    "years_experience": 7,
+    "skills": [
+      "REST APIs",
+      "Redis",
+      "Kubernetes",
+      "GCP",
+      "Spring Boot",
+      "PostgreSQL",
+      "Terraform"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Movilidad Ebro",
+        "title": "Desarrollador Backend Senior",
+        "start": "2025-10",
+        "end": null
+      },
+      {
+        "company": "Banca Mirador",
+        "title": "Desarrollador Backend",
+        "start": "2022-08",
+        "end": "2025-10"
+      },
+      {
+        "company": "Clínica Levante",
+        "title": "Desarrollador de Software",
+        "start": "2019-03",
+        "end": "2022-05"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Complutense de Madrid",
+        "degree": "Grado en Ingeniería Informática"
+      },
+      {
+        "institution": "Universidad del País Vasco",
+        "degree": "Grado en Economía"
+      }
+    ]
+  }
+}

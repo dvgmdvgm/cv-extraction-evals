@@ -1,0 +1,73 @@
+{
+  "id": "cv_022",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": [
+      "two_phones",
+      "no_headline"
+    ]
+  },
+  "cv": {
+    "name": "Diego Ferrer Navarro",
+    "email": "diego.ferrer@example.org",
+    "phone": "+34657498566",
+    "location": "Madrid, España",
+    "current_title": "Director de Crecimiento",
+    "years_experience": 8,
+    "skills": [
+      "Looker Studio",
+      "Copywriting",
+      "Email Marketing",
+      "SEO",
+      "Meta Ads"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Movilidad Ebro",
+        "title": "Director de Crecimiento",
+        "start": "2025-04",
+        "end": null
+      },
+      {
+        "company": "Soluciones Turia",
+        "title": "Responsable de Marketing Digital",
+        "start": "2021-11",
+        "end": "2025-04"
+      },
+      {
+        "company": "Editorial Maranta",
+        "title": "Especialista en Marketing Digital",
+        "start": "2019-10",
+        "end": "2021-09"
+      },
+      {
+        "company": "Datanova Ibérica",
+        "title": "Técnico de Marketing",
+        "start": "2018-06",
+        "end": "2019-07"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Zaragoza",
+        "degree": "Grado en Marketing"
+      },
+      {
+        "institution": "Universidad Politécnica de Valencia",
+        "degree": "Grado en Matemáticas"
+      }
+    ]
+  }
+}

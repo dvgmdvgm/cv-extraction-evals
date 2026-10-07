@@ -1,0 +1,65 @@
+{
+  "id": "cv_039",
+  "meta": {
+    "lang": "en",
+    "format": "docx",
+    "layout": "one_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Jack Harland",
+    "email": "jack.harland@example.org",
+    "phone": "+447700900070",
+    "location": "Barcelona, Spain",
+    "current_title": "Senior Backend Engineer",
+    "years_experience": 5,
+    "skills": [
+      "PostgreSQL",
+      "Go",
+      "REST APIs",
+      "gRPC",
+      "Spring Boot",
+      "Terraform"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B1"
+      },
+      {
+        "name": "Portuguese",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Northwind Analytics",
+        "title": "Senior Backend Engineer",
+        "start": "2025-01",
+        "end": null
+      },
+      {
+        "company": "Brightlane Media",
+        "title": "Backend Engineer",
+        "start": "2023-11",
+        "end": "2025-01"
+      },
+      {
+        "company": "Stonebridge Capital",
+        "title": "Software Developer",
+        "start": "2021-04",
+        "end": "2023-09"
+      }
+    ],
+    "education": [
+      {
+        "institution": "King's College London",
+        "degree": "BSc Computer Science"
+      }
+    ]
+  }
+}

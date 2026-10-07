@@ -1,0 +1,59 @@
+{
+  "id": "cv_040",
+  "meta": {
+    "lang": "es",
+    "format": "docx",
+    "layout": "two_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Álvaro Martínez García",
+    "email": "alvaro.martinez@example.net",
+    "phone": "+34645792914",
+    "location": "Madrid, España",
+    "current_title": "Responsable de IA",
+    "years_experience": 3,
+    "skills": [
+      "Vertex AI",
+      "Docker",
+      "Python",
+      "PyTorch",
+      "scikit-learn",
+      "Pandas"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "Catalan",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "C1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tecnologías Albera",
+        "title": "Responsable de IA",
+        "start": "2024-12",
+        "end": null
+      },
+      {
+        "company": "Datanova Ibérica",
+        "title": "Líder Técnico de ML",
+        "start": "2023-03",
+        "end": "2024-12"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad del País Vasco",
+        "degree": "Máster en Inteligencia Artificial"
+      }
+    ]
+  }
+}

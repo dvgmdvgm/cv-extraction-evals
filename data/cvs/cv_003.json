@@ -1,0 +1,58 @@
+{
+  "id": "cv_003",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Isla Pennock",
+    "email": "isla.pennock@example.net",
+    "phone": "+447700900132",
+    "location": "Barcelona, Spain",
+    "current_title": "Digital Marketing Manager",
+    "years_experience": 5,
+    "skills": [
+      "Copywriting",
+      "Google Analytics",
+      "Meta Ads",
+      "HubSpot",
+      "SEO"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B2"
+      },
+      {
+        "name": "French",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Brightlane Media",
+        "title": "Digital Marketing Manager",
+        "start": "2025-05",
+        "end": null
+      },
+      {
+        "company": "Harbor & Finch",
+        "title": "Digital Marketing Specialist",
+        "start": "2021-06",
+        "end": "2025-02"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Manchester",
+        "degree": "BA Marketing"
+      }
+    ]
+  }
+}

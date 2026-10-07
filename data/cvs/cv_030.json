@@ -1,0 +1,75 @@
+{
+  "id": "cv_030",
+  "meta": {
+    "lang": "es",
+    "format": "scanned",
+    "layout": "two_col",
+    "edge_cases": [
+      "two_phones",
+      "no_headline"
+    ]
+  },
+  "cv": {
+    "name": "Paula Soler Lozano",
+    "email": "paula.soler@example.net",
+    "phone": "+34610447241",
+    "location": "Zaragoza, España",
+    "current_title": "Directora de Crecimiento",
+    "years_experience": 10,
+    "skills": [
+      "Meta Ads",
+      "Copywriting",
+      "HubSpot",
+      "Google Ads",
+      "Email Marketing",
+      "SEO",
+      "Google Analytics"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Banca Mirador",
+        "title": "Directora de Crecimiento",
+        "start": "2025-04",
+        "end": null
+      },
+      {
+        "company": "Soluciones Turia",
+        "title": "Responsable de Marketing Digital",
+        "start": "2022-03",
+        "end": "2025-02"
+      },
+      {
+        "company": "Viñedos Altamar",
+        "title": "Especialista en Marketing Digital",
+        "start": "2018-11",
+        "end": "2022-01"
+      },
+      {
+        "company": "Editorial Maranta",
+        "title": "Técnica de Marketing",
+        "start": "2015-12",
+        "end": "2018-08"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Sevilla",
+        "degree": "Grado en Marketing"
+      },
+      {
+        "institution": "Universidad Complutense de Madrid",
+        "degree": "Grado en Matemáticas"
+      }
+    ]
+  }
+}

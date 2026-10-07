@@ -1,0 +1,77 @@
+{
+  "id": "cv_004",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "no_email"
+    ]
+  },
+  "cv": {
+    "name": "Álvaro Cortés Vidal",
+    "email": null,
+    "phone": "+34659162374",
+    "location": "Sevilla, España",
+    "current_title": "Responsable de Frontend",
+    "years_experience": 13,
+    "skills": [
+      "Storybook",
+      "CSS",
+      "Accessibility",
+      "GraphQL",
+      "Next.js",
+      "Figma"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B1"
+      },
+      {
+        "name": "French",
+        "level": "A2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Soluciones Turia",
+        "title": "Responsable de Frontend",
+        "start": "2023-04",
+        "end": null
+      },
+      {
+        "company": "Grupo Alcorza",
+        "title": "Líder Técnico Frontend",
+        "start": "2019-05",
+        "end": "2023-01"
+      },
+      {
+        "company": "Viñedos Altamar",
+        "title": "Desarrollador Frontend Senior",
+        "start": "2016-11",
+        "end": "2019-05"
+      },
+      {
+        "company": "Editorial Maranta",
+        "title": "Desarrollador Frontend",
+        "start": "2013-01",
+        "end": "2016-09"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Zaragoza",
+        "degree": "Grado en Ingeniería del Software"
+      },
+      {
+        "institution": "Universidad del País Vasco",
+        "degree": "Grado en Matemáticas"
+      }
+    ]
+  }
+}

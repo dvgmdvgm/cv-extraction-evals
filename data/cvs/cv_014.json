@@ -1,0 +1,76 @@
+{
+  "id": "cv_014",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "two_phones",
+      "no_headline",
+      "not_currently_employed"
+    ]
+  },
+  "cv": {
+    "name": "Mateo Lozano García",
+    "email": "mateo.lozano@example.com",
+    "phone": "+34662222486",
+    "location": "Valencia, España",
+    "current_title": "Líder Técnico Frontend",
+    "years_experience": 7,
+    "skills": [
+      "Vite",
+      "Jest",
+      "GraphQL",
+      "Figma",
+      "React"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "Catalan",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B2"
+      },
+      {
+        "name": "Italian",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Logística Sorolla",
+        "title": "Líder Técnico Frontend",
+        "start": "2023-11",
+        "end": "2026-08"
+      },
+      {
+        "company": "Banca Mirador",
+        "title": "Desarrollador Frontend Senior",
+        "start": "2020-07",
+        "end": "2023-11"
+      },
+      {
+        "company": "Grupo Alcorza",
+        "title": "Desarrollador Frontend",
+        "start": "2019-01",
+        "end": "2020-05"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Sevilla",
+        "degree": "Grado en Ingeniería del Software"
+      },
+      {
+        "institution": "Universidad de Sevilla",
+        "degree": "Grado en Economía"
+      }
+    ]
+  }
+}

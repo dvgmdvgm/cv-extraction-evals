@@ -1,0 +1,66 @@
+{
+  "id": "cv_013",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Noah Ashdown",
+    "email": "noah.ashdown@example.org",
+    "phone": "+447700900737",
+    "location": "Manchester, UK",
+    "current_title": "Finance Manager",
+    "years_experience": 10,
+    "skills": [
+      "Audit",
+      "Treasury",
+      "Budgeting",
+      "SAP FI",
+      "Power BI"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Copperleaf Health",
+        "title": "Finance Manager",
+        "start": "2024-10",
+        "end": null
+      },
+      {
+        "company": "Meridian Retail Group",
+        "title": "Senior Accountant",
+        "start": "2021-05",
+        "end": "2024-09"
+      },
+      {
+        "company": "Tidewater Logistics",
+        "title": "Accountant",
+        "start": "2020-02",
+        "end": "2021-02"
+      },
+      {
+        "company": "Stonebridge Capital",
+        "title": "Accounts Assistant",
+        "start": "2016-06",
+        "end": "2019-11"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Leeds",
+        "degree": "BSc Accounting and Finance"
+      }
+    ]
+  }
+}

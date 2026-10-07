@@ -1,0 +1,56 @@
+{
+  "id": "cv_029",
+  "meta": {
+    "lang": "en",
+    "format": "scanned",
+    "layout": "one_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Ethan Brierley",
+    "email": "ethan.brierley@example.com",
+    "phone": "+447700900586",
+    "location": "London, UK",
+    "current_title": "Head of Frontend",
+    "years_experience": 4,
+    "skills": [
+      "React",
+      "Jest",
+      "TypeScript",
+      "Storybook",
+      "GraphQL",
+      "Next.js",
+      "CSS"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Copperleaf Health",
+        "title": "Head of Frontend",
+        "start": "2023-10",
+        "end": null
+      },
+      {
+        "company": "Stonebridge Capital",
+        "title": "Frontend Tech Lead",
+        "start": "2022-08",
+        "end": "2023-09"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Manchester",
+        "degree": "BSc Software Engineering"
+      }
+    ]
+  }
+}

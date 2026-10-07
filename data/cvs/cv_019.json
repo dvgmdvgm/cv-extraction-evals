@@ -1,0 +1,66 @@
+{
+  "id": "cv_019",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Noah Harland",
+    "email": "noah.harland@example.net",
+    "phone": "+447700900609",
+    "location": "Edinburgh, UK",
+    "current_title": "Frontend Tech Lead",
+    "years_experience": 9,
+    "skills": [
+      "CSS",
+      "TypeScript",
+      "Jest",
+      "Vite",
+      "Next.js"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Lumen Mobility",
+        "title": "Frontend Tech Lead",
+        "start": "2024-11",
+        "end": null
+      },
+      {
+        "company": "Copperleaf Health",
+        "title": "Senior Frontend Developer",
+        "start": "2022-07",
+        "end": "2024-08"
+      },
+      {
+        "company": "Quantel Systems",
+        "title": "Frontend Developer",
+        "start": "2019-07",
+        "end": "2022-07"
+      },
+      {
+        "company": "Stonebridge Capital",
+        "title": "Web Developer",
+        "start": "2017-09",
+        "end": "2019-06"
+      }
+    ],
+    "education": [
+      {
+        "institution": "King's College London",
+        "degree": "BSc Software Engineering"
+      }
+    ]
+  }
+}

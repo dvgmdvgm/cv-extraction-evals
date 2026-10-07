@@ -1,0 +1,62 @@
+{
+  "id": "cv_009",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Grace Calloway",
+    "email": "grace.calloway@example.org",
+    "phone": "+447700900358",
+    "location": "London, UK",
+    "current_title": "Marketing Executive",
+    "years_experience": 2,
+    "skills": [
+      "Google Analytics",
+      "HubSpot",
+      "Google Ads",
+      "Meta Ads",
+      "SEO"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C1"
+      },
+      {
+        "name": "German",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Northwind Analytics",
+        "title": "Marketing Executive",
+        "start": "2025-03",
+        "end": null
+      },
+      {
+        "company": "Harbor & Finch",
+        "title": "Marketing Assistant",
+        "start": "2024-01",
+        "end": "2025-01"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Manchester",
+        "degree": "BA Marketing"
+      },
+      {
+        "institution": "University of Manchester",
+        "degree": "BSc Mathematics"
+      }
+    ]
+  }
+}

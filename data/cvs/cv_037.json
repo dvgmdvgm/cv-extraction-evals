@@ -1,0 +1,70 @@
+{
+  "id": "cv_037",
+  "meta": {
+    "lang": "en",
+    "format": "docx",
+    "layout": "one_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Ethan Harland",
+    "email": "ethan.harland@example.com",
+    "phone": "+447700900306",
+    "location": "Edinburgh, UK",
+    "current_title": "Frontend Tech Lead",
+    "years_experience": 9,
+    "skills": [
+      "Vite",
+      "Jest",
+      "Next.js",
+      "Figma",
+      "TypeScript"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Northwind Analytics",
+        "title": "Frontend Tech Lead",
+        "start": "2025-01",
+        "end": null
+      },
+      {
+        "company": "Bluepeak Software",
+        "title": "Senior Frontend Developer",
+        "start": "2022-03",
+        "end": "2025-01"
+      },
+      {
+        "company": "Copperleaf Health",
+        "title": "Frontend Developer",
+        "start": "2020-07",
+        "end": "2022-01"
+      },
+      {
+        "company": "Quantel Systems",
+        "title": "Web Developer",
+        "start": "2016-11",
+        "end": "2020-05"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Glasgow",
+        "degree": "BSc Software Engineering"
+      },
+      {
+        "institution": "University of Manchester",
+        "degree": "BSc Mathematics"
+      }
+    ]
+  }
+}

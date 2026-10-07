@@ -1,0 +1,66 @@
+{
+  "id": "cv_001",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Amelia Thursby",
+    "email": "amelia.thursby@example.net",
+    "phone": "+447700900499",
+    "location": "Bristol, UK",
+    "current_title": "Product Manager",
+    "years_experience": 7,
+    "skills": [
+      "OKRs",
+      "User Research",
+      "Jira",
+      "Roadmapping",
+      "Amplitude",
+      "A/B Testing",
+      "SQL"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C1"
+      },
+      {
+        "name": "Portuguese",
+        "level": "A2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Brightlane Media",
+        "title": "Product Manager",
+        "start": "2025-02",
+        "end": null
+      },
+      {
+        "company": "Harbor & Finch",
+        "title": "Associate Product Manager",
+        "start": "2022-10",
+        "end": "2025-01"
+      },
+      {
+        "company": "Tidewater Logistics",
+        "title": "Business Analyst",
+        "start": "2019-01",
+        "end": "2022-08"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Manchester",
+        "degree": "BA Business Administration"
+      }
+    ]
+  }
+}

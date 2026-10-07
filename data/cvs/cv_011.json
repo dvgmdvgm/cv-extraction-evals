@@ -1,0 +1,54 @@
+{
+  "id": "cv_011",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Isla Marlowe",
+    "email": "isla.marlowe@example.org",
+    "phone": "+447700900275",
+    "location": "Madrid, Spain",
+    "current_title": "Head of AI",
+    "years_experience": 5,
+    "skills": [
+      "Docker",
+      "Vertex AI",
+      "LLM Evaluation",
+      "NLP",
+      "scikit-learn"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tidewater Logistics",
+        "title": "Head of AI",
+        "start": "2024-12",
+        "end": null
+      },
+      {
+        "company": "Lumen Mobility",
+        "title": "ML Tech Lead",
+        "start": "2021-08",
+        "end": "2024-11"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Glasgow",
+        "degree": "MSc Artificial Intelligence"
+      }
+    ]
+  }
+}

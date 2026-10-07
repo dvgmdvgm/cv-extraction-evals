@@ -1,0 +1,67 @@
+{
+  "id": "cv_018",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": [
+      "year_only_dates",
+      "no_headline"
+    ]
+  },
+  "cv": {
+    "name": "Sergio Ferrer Martínez",
+    "email": "sergio.ferrer@example.net",
+    "phone": "+34669358560",
+    "location": "Madrid, España",
+    "current_title": "Líder Técnico Frontend",
+    "years_experience": 8,
+    "skills": [
+      "Figma",
+      "CSS",
+      "Vite",
+      "React",
+      "GraphQL"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "Catalan",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "C2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tecnologías Albera",
+        "title": "Líder Técnico Frontend",
+        "start": "2025",
+        "end": null
+      },
+      {
+        "company": "Banca Mirador",
+        "title": "Desarrollador Frontend Senior",
+        "start": "2022",
+        "end": "2025"
+      },
+      {
+        "company": "Editorial Maranta",
+        "title": "Desarrollador Frontend",
+        "start": "2018",
+        "end": "2021"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Zaragoza",
+        "degree": "Grado en Ingeniería del Software"
+      }
+    ]
+  }
+}

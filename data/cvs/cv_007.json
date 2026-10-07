@@ -1,0 +1,58 @@
+{
+  "id": "cv_007",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": []
+  },
+  "cv": {
+    "name": "Grace Whitcombe",
+    "email": "grace.whitcombe@example.net",
+    "phone": "+447700900787",
+    "location": "Madrid, Spain",
+    "current_title": "Finance Manager",
+    "years_experience": 5,
+    "skills": [
+      "IFRS",
+      "Excel",
+      "Audit",
+      "Treasury",
+      "Budgeting"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Northwind Analytics",
+        "title": "Finance Manager",
+        "start": "2023-01",
+        "end": null
+      },
+      {
+        "company": "Quantel Systems",
+        "title": "Senior Accountant",
+        "start": "2021-02",
+        "end": "2022-11"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Bristol",
+        "degree": "BSc Accounting and Finance"
+      },
+      {
+        "institution": "University of Manchester",
+        "degree": "BA Economics"
+      }
+    ]
+  }
+}

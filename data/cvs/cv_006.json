@@ -1,0 +1,79 @@
+{
+  "id": "cv_006",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "two_phones",
+      "no_headline"
+    ]
+  },
+  "cv": {
+    "name": "Sergio Soler Beltrán",
+    "email": "sergio.soler@example.com",
+    "phone": "+34686502464",
+    "location": "Málaga, España",
+    "current_title": "Responsable de Frontend",
+    "years_experience": 8,
+    "skills": [
+      "Vite",
+      "GraphQL",
+      "Storybook",
+      "Accessibility",
+      "CSS",
+      "Jest",
+      "Figma"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "Catalan",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B1"
+      },
+      {
+        "name": "French",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Viñedos Altamar",
+        "title": "Responsable de Frontend",
+        "start": "2025-03",
+        "end": null
+      },
+      {
+        "company": "Editorial Maranta",
+        "title": "Líder Técnico Frontend",
+        "start": "2022-02",
+        "end": "2025-01"
+      },
+      {
+        "company": "Datanova Ibérica",
+        "title": "Desarrollador Frontend Senior",
+        "start": "2020-11",
+        "end": "2022-01"
+      },
+      {
+        "company": "Logística Sorolla",
+        "title": "Desarrollador Frontend",
+        "start": "2018-04",
+        "end": "2020-11"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Politécnica de Valencia",
+        "degree": "Grado en Ingeniería del Software"
+      }
+    ]
+  }
+}
