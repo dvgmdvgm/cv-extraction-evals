@@ -50,7 +50,7 @@ def table(header, rows):
 
 def summary_table(res):
     ms = res["models"]
-    return table(["Model", "Overall", "Cost / 40 CVs", "p50 latency", "p95 latency", "Errors"],
+    return table(["Model", "Overall", f"Cost / {res['n_cvs']} CVs", "p50 latency", "p95 latency", "Errors"],
                  [[m, f"**{s['overall']}**", f"${s['cost_usd']:.3f}", f"{s['latency_p50_s']} s", f"{s['latency_p95_s']} s",
                    s["errors"]] for m, s in sorted(ms.items(), key=lambda kv: -kv[1]["overall"])])
 

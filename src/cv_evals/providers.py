@@ -61,7 +61,10 @@ def call_gemini(model, system, text, schema, pdf=None):
 
     parts = [types.Part.from_bytes(data=pdf, mime_type="application/pdf")] if pdf else []
     parts.append(text)
-    r = genai.Client().models.generate_content(
+    # Keep the Client referenced: a temporary genai.Client() is garbage-collected (and its
+    # HTTP client closed) before .models.generate_content() sends the request.
+    client = genai.Client()
+    r = client.models.generate_content(
         model=model, contents=parts,
         config=types.GenerateContentConfig(system_instruction=system, response_mime_type="application/json",
                                            response_schema=schema, max_output_tokens=MAX_OUTPUT_TOKENS,

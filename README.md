@@ -39,13 +39,37 @@ native structured output on each provider, PDFs sent as documents (scans include
 
 ## Results
 
+> **This run covers Gemini only.** The Claude (Haiku 4.5, Sonnet 5.5) and OpenAI (GPT-6 Luna, GPT-6.1 Sol)
+> adapters are included and tested against mocked HTTP, but have not been run yet: no API keys were
+> available. Setting `ANTHROPIC_API_KEY` / `OPENAI_API_KEY` and re-running adds them to this table.
+
 <!-- results:start -->
-_No full run committed yet: set the API keys and run `uv run evals run` — this block is regenerated from the results._
+_Run of 2026-10-08, 40 CVs. Full breakdown in [RESULTS.md](RESULTS.md)._
+
+| Model | Overall | Cost / 40 CVs | p50 latency | p95 latency | Errors |
+|---|---|---|---|---|---|
+| gemini-3.8-flash | **100.0** | $0.136 | 6.95 s | 11.92 s | 0 |
+| gemini-3.1-pro | **100.0** | $0.876 | 13.66 s | 18.95 s | 0 |
 <!-- results:end -->
 
 ## Findings
 
-_Written from the first full run; see [RESULTS.md](RESULTS.md) for the per-field, per-layout and per-language tables._
+From the 2026-10-08 Gemini run (per-field, per-layout and per-language tables in [RESULTS.md](RESULTS.md)):
+
+1. **This dataset is saturated for current Gemini models.** Both scored 100 on every field, every layout
+   (two-column, scanned, DOCX) and both languages: Spanish month abbreviations, "present" end dates, year-only
+   dates and CVs with two phone numbers included. On clean synthetic CVs the eval cannot separate these
+   models any more; it needs harder cases (real-world scan noise, tables, photos, mixed-language CVs).
+2. **Flash matches Pro at 1/6 of the cost and half the latency.** $0.14 vs $0.88 per 40 CVs ($3.40 vs
+   $21.90 per 1,000), p50 7.0 s vs 13.7 s. Since quality is the same here, Flash is the obvious pick for
+   this task.
+3. **Normalisation made the phone score.** Both models copied every phone number exactly as printed
+   (`(+34) 686502464`, `+44 (0)7700 900132`, `659 16 23 74`). Not one of the 80 matched the E.164 gold string
+   verbatim, so a naive string comparison would have reported 0% phone accuracy. After normalisation all
+   80 were correct. Metric design matters as much as the model.
+4. **The judge was validated but never needed.** Gemini 3.1 Pro agreed with all 10 human labels on the
+   spot check, but every extracted job title passed the fuzzy match, so the judge made no scoring calls.
+   Models copied titles verbatim and did not translate them.
 
 ## Reproduce
 
@@ -56,7 +80,8 @@ export GEMINI_API_KEY=... ANTHROPIC_API_KEY=... OPENAI_API_KEY=...
 uv run evals run                 # all 6 models x 40 CVs -> results/<date>.json, RESULTS.md, this README's table
 ```
 
-A full run costs a few dollars (the exact spend is printed at the end; budget ~$5). Useful variants:
+The exact spend is printed at the end. The Gemini-only run cost $1.03 (judge included); with all six models,
+budget about $5. Useful variants:
 
 ```bash
 uv run evals run --limit 3                               # smoke test on 3 CVs, cents
@@ -69,7 +94,7 @@ uv run --extra render evals generate                     # re-render the dataset
 ### Regression mode: evals as CI tests for prompts
 
 ```bash
-uv run evals run --baseline results/2026-10-07.json
+uv run evals run --baseline results/2026-10-08.json
 ```
 
 Exits non-zero if any field of any model drops more than 2 points against the baseline. Change the prompt in

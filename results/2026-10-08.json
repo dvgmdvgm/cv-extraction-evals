@@ -1,0 +1,8572 @@
+{
+ "date": "2026-10-08",
+ "dry_run": false,
+ "n_cvs": 40,
+ "models": {
+  "gemini-3.8-flash": {
+   "n": 40,
+   "errors": 0,
+   "overall": 100.0,
+   "fields": {
+    "name": 100.0,
+    "email": 100.0,
+    "phone": 100.0,
+    "location": 100.0,
+    "current_title": 100.0,
+    "years_experience": 100.0,
+    "skills": 100.0,
+    "languages": 100.0,
+    "experience": 100.0,
+    "experience_dates": 100.0,
+    "education": 100.0
+   },
+   "precision_recall": {
+    "skills": {
+     "p": 100.0,
+     "r": 100.0
+    },
+    "languages": {
+     "p": 100.0,
+     "r": 100.0
+    },
+    "experience": {
+     "p": 100.0,
+     "r": 100.0
+    },
+    "education": {
+     "p": 100.0,
+     "r": 100.0
+    }
+   },
+   "by_slice": {
+    "DOCX": 100.0,
+    "PDF one-column": 100.0,
+    "PDF two-column": 100.0,
+    "lang: EN": 100.0,
+    "lang: ES": 100.0,
+    "scanned PDF": 100.0
+   },
+   "cost_usd": 0.1361,
+   "latency_p50_s": 6.95,
+   "latency_p95_s": 11.92,
+   "model_id": "gemini-3.8-flash"
+  },
+  "gemini-3.1-pro": {
+   "n": 40,
+   "errors": 0,
+   "overall": 100.0,
+   "fields": {
+    "name": 100.0,
+    "email": 100.0,
+    "phone": 100.0,
+    "location": 100.0,
+    "current_title": 100.0,
+    "years_experience": 100.0,
+    "skills": 100.0,
+    "languages": 100.0,
+    "experience": 100.0,
+    "experience_dates": 100.0,
+    "education": 100.0
+   },
+   "precision_recall": {
+    "skills": {
+     "p": 100.0,
+     "r": 100.0
+    },
+    "languages": {
+     "p": 100.0,
+     "r": 100.0
+    },
+    "experience": {
+     "p": 100.0,
+     "r": 100.0
+    },
+    "education": {
+     "p": 100.0,
+     "r": 100.0
+    }
+   },
+   "by_slice": {
+    "DOCX": 100.0,
+    "PDF one-column": 100.0,
+    "PDF two-column": 100.0,
+    "lang: EN": 100.0,
+    "lang: ES": 100.0,
+    "scanned PDF": 100.0
+   },
+   "cost_usd": 0.8756,
+   "latency_p50_s": 13.66,
+   "latency_p95_s": 18.95,
+   "model_id": "gemini-3.1-pro-preview"
+  }
+ },
+ "skipped": {
+  "anthropic": "ANTHROPIC_API_KEY not set",
+  "openai": "OPENAI_API_KEY not set"
+ },
+ "judge": {
+  "model": "gemini-3.1-pro",
+  "agree": 10,
+  "n": 10,
+  "disagreements": [],
+  "calls": 10,
+  "cost_usd": 0.0199
+ },
+ "total_cost_usd": 1.0316,
+ "per_cv": {
+  "gemini-3.8-flash": [
+   {
+    "id": "cv_001",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Amelia Thursby",
+     "email": "amelia.thursby@example.net",
+     "phone": "+44 7700 900499",
+     "location": "Bristol, UK",
+     "current_title": "Product Manager",
+     "years_experience": 7,
+     "skills": [
+      "OKRs",
+      "User Research",
+      "Jira",
+      "Roadmapping",
+      "Amplitude",
+      "A/B Testing",
+      "SQL"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C1"
+      },
+      {
+       "name": "Portuguese",
+       "level": "A2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Brightlane Media",
+       "title": "Product Manager",
+       "start": "2025-02",
+       "end": null
+      },
+      {
+       "company": "Harbor & Finch",
+       "title": "Associate Product Manager",
+       "start": "2022-10",
+       "end": "2025-01"
+      },
+      {
+       "company": "Tidewater Logistics",
+       "title": "Business Analyst",
+       "start": "2019-01",
+       "end": "2022-08"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Manchester",
+       "degree": "BA Business Administration"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     674
+    ],
+    "latency": 6.542,
+    "cost": 0.003135,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_002",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Álvaro Martínez Soler",
+     "email": "alvaro.martinez@example.com",
+     "phone": "+34 642 544 707",
+     "location": "Bilbao, España",
+     "current_title": "Product Manager",
+     "years_experience": 8,
+     "skills": [
+      "SQL",
+      "A/B Testing",
+      "Jira",
+      "Amplitude",
+      "Roadmapping"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B2"
+      },
+      {
+       "name": "French",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Soluciones Turia",
+       "title": "Product Manager",
+       "start": "2022-10",
+       "end": null
+      },
+      {
+       "company": "Viñedos Altamar",
+       "title": "Product Manager Junior",
+       "start": "2021-06",
+       "end": "2022-09"
+      },
+      {
+       "company": "Movilidad Ebro",
+       "title": "Analista de Negocio",
+       "start": "2017-11",
+       "end": "2021-06"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Zaragoza",
+       "degree": "Grado en Administración y Dirección de Empresas"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     976
+    ],
+    "latency": 7.954,
+    "cost": 0.0042675,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_003",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Isla Pennock",
+     "email": "isla.pennock@example.net",
+     "phone": "+44 (0)7700 900132",
+     "location": "Barcelona, Spain",
+     "current_title": "Digital Marketing Manager",
+     "years_experience": 5,
+     "skills": [
+      "Copywriting",
+      "Google Analytics",
+      "Meta Ads",
+      "HubSpot",
+      "SEO"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B2"
+      },
+      {
+       "name": "French",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Brightlane Media",
+       "title": "Digital Marketing Manager",
+       "start": "2025-05",
+       "end": null
+      },
+      {
+       "company": "Harbor & Finch",
+       "title": "Digital Marketing Specialist",
+       "start": "2021-06",
+       "end": "2025-02"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Manchester",
+       "degree": "BA Marketing"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     575
+    ],
+    "latency": 6.33,
+    "cost": 0.00276375,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_004",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "no_email"
+     ]
+    },
+    "pred": {
+     "name": "Álvaro Cortés Vidal",
+     "email": null,
+     "phone": "659 16 23 74",
+     "location": "Sevilla, España",
+     "current_title": "Responsable de Frontend",
+     "years_experience": 13,
+     "skills": [
+      "Storybook",
+      "CSS",
+      "Accessibility",
+      "GraphQL",
+      "Next.js",
+      "Figma"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      },
+      {
+       "name": "French",
+       "level": "A2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Soluciones Turia",
+       "title": "Responsable de Frontend",
+       "start": "2023-04",
+       "end": null
+      },
+      {
+       "company": "Grupo Alcorza",
+       "title": "Líder Técnico Frontend",
+       "start": "2019-05",
+       "end": "2023-01"
+      },
+      {
+       "company": "Viñedos Altamar",
+       "title": "Desarrollador Frontend Senior",
+       "start": "2016-11",
+       "end": "2019-05"
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Desarrollador Frontend",
+       "start": "2013-01",
+       "end": "2016-09"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Zaragoza",
+       "degree": "Grado en Ingeniería del Software"
+      },
+      {
+       "institution": "Universidad del País Vasco",
+       "degree": "Grado en Matemáticas"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1261
+    ],
+    "latency": 9.874,
+    "cost": 0.00533625,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_005",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "not_currently_employed"
+     ]
+    },
+    "pred": {
+     "name": "Chloe Kesteven",
+     "email": "chloe.kesteven@example.org",
+     "phone": "+44 (0)7700 900991",
+     "location": "London, UK",
+     "current_title": "Frontend Tech Lead",
+     "years_experience": 6,
+     "skills": [
+      "Accessibility",
+      "TypeScript",
+      "CSS",
+      "GraphQL",
+      "Jest",
+      "Figma"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B2"
+      },
+      {
+       "name": "Italian",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Quantel Systems",
+       "title": "Frontend Tech Lead",
+       "start": "2024-07",
+       "end": "2026-04"
+      },
+      {
+       "company": "Copperleaf Health",
+       "title": "Senior Frontend Developer",
+       "start": "2023-01",
+       "end": "2024-05"
+      },
+      {
+       "company": "Northwind Analytics",
+       "title": "Frontend Developer",
+       "start": "2021-12",
+       "end": "2022-12"
+      },
+      {
+       "company": "Stonebridge Capital",
+       "title": "Web Developer",
+       "start": "2020-10",
+       "end": "2021-11"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Bristol",
+       "degree": "BSc Software Engineering"
+      },
+      {
+       "institution": "King's College London",
+       "degree": "BSc Mathematics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     741
+    ],
+    "latency": 7.273,
+    "cost": 0.00338625,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_006",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "two_phones",
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Sergio Soler Beltrán",
+     "email": "sergio.soler@example.com",
+     "phone": "(+34) 686502464",
+     "location": "Málaga, España",
+     "current_title": "Responsable de Frontend",
+     "years_experience": 8,
+     "skills": [
+      "Vite",
+      "GraphQL",
+      "Storybook",
+      "Accessibility",
+      "CSS",
+      "Jest",
+      "Figma"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      },
+      {
+       "name": "French",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Viñedos Altamar",
+       "title": "Responsable de Frontend",
+       "start": "2025-03",
+       "end": null
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Líder Técnico Frontend",
+       "start": "2022-02",
+       "end": "2025-01"
+      },
+      {
+       "company": "Datanova Ibérica",
+       "title": "Desarrollador Frontend Senior",
+       "start": "2020-11",
+       "end": "2022-01"
+      },
+      {
+       "company": "Logística Sorolla",
+       "title": "Desarrollador Frontend",
+       "start": "2018-04",
+       "end": "2020-11"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Politécnica de Valencia",
+       "degree": "Grado en Ingeniería del Software"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1067
+    ],
+    "latency": 9.295,
+    "cost": 0.00460875,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_007",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Grace Whitcombe",
+     "email": "grace.whitcombe@example.net",
+     "phone": "+44 (0)7700 900787",
+     "location": "Madrid, Spain",
+     "current_title": "Finance Manager",
+     "years_experience": 5,
+     "skills": [
+      "IFRS",
+      "Excel",
+      "Audit",
+      "Treasury",
+      "Budgeting"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Northwind Analytics",
+       "title": "Finance Manager",
+       "start": "2023-01",
+       "end": null
+      },
+      {
+       "company": "Quantel Systems",
+       "title": "Senior Accountant",
+       "start": "2021-02",
+       "end": "2022-11"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Bristol",
+       "degree": "BSc Accounting and Finance"
+      },
+      {
+       "institution": "University of Manchester",
+       "degree": "BA Economics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     725
+    ],
+    "latency": 8.391,
+    "cost": 0.00332625,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_008",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "year_only_dates"
+     ]
+    },
+    "pred": {
+     "name": "Paula Lozano Navarro",
+     "email": "paula.lozano@example.com",
+     "phone": "0034 652 684 431",
+     "location": "Madrid, España",
+     "current_title": "Product Manager Senior",
+     "years_experience": 10,
+     "skills": [
+      "Stakeholder Management",
+      "Roadmapping",
+      "Amplitude",
+      "User Research",
+      "A/B Testing",
+      "Jira",
+      "SQL"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      },
+      {
+       "name": "French",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Logística Sorolla",
+       "title": "Product Manager Senior",
+       "start": "2024",
+       "end": null
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Product Manager",
+       "start": "2021",
+       "end": "2024"
+      },
+      {
+       "company": "Grupo Alcorza",
+       "title": "Product Manager Junior",
+       "start": "2020",
+       "end": "2021"
+      },
+      {
+       "company": "Viñedos Altamar",
+       "title": "Analista de Negocio",
+       "start": "2016",
+       "end": "2020"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Zaragoza",
+       "degree": "Grado en Administración y Dirección de Empresas"
+      },
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Física"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     633
+    ],
+    "latency": 6.9,
+    "cost": 0.00298125,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_009",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Grace Calloway",
+     "email": "grace.calloway@example.org",
+     "phone": "+44 (0)7700 900358",
+     "location": "London, UK",
+     "current_title": "Marketing Executive",
+     "years_experience": 2,
+     "skills": [
+      "Google Analytics",
+      "HubSpot",
+      "Google Ads",
+      "Meta Ads",
+      "SEO"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C1"
+      },
+      {
+       "name": "German",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Northwind Analytics",
+       "title": "Marketing Executive",
+       "start": "2025-03",
+       "end": null
+      },
+      {
+       "company": "Harbor & Finch",
+       "title": "Marketing Assistant",
+       "start": "2024-01",
+       "end": "2025-01"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Manchester",
+       "degree": "BA Marketing"
+      },
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Mathematics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     590
+    ],
+    "latency": 5.989,
+    "cost": 0.00282,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_010",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Lucía Soler Cortés",
+     "email": "lucia.soler@example.net",
+     "phone": "(+34) 655743241",
+     "location": "Bilbao, España",
+     "current_title": "Ingeniera de Datos",
+     "years_experience": 3,
+     "skills": [
+      "Kafka",
+      "Python",
+      "Apache Spark",
+      "Airflow",
+      "Tableau"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "C2"
+      },
+      {
+       "name": "French",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Logística Sorolla",
+       "title": "Ingeniera de Datos",
+       "start": "2025-05",
+       "end": null
+      },
+      {
+       "company": "Banca Mirador",
+       "title": "Analista de Datos",
+       "start": "2023-04",
+       "end": "2025-05"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Complutense de Madrid",
+       "degree": "Máster en Ciencia de Datos"
+      },
+      {
+       "institution": "Universidad del País Vasco",
+       "degree": "Grado en Matemáticas"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     630
+    ],
+    "latency": 6.124,
+    "cost": 0.00297,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_011",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Isla Marlowe",
+     "email": "isla.marlowe@example.org",
+     "phone": "+44 7700 900275",
+     "location": "Madrid, Spain",
+     "current_title": "Head of AI",
+     "years_experience": 5,
+     "skills": [
+      "Docker",
+      "Vertex AI",
+      "LLM Evaluation",
+      "NLP",
+      "scikit-learn"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Tidewater Logistics",
+       "title": "Head of AI",
+       "start": "2024-12",
+       "end": null
+      },
+      {
+       "company": "Lumen Mobility",
+       "title": "ML Tech Lead",
+       "start": "2021-08",
+       "end": "2024-11"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Glasgow",
+       "degree": "MSc Artificial Intelligence"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     496
+    ],
+    "latency": 4.325,
+    "cost": 0.0024675,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_012",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "no_email"
+     ]
+    },
+    "pred": {
+     "name": "Irene Lozano Cortés",
+     "email": null,
+     "phone": "697 37 36 42",
+     "location": "Málaga, España",
+     "current_title": "Controller Financiera",
+     "years_experience": 8,
+     "skills": [
+      "Budgeting",
+      "Power BI",
+      "SAP FI",
+      "Excel",
+      "Audit"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      },
+      {
+       "name": "Italian",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Clínica Levante",
+       "title": "Controller Financiera",
+       "start": "2024-11",
+       "end": null
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Responsable Financiera",
+       "start": "2021-06",
+       "end": "2024-11"
+      },
+      {
+       "company": "Banca Mirador",
+       "title": "Contable Senior",
+       "start": "2018-04",
+       "end": "2021-04"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Politécnica de Valencia",
+       "degree": "Grado en Finanzas y Contabilidad"
+      },
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Física"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     752
+    ],
+    "latency": 6.995,
+    "cost": 0.0034275,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_013",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Noah Ashdown",
+     "email": "noah.ashdown@example.org",
+     "phone": "+44 (0)7700 900737",
+     "location": "Manchester, UK",
+     "current_title": "Finance Manager",
+     "years_experience": 10,
+     "skills": [
+      "Audit",
+      "Treasury",
+      "Budgeting",
+      "SAP FI",
+      "Power BI"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Copperleaf Health",
+       "title": "Finance Manager",
+       "start": "2024-10",
+       "end": null
+      },
+      {
+       "company": "Meridian Retail Group",
+       "title": "Senior Accountant",
+       "start": "2021-05",
+       "end": "2024-09"
+      },
+      {
+       "company": "Tidewater Logistics",
+       "title": "Accountant",
+       "start": "2020-02",
+       "end": "2021-02"
+      },
+      {
+       "company": "Stonebridge Capital",
+       "title": "Accounts Assistant",
+       "start": "2016-06",
+       "end": "2019-11"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Leeds",
+       "degree": "BSc Accounting and Finance"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     512
+    ],
+    "latency": 5.001,
+    "cost": 0.0025275,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_014",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "two_phones",
+      "no_headline",
+      "not_currently_employed"
+     ]
+    },
+    "pred": {
+     "name": "Mateo Lozano García",
+     "email": "mateo.lozano@example.com",
+     "phone": "(+34) 662222486",
+     "location": "Valencia, España",
+     "current_title": "Líder Técnico Frontend",
+     "years_experience": 7,
+     "skills": [
+      "Vite",
+      "Jest",
+      "GraphQL",
+      "Figma",
+      "React"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B2"
+      },
+      {
+       "name": "Italian",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Logística Sorolla",
+       "title": "Líder Técnico Frontend",
+       "start": "2023-11",
+       "end": "2026-08"
+      },
+      {
+       "company": "Banca Mirador",
+       "title": "Desarrollador Frontend Senior",
+       "start": "2020-07",
+       "end": "2023-11"
+      },
+      {
+       "company": "Grupo Alcorza",
+       "title": "Desarrollador Frontend",
+       "start": "2019-01",
+       "end": "2020-05"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Ingeniería del Software"
+      },
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Economía"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     686
+    ],
+    "latency": 7.804,
+    "cost": 0.00318,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_015",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Harry Whitcombe",
+     "email": "harry.whitcombe@example.com",
+     "phone": "+44 (0)7700 900531",
+     "location": "Manchester, UK",
+     "current_title": "Digital Marketing Manager",
+     "years_experience": 10,
+     "skills": [
+      "Meta Ads",
+      "Copywriting",
+      "Email Marketing",
+      "Google Ads",
+      "Looker Studio",
+      "SEO"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Lumen Mobility",
+       "title": "Digital Marketing Manager",
+       "start": "2023-02",
+       "end": null
+      },
+      {
+       "company": "Harbor & Finch",
+       "title": "Digital Marketing Specialist",
+       "start": "2020-07",
+       "end": "2022-11"
+      },
+      {
+       "company": "Brightlane Media",
+       "title": "Marketing Executive",
+       "start": "2016-10",
+       "end": "2020-04"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Glasgow",
+       "degree": "BA Marketing"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     658
+    ],
+    "latency": 7.361,
+    "cost": 0.003075,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_016",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Sergio Soler Beltrán",
+     "email": "sergio.soler@example.net",
+     "phone": "+34 624 169 361",
+     "location": "Bilbao, España",
+     "current_title": "Desarrollador Backend Senior",
+     "years_experience": 7,
+     "skills": [
+      "REST APIs",
+      "Redis",
+      "Kubernetes",
+      "GCP",
+      "Spring Boot",
+      "PostgreSQL",
+      "Terraform"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Movilidad Ebro",
+       "title": "Desarrollador Backend Senior",
+       "start": "2025-10",
+       "end": null
+      },
+      {
+       "company": "Banca Mirador",
+       "title": "Desarrollador Backend",
+       "start": "2022-08",
+       "end": "2025-10"
+      },
+      {
+       "company": "Clínica Levante",
+       "title": "Desarrollador de Software",
+       "start": "2019-03",
+       "end": "2022-05"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Complutense de Madrid",
+       "degree": "Grado en Ingeniería Informática"
+      },
+      {
+       "institution": "Universidad del País Vasco",
+       "degree": "Grado en Economía"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     865
+    ],
+    "latency": 7.978,
+    "cost": 0.00385125,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_017",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Leo Calloway",
+     "email": "leo.calloway@example.org",
+     "phone": "+44 (0)7700 900832",
+     "location": "Madrid, Spain",
+     "current_title": "Finance Manager",
+     "years_experience": 11,
+     "skills": [
+      "Treasury",
+      "SAP FI",
+      "Audit",
+      "Month-end Close",
+      "Excel"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C1"
+      },
+      {
+       "name": "Italian",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Bluepeak Software",
+       "title": "Finance Manager",
+       "start": "2023-05",
+       "end": null
+      },
+      {
+       "company": "Copperleaf Health",
+       "title": "Senior Accountant",
+       "start": "2019-06",
+       "end": "2023-02"
+      },
+      {
+       "company": "Brightlane Media",
+       "title": "Accountant",
+       "start": "2017-05",
+       "end": "2019-03"
+      },
+      {
+       "company": "Northwind Analytics",
+       "title": "Accounts Assistant",
+       "start": "2015-03",
+       "end": "2017-02"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Bristol",
+       "degree": "BSc Accounting and Finance"
+      },
+      {
+       "institution": "University of Leeds",
+       "degree": "BSc Physics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     500
+    ],
+    "latency": 17.115,
+    "cost": 0.0024825,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_018",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": [
+      "year_only_dates",
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Sergio Ferrer Martínez",
+     "email": "sergio.ferrer@example.net",
+     "phone": "669 35 85 60",
+     "location": "Madrid, España",
+     "current_title": "Líder Técnico Frontend",
+     "years_experience": 8,
+     "skills": [
+      "Figma",
+      "CSS",
+      "Vite",
+      "React",
+      "GraphQL"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "C2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Tecnologías Albera",
+       "title": "Líder Técnico Frontend",
+       "start": "2025",
+       "end": null
+      },
+      {
+       "company": "Banca Mirador",
+       "title": "Desarrollador Frontend Senior",
+       "start": "2022",
+       "end": "2025"
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Desarrollador Frontend",
+       "start": "2018",
+       "end": "2021"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Zaragoza",
+       "degree": "Grado en Ingeniería del Software"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     870
+    ],
+    "latency": 8.023,
+    "cost": 0.00387,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_019",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Noah Harland",
+     "email": "noah.harland@example.net",
+     "phone": "+44 (0)7700 900609",
+     "location": "Edinburgh, UK",
+     "current_title": "Frontend Tech Lead",
+     "years_experience": 9,
+     "skills": [
+      "CSS",
+      "TypeScript",
+      "Jest",
+      "Vite",
+      "Next.js"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Lumen Mobility",
+       "title": "Frontend Tech Lead",
+       "start": "2024-11",
+       "end": null
+      },
+      {
+       "company": "Copperleaf Health",
+       "title": "Senior Frontend Developer",
+       "start": "2022-07",
+       "end": "2024-08"
+      },
+      {
+       "company": "Quantel Systems",
+       "title": "Frontend Developer",
+       "start": "2019-07",
+       "end": "2022-07"
+      },
+      {
+       "company": "Stonebridge Capital",
+       "title": "Web Developer",
+       "start": "2017-09",
+       "end": "2019-06"
+      }
+     ],
+     "education": [
+      {
+       "institution": "King's College London",
+       "degree": "BSc Software Engineering"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     573
+    ],
+    "latency": 4.858,
+    "cost": 0.00275625,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_020",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": [
+      "no_email"
+     ]
+    },
+    "pred": {
+     "name": "Lucía Ferrer Cortés",
+     "email": null,
+     "phone": "+34 687 294 925",
+     "location": "Bilbao, España",
+     "current_title": "Desarrolladora Backend Senior",
+     "years_experience": 9,
+     "skills": [
+      "Go",
+      "gRPC",
+      "Java",
+      "Terraform",
+      "Kubernetes",
+      "REST APIs"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "C1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Banca Mirador",
+       "title": "Desarrolladora Backend Senior",
+       "start": "2024-06",
+       "end": null
+      },
+      {
+       "company": "Soluciones Turia",
+       "title": "Desarrolladora Backend",
+       "start": "2022-01",
+       "end": "2024-05"
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Desarrolladora de Software",
+       "start": "2019-03",
+       "end": "2022-01"
+      },
+      {
+       "company": "Datanova Ibérica",
+       "title": "Desarrolladora Junior",
+       "start": "2017-09",
+       "end": "2018-12"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Zaragoza",
+       "degree": "Grado en Ingeniería Informática"
+      },
+      {
+       "institution": "Universidad Politécnica de Valencia",
+       "degree": "Grado en Economía"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1211
+    ],
+    "latency": 9.834,
+    "cost": 0.00514875,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_021",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Noah Kesteven",
+     "email": "noah.kesteven@example.net",
+     "phone": "+44 (0)7700 900507",
+     "location": "Bristol, UK",
+     "current_title": "Senior Backend Engineer",
+     "years_experience": 6,
+     "skills": [
+      "Spring Boot",
+      "REST APIs",
+      "Go",
+      "PostgreSQL",
+      "gRPC",
+      "Redis",
+      "Java"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Harbor & Finch",
+       "title": "Senior Backend Engineer",
+       "start": "2023-11",
+       "end": null
+      },
+      {
+       "company": "Meridian Retail Group",
+       "title": "Backend Engineer",
+       "start": "2019-11",
+       "end": "2023-08"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Computer Science"
+      },
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Physics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     513
+    ],
+    "latency": 6.162,
+    "cost": 0.00253125,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_022",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": [
+      "two_phones",
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Diego Ferrer Navarro",
+     "email": "diego.ferrer@example.org",
+     "phone": "(+34) 657498566",
+     "location": "Madrid, España",
+     "current_title": "Director de Crecimiento",
+     "years_experience": 8,
+     "skills": [
+      "Looker Studio",
+      "Copywriting",
+      "Email Marketing",
+      "SEO",
+      "Meta Ads"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Movilidad Ebro",
+       "title": "Director de Crecimiento",
+       "start": "2025-04",
+       "end": null
+      },
+      {
+       "company": "Soluciones Turia",
+       "title": "Responsable de Marketing Digital",
+       "start": "2021-11",
+       "end": "2025-04"
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Especialista en Marketing Digital",
+       "start": "2019-10",
+       "end": "2021-09"
+      },
+      {
+       "company": "Datanova Ibérica",
+       "title": "Técnico de Marketing",
+       "start": "2018-06",
+       "end": "2019-07"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Zaragoza",
+       "degree": "Grado en Marketing"
+      },
+      {
+       "institution": "Universidad Politécnica de Valencia",
+       "degree": "Grado en Matemáticas"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1019
+    ],
+    "latency": 8.46,
+    "cost": 0.00442875,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_023",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": [
+      "not_currently_employed"
+     ]
+    },
+    "pred": {
+     "name": "Ruby Calloway",
+     "email": "ruby.calloway@example.net",
+     "phone": "+44 7700 900993",
+     "location": "Bristol, UK",
+     "current_title": "Data Analyst",
+     "years_experience": 6,
+     "skills": [
+      "Apache Spark",
+      "Tableau",
+      "Python",
+      "AWS",
+      "Kafka"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Copperleaf Health",
+       "title": "Data Analyst",
+       "start": "2023-02",
+       "end": "2026-05"
+      },
+      {
+       "company": "Quantel Systems",
+       "title": "Junior Data Analyst",
+       "start": "2020-09",
+       "end": "2023-02"
+      }
+     ],
+     "education": [
+      {
+       "institution": "King's College London",
+       "degree": "MSc Data Science"
+      },
+      {
+       "institution": "University of Leeds",
+       "degree": "BA Economics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     556
+    ],
+    "latency": 5.717,
+    "cost": 0.0026925,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_024",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Sergio Lozano Beltrán",
+     "email": "sergio.lozano@example.org",
+     "phone": "(+34) 643425994",
+     "location": "Málaga, España",
+     "current_title": "Desarrollador Frontend Senior",
+     "years_experience": 7,
+     "skills": [
+      "Figma",
+      "Accessibility",
+      "CSS",
+      "GraphQL",
+      "TypeScript",
+      "Storybook"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Soluciones Turia",
+       "title": "Desarrollador Frontend Senior",
+       "start": "2023-11",
+       "end": null
+      },
+      {
+       "company": "Viñedos Altamar",
+       "title": "Desarrollador Frontend",
+       "start": "2020-06",
+       "end": "2023-08"
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Desarrollador Web",
+       "start": "2018-12",
+       "end": "2020-04"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Ingeniería del Software"
+      },
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Matemáticas"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1198
+    ],
+    "latency": 10.203,
+    "cost": 0.0051,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_025",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Noah Calloway",
+     "email": "noah.calloway@example.com",
+     "phone": "+44 (0)7700 900104",
+     "location": "Madrid, Spain",
+     "current_title": "Senior Product Manager",
+     "years_experience": 10,
+     "skills": [
+      "Roadmapping",
+      "A/B Testing",
+      "OKRs",
+      "Jira",
+      "SQL",
+      "Stakeholder Management"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C2"
+      },
+      {
+       "name": "Italian",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Brightlane Media",
+       "title": "Senior Product Manager",
+       "start": "2023-11",
+       "end": null
+      },
+      {
+       "company": "Stonebridge Capital",
+       "title": "Product Manager",
+       "start": "2022-02",
+       "end": "2023-08"
+      },
+      {
+       "company": "Copperleaf Health",
+       "title": "Associate Product Manager",
+       "start": "2019-01",
+       "end": "2022-01"
+      },
+      {
+       "company": "Tidewater Logistics",
+       "title": "Business Analyst",
+       "start": "2015-11",
+       "end": "2019-01"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Glasgow",
+       "degree": "BA Business Administration"
+      },
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Physics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     584
+    ],
+    "latency": 6.809,
+    "cost": 0.0027975,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_026",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": [
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Marta Iglesias Ferrer",
+     "email": "marta.iglesias@example.com",
+     "phone": "(+34) 653283798",
+     "location": "Sevilla, España",
+     "current_title": "Ingeniera de Datos Senior",
+     "years_experience": 10,
+     "skills": [
+      "Airflow",
+      "Snowflake",
+      "Python",
+      "SQL",
+      "Tableau",
+      "dbt",
+      "Docker"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      },
+      {
+       "name": "French",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Soluciones Turia",
+       "title": "Ingeniera de Datos Senior",
+       "start": "2025-02",
+       "end": null
+      },
+      {
+       "company": "Viñedos Altamar",
+       "title": "Ingeniera de Datos",
+       "start": "2023-08",
+       "end": "2024-12"
+      },
+      {
+       "company": "Clínica Levante",
+       "title": "Analista de Datos",
+       "start": "2020-11",
+       "end": "2023-08"
+      },
+      {
+       "company": "Datanova Ibérica",
+       "title": "Analista de Datos Junior",
+       "start": "2016-10",
+       "end": "2020-10"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Complutense de Madrid",
+       "degree": "Máster en Ciencia de Datos"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     635
+    ],
+    "latency": 6.537,
+    "cost": 0.00298875,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_027",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Harry Thursby",
+     "email": "harry.thursby@example.net",
+     "phone": "+44 (0)7700 900894",
+     "location": "Bristol, UK",
+     "current_title": "Staff Engineer",
+     "years_experience": 12,
+     "skills": [
+      "REST APIs",
+      "Go",
+      "Terraform",
+      "Spring Boot",
+      "gRPC",
+      "Kubernetes"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Quantel Systems",
+       "title": "Staff Engineer",
+       "start": "2022-12",
+       "end": null
+      },
+      {
+       "company": "Tidewater Logistics",
+       "title": "Senior Backend Engineer",
+       "start": "2018-12",
+       "end": "2022-10"
+      },
+      {
+       "company": "Brightlane Media",
+       "title": "Backend Engineer",
+       "start": "2017-06",
+       "end": "2018-12"
+      },
+      {
+       "company": "Copperleaf Health",
+       "title": "Software Developer",
+       "start": "2014-05",
+       "end": "2017-03"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Bristol",
+       "degree": "BSc Computer Science"
+      },
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Physics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     900
+    ],
+    "latency": 8.187,
+    "cost": 0.0039825,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_028",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": [
+      "no_email",
+      "year_only_dates"
+     ]
+    },
+    "pred": {
+     "name": "Lucía Soler Cortés",
+     "email": null,
+     "phone": "689 17 96 38",
+     "location": "Sevilla, España",
+     "current_title": "Desarrolladora de Software",
+     "years_experience": 7,
+     "skills": [
+      "Terraform",
+      "GCP",
+      "Kubernetes",
+      "PostgreSQL",
+      "gRPC"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "C1"
+      },
+      {
+       "name": "Italian",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Movilidad Ebro",
+       "title": "Desarrolladora de Software",
+       "start": "2023",
+       "end": null
+      },
+      {
+       "company": "Soluciones Turia",
+       "title": "Desarrolladora Junior",
+       "start": "2019",
+       "end": "2023"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Politécnica de Valencia",
+       "degree": "Grado en Ingeniería Informática"
+      },
+      {
+       "institution": "Universidad Politécnica de Valencia",
+       "degree": "Grado en Física"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     593
+    ],
+    "latency": 5.73,
+    "cost": 0.00283125,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_029",
+    "meta": {
+     "lang": "en",
+     "format": "scanned",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Ethan Brierley",
+     "email": "ethan.brierley@example.com",
+     "phone": "+44 7700 900586",
+     "location": "London, UK",
+     "current_title": "Head of Frontend",
+     "years_experience": 4,
+     "skills": [
+      "React",
+      "Jest",
+      "TypeScript",
+      "Storybook",
+      "GraphQL",
+      "Next.js",
+      "CSS"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Copperleaf Health",
+       "title": "Head of Frontend",
+       "start": "2023-10",
+       "end": null
+      },
+      {
+       "company": "Stonebridge Capital",
+       "title": "Frontend Tech Lead",
+       "start": "2022-08",
+       "end": "2023-09"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Software Engineering"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     818,
+     454
+    ],
+    "latency": 5.022,
+    "cost": 0.002316,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_030",
+    "meta": {
+     "lang": "es",
+     "format": "scanned",
+     "layout": "two_col",
+     "edge_cases": [
+      "two_phones",
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Paula Soler Lozano",
+     "email": "paula.soler@example.net",
+     "phone": "(+34) 610447241",
+     "location": "Zaragoza, España",
+     "current_title": "Directora de Crecimiento",
+     "years_experience": 10,
+     "skills": [
+      "Meta Ads",
+      "Copywriting",
+      "HubSpot",
+      "Google Ads",
+      "Email Marketing",
+      "SEO",
+      "Google Analytics"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Banca Mirador",
+       "title": "Directora de Crecimiento",
+       "start": "2025-04",
+       "end": null
+      },
+      {
+       "company": "Soluciones Turia",
+       "title": "Responsable de Marketing Digital",
+       "start": "2022-03",
+       "end": "2025-02"
+      },
+      {
+       "company": "Viñedos Altamar",
+       "title": "Especialista en Marketing Digital",
+       "start": "2018-11",
+       "end": "2022-01"
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Técnica de Marketing",
+       "start": "2015-12",
+       "end": "2018-08"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Marketing"
+      },
+      {
+       "institution": "Universidad Complutense de Madrid",
+       "degree": "Grado en Matemáticas"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     818,
+     745
+    ],
+    "latency": 9.264,
+    "cost": 0.00340725,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_031",
+    "meta": {
+     "lang": "en",
+     "format": "scanned",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Ruby Pennock",
+     "email": "ruby.pennock@example.com",
+     "phone": "+44 (0)7700 900644",
+     "location": "Bristol, UK",
+     "current_title": "Senior Backend Engineer",
+     "years_experience": 6,
+     "skills": [
+      "Java",
+      "Go",
+      "GCP",
+      "PostgreSQL",
+      "Terraform"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Brightlane Media",
+       "title": "Senior Backend Engineer",
+       "start": "2025-06",
+       "end": null
+      },
+      {
+       "company": "Stonebridge Capital",
+       "title": "Backend Engineer",
+       "start": "2023-06",
+       "end": "2025-03"
+      },
+      {
+       "company": "Tidewater Logistics",
+       "title": "Software Developer",
+       "start": "2022-05",
+       "end": "2023-05"
+      },
+      {
+       "company": "Lumen Mobility",
+       "title": "Junior Developer",
+       "start": "2020-06",
+       "end": "2022-04"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Bristol",
+       "degree": "BSc Computer Science"
+      },
+      {
+       "institution": "University of Bristol",
+       "degree": "BA Economics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     550
+    ],
+    "latency": 6.184,
+    "cost": 0.00267,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_032",
+    "meta": {
+     "lang": "es",
+     "format": "scanned",
+     "layout": "two_col",
+     "edge_cases": [
+      "not_currently_employed"
+     ]
+    },
+    "pred": {
+     "name": "Javier García Iglesias",
+     "email": "javier.garcia@example.net",
+     "phone": "0034 652 133 582",
+     "location": "Málaga, España",
+     "current_title": "Líder Técnico de ML",
+     "years_experience": 7,
+     "skills": [
+      "Vertex AI",
+      "Docker",
+      "PyTorch",
+      "scikit-learn",
+      "NLP",
+      "Pandas",
+      "LLM Evaluation"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B2"
+      },
+      {
+       "name": "French",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Banca Mirador",
+       "title": "Líder Técnico de ML",
+       "start": "2023-03",
+       "end": "2026-08"
+      },
+      {
+       "company": "Clínica Levante",
+       "title": "Ingeniero de Machine Learning Senior",
+       "start": "2021-10",
+       "end": "2023-01"
+      },
+      {
+       "company": "Soluciones Turia",
+       "title": "Ingeniero de Machine Learning",
+       "start": "2019-08",
+       "end": "2021-07"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Máster en Inteligencia Artificial"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     818,
+     1416
+    ],
+    "latency": 12.289,
+    "cost": 0.0059235,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_033",
+    "meta": {
+     "lang": "en",
+     "format": "scanned",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Noah Pennock",
+     "email": "noah.pennock@example.net",
+     "phone": "+44 7700 900834",
+     "location": "Edinburgh, UK",
+     "current_title": "Senior Frontend Developer",
+     "years_experience": 5,
+     "skills": [
+      "Vite",
+      "React",
+      "Jest",
+      "TypeScript",
+      "CSS",
+      "Storybook",
+      "Accessibility"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C2"
+      },
+      {
+       "name": "Italian",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Brightlane Media",
+       "title": "Senior Frontend Developer",
+       "start": "2025-07",
+       "end": null
+      },
+      {
+       "company": "Meridian Retail Group",
+       "title": "Frontend Developer",
+       "start": "2024-04",
+       "end": "2025-05"
+      },
+      {
+       "company": "Quantel Systems",
+       "title": "Web Developer",
+       "start": "2021-08",
+       "end": "2024-03"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Glasgow",
+       "degree": "BSc Software Engineering"
+      },
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Physics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     568
+    ],
+    "latency": 5.988,
+    "cost": 0.0027375,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_034",
+    "meta": {
+     "lang": "es",
+     "format": "scanned",
+     "layout": "two_col",
+     "edge_cases": [
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Elena Cortés Martínez",
+     "email": "elena.cortes@example.net",
+     "phone": "+34 657 416 183",
+     "location": "Sevilla, España",
+     "current_title": "Líder Técnico de ML",
+     "years_experience": 8,
+     "skills": [
+      "scikit-learn",
+      "Vertex AI",
+      "NLP",
+      "Pandas",
+      "Python",
+      "LLM Evaluation",
+      "MLflow"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "C2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Logística Sorolla",
+       "title": "Líder Técnico de ML",
+       "start": "2025-01",
+       "end": null
+      },
+      {
+       "company": "Grupo Alcorza",
+       "title": "Ingeniera de Machine Learning Senior",
+       "start": "2023-06",
+       "end": "2024-12"
+      },
+      {
+       "company": "Soluciones Turia",
+       "title": "Ingeniera de Machine Learning",
+       "start": "2020-04",
+       "end": "2023-05"
+      },
+      {
+       "company": "Movilidad Ebro",
+       "title": "Asistente de Investigación",
+       "start": "2018-06",
+       "end": "2020-04"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Politécnica de Valencia",
+       "degree": "Máster en Inteligencia Artificial"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1397
+    ],
+    "latency": 11.201,
+    "cost": 0.00584625,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_035",
+    "meta": {
+     "lang": "en",
+     "format": "docx",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Amelia Harland",
+     "email": "amelia.harland@example.org",
+     "phone": "+44 (0)7700 900904",
+     "location": "Madrid, Spain",
+     "current_title": "Head of Product",
+     "years_experience": 5,
+     "skills": [
+      "Amplitude",
+      "Jira",
+      "User Research",
+      "Roadmapping",
+      "Stakeholder Management"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C1"
+      },
+      {
+       "name": "French",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Bluepeak Software",
+       "title": "Head of Product",
+       "start": "2023-10",
+       "end": null
+      },
+      {
+       "company": "Quantel Systems",
+       "title": "Senior Product Manager",
+       "start": "2021-10",
+       "end": "2023-09"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Glasgow",
+       "degree": "BA Business Administration"
+      },
+      {
+       "institution": "University of Leeds",
+       "degree": "BA Economics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     499,
+     600
+    ],
+    "latency": 5.12,
+    "cost": 0.00262425,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_036",
+    "meta": {
+     "lang": "es",
+     "format": "docx",
+     "layout": "two_col",
+     "edge_cases": [
+      "no_email"
+     ]
+    },
+    "pred": {
+     "name": "Sergio Lozano Navarro",
+     "email": null,
+     "phone": "0034 629 671 867",
+     "location": "Valencia, España",
+     "current_title": "Product Manager Junior",
+     "years_experience": 3,
+     "skills": [
+      "A/B Testing",
+      "OKRs",
+      "Roadmapping",
+      "SQL",
+      "Stakeholder Management"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "C2"
+      },
+      {
+       "name": "Italian",
+       "level": "A2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Grupo Alcorza",
+       "title": "Product Manager Junior",
+       "start": "2025-09",
+       "end": null
+      },
+      {
+       "company": "Soluciones Turia",
+       "title": "Analista de Negocio",
+       "start": "2023-04",
+       "end": "2025-08"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Administración y Dirección de Empresas"
+      },
+      {
+       "institution": "Universidad de Zaragoza",
+       "degree": "Grado en Economía"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     513,
+     492
+    ],
+    "latency": 6.204,
+    "cost": 0.00222975,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_037",
+    "meta": {
+     "lang": "en",
+     "format": "docx",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Ethan Harland",
+     "email": "ethan.harland@example.com",
+     "phone": "+44 7700 900306",
+     "location": "Edinburgh, UK",
+     "current_title": "Frontend Tech Lead",
+     "years_experience": 9,
+     "skills": [
+      "Vite",
+      "Jest",
+      "Next.js",
+      "Figma",
+      "TypeScript"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Northwind Analytics",
+       "title": "Frontend Tech Lead",
+       "start": "2025-01",
+       "end": null
+      },
+      {
+       "company": "Bluepeak Software",
+       "title": "Senior Frontend Developer",
+       "start": "2022-03",
+       "end": "2025-01"
+      },
+      {
+       "company": "Copperleaf Health",
+       "title": "Frontend Developer",
+       "start": "2020-07",
+       "end": "2022-01"
+      },
+      {
+       "company": "Quantel Systems",
+       "title": "Web Developer",
+       "start": "2016-11",
+       "end": "2020-05"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Glasgow",
+       "degree": "BSc Software Engineering"
+      },
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Mathematics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     592,
+     873
+    ],
+    "latency": 7.817,
+    "cost": 0.00371775,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_038",
+    "meta": {
+     "lang": "es",
+     "format": "docx",
+     "layout": "two_col",
+     "edge_cases": [
+      "two_phones",
+      "year_only_dates",
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Irene Martínez García",
+     "email": "irene.martinez@example.org",
+     "phone": "614 96 33 64",
+     "location": "Bilbao, España",
+     "current_title": "Desarrolladora Backend Senior",
+     "years_experience": 5,
+     "skills": [
+      "PostgreSQL",
+      "Go",
+      "gRPC",
+      "GCP",
+      "Spring Boot",
+      "Redis"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Banca Mirador",
+       "title": "Desarrolladora Backend Senior",
+       "start": "2025",
+       "end": null
+      },
+      {
+       "company": "Logística Sorolla",
+       "title": "Desarrolladora Backend",
+       "start": "2021",
+       "end": "2025"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Complutense de Madrid",
+       "degree": "Grado en Ingeniería Informática"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     514,
+     777
+    ],
+    "latency": 6.835,
+    "cost": 0.00329925,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_039",
+    "meta": {
+     "lang": "en",
+     "format": "docx",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Jack Harland",
+     "email": "jack.harland@example.org",
+     "phone": "+44 (0)7700 900070",
+     "location": "Barcelona, Spain",
+     "current_title": "Senior Backend Engineer",
+     "years_experience": 5,
+     "skills": [
+      "PostgreSQL",
+      "Go",
+      "REST APIs",
+      "gRPC",
+      "Spring Boot",
+      "Terraform"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B1"
+      },
+      {
+       "name": "Portuguese",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Northwind Analytics",
+       "title": "Senior Backend Engineer",
+       "start": "2025-01",
+       "end": null
+      },
+      {
+       "company": "Brightlane Media",
+       "title": "Backend Engineer",
+       "start": "2023-11",
+       "end": "2025-01"
+      },
+      {
+       "company": "Stonebridge Capital",
+       "title": "Software Developer",
+       "start": "2021-04",
+       "end": "2023-09"
+      }
+     ],
+     "education": [
+      {
+       "institution": "King's College London",
+       "degree": "BSc Computer Science"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     536,
+     821
+    ],
+    "latency": 11.918,
+    "cost": 0.00348075,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_040",
+    "meta": {
+     "lang": "es",
+     "format": "docx",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Álvaro Martínez García",
+     "email": "alvaro.martinez@example.net",
+     "phone": "+34 645 792 914",
+     "location": "Madrid, España",
+     "current_title": "Responsable de IA",
+     "years_experience": 3,
+     "skills": [
+      "Vertex AI",
+      "Docker",
+      "Python",
+      "PyTorch",
+      "scikit-learn",
+      "Pandas"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "C1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Tecnologías Albera",
+       "title": "Responsable de IA",
+       "start": "2024-12",
+       "end": null
+      },
+      {
+       "company": "Datanova Ibérica",
+       "title": "Líder Técnico de ML",
+       "start": "2023-03",
+       "end": "2024-12"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad del País Vasco",
+       "degree": "Máster en Inteligencia Artificial"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     505,
+     461
+    ],
+    "latency": 5.183,
+    "cost": 0.0021075,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   }
+  ],
+  "gemini-3.1-pro": [
+   {
+    "id": "cv_001",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Amelia Thursby",
+     "email": "amelia.thursby@example.net",
+     "phone": "+44 7700 900499",
+     "location": "Bristol, UK",
+     "current_title": "Product Manager",
+     "years_experience": 7,
+     "skills": [
+      "OKRs",
+      "User Research",
+      "Jira",
+      "Roadmapping",
+      "Amplitude",
+      "A/B Testing",
+      "SQL"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C1"
+      },
+      {
+       "name": "Portuguese",
+       "level": "A2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Brightlane Media",
+       "title": "Product Manager",
+       "start": "2025-02",
+       "end": null
+      },
+      {
+       "company": "Harbor & Finch",
+       "title": "Associate Product Manager",
+       "start": "2022-10",
+       "end": "2025-01"
+      },
+      {
+       "company": "Tidewater Logistics",
+       "title": "Business Analyst",
+       "start": "2019-01",
+       "end": "2022-08"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Manchester",
+       "degree": "BA Business Administration"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1683
+    ],
+    "latency": 13.179,
+    "cost": 0.021816,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_002",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Álvaro Martínez Soler",
+     "email": "alvaro.martinez@example.com",
+     "phone": "+34 642 544 707",
+     "location": "Bilbao, España",
+     "current_title": "Product Manager",
+     "years_experience": 8,
+     "skills": [
+      "SQL",
+      "A/B Testing",
+      "Jira",
+      "Amplitude",
+      "Roadmapping"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B2"
+      },
+      {
+       "name": "French",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Soluciones Turia",
+       "title": "Product Manager",
+       "start": "2022-10",
+       "end": null
+      },
+      {
+       "company": "Viñedos Altamar",
+       "title": "Product Manager Junior",
+       "start": "2021-06",
+       "end": "2022-09"
+      },
+      {
+       "company": "Movilidad Ebro",
+       "title": "Analista de Negocio",
+       "start": "2017-11",
+       "end": "2021-06"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Zaragoza",
+       "degree": "Grado en Administración y Dirección de Empresas"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1792
+    ],
+    "latency": 13.617,
+    "cost": 0.023124,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_003",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Isla Pennock",
+     "email": "isla.pennock@example.net",
+     "phone": "+44 (0)7700 900132",
+     "location": "Barcelona, Spain",
+     "current_title": "Digital Marketing Manager",
+     "years_experience": 5,
+     "skills": [
+      "Copywriting",
+      "Google Analytics",
+      "Meta Ads",
+      "HubSpot",
+      "SEO"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B2"
+      },
+      {
+       "name": "French",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Brightlane Media",
+       "title": "Digital Marketing Manager",
+       "start": "2025-05",
+       "end": null
+      },
+      {
+       "company": "Harbor & Finch",
+       "title": "Digital Marketing Specialist",
+       "start": "2021-06",
+       "end": "2025-02"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Manchester",
+       "degree": "BA Marketing"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1526
+    ],
+    "latency": 12.147,
+    "cost": 0.019932,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_004",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "no_email"
+     ]
+    },
+    "pred": {
+     "name": "Álvaro Cortés Vidal",
+     "email": null,
+     "phone": "659 16 23 74",
+     "location": "Sevilla, España",
+     "current_title": "Responsable de Frontend",
+     "years_experience": 13,
+     "skills": [
+      "Storybook",
+      "CSS",
+      "Accessibility",
+      "GraphQL",
+      "Next.js",
+      "Figma"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      },
+      {
+       "name": "French",
+       "level": "A2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Soluciones Turia",
+       "title": "Responsable de Frontend",
+       "start": "2023-04",
+       "end": null
+      },
+      {
+       "company": "Grupo Alcorza",
+       "title": "Líder Técnico Frontend",
+       "start": "2019-05",
+       "end": "2023-01"
+      },
+      {
+       "company": "Viñedos Altamar",
+       "title": "Desarrollador Frontend Senior",
+       "start": "2016-11",
+       "end": "2019-05"
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Desarrollador Frontend",
+       "start": "2013-01",
+       "end": "2016-09"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Zaragoza",
+       "degree": "Grado en Ingeniería del Software"
+      },
+      {
+       "institution": "Universidad del País Vasco",
+       "degree": "Grado en Matemáticas"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     2133
+    ],
+    "latency": 15.124,
+    "cost": 0.027216,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_005",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "not_currently_employed"
+     ]
+    },
+    "pred": {
+     "name": "Chloe Kesteven",
+     "email": "chloe.kesteven@example.org",
+     "phone": "+44 (0)7700 900991",
+     "location": "London, UK",
+     "current_title": "Frontend Tech Lead",
+     "years_experience": 6,
+     "skills": [
+      "Accessibility",
+      "TypeScript",
+      "CSS",
+      "GraphQL",
+      "Jest",
+      "Figma"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B2"
+      },
+      {
+       "name": "Italian",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Quantel Systems",
+       "title": "Frontend Tech Lead",
+       "start": "2024-07",
+       "end": "2026-04"
+      },
+      {
+       "company": "Copperleaf Health",
+       "title": "Senior Frontend Developer",
+       "start": "2023-01",
+       "end": "2024-05"
+      },
+      {
+       "company": "Northwind Analytics",
+       "title": "Frontend Developer",
+       "start": "2021-12",
+       "end": "2022-12"
+      },
+      {
+       "company": "Stonebridge Capital",
+       "title": "Web Developer",
+       "start": "2020-10",
+       "end": "2021-11"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Bristol",
+       "degree": "BSc Software Engineering"
+      },
+      {
+       "institution": "King's College London",
+       "degree": "BSc Mathematics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1756
+    ],
+    "latency": 13.965,
+    "cost": 0.022692,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_006",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "two_phones",
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Sergio Soler Beltrán",
+     "email": "sergio.soler@example.com",
+     "phone": "(+34) 686502464",
+     "location": "Málaga, España",
+     "current_title": "Responsable de Frontend",
+     "years_experience": 8,
+     "skills": [
+      "Vite",
+      "GraphQL",
+      "Storybook",
+      "Accessibility",
+      "CSS",
+      "Jest",
+      "Figma"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      },
+      {
+       "name": "French",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Viñedos Altamar",
+       "title": "Responsable de Frontend",
+       "start": "2025-03",
+       "end": null
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Líder Técnico Frontend",
+       "start": "2022-02",
+       "end": "2025-01"
+      },
+      {
+       "company": "Datanova Ibérica",
+       "title": "Desarrollador Frontend Senior",
+       "start": "2020-11",
+       "end": "2022-01"
+      },
+      {
+       "company": "Logística Sorolla",
+       "title": "Desarrollador Frontend",
+       "start": "2018-04",
+       "end": "2020-11"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Politécnica de Valencia",
+       "degree": "Grado en Ingeniería del Software"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     2474
+    ],
+    "latency": 21.798,
+    "cost": 0.031308,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_007",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Grace Whitcombe",
+     "email": "grace.whitcombe@example.net",
+     "phone": "+44 (0)7700 900787",
+     "location": "Madrid, Spain",
+     "current_title": "Finance Manager",
+     "years_experience": 5,
+     "skills": [
+      "IFRS",
+      "Excel",
+      "Audit",
+      "Treasury",
+      "Budgeting"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Northwind Analytics",
+       "title": "Finance Manager",
+       "start": "2023-01",
+       "end": null
+      },
+      {
+       "company": "Quantel Systems",
+       "title": "Senior Accountant",
+       "start": "2021-02",
+       "end": "2022-11"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Bristol",
+       "degree": "BSc Accounting and Finance"
+      },
+      {
+       "institution": "University of Manchester",
+       "degree": "BA Economics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1250
+    ],
+    "latency": 11.178,
+    "cost": 0.01662,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_008",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "year_only_dates"
+     ]
+    },
+    "pred": {
+     "name": "Paula Lozano Navarro",
+     "email": "paula.lozano@example.com",
+     "phone": "0034 652 684 431",
+     "location": "Madrid, España",
+     "current_title": "Product Manager Senior",
+     "years_experience": 10,
+     "skills": [
+      "Stakeholder Management",
+      "Roadmapping",
+      "Amplitude",
+      "User Research",
+      "A/B Testing",
+      "Jira",
+      "SQL"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      },
+      {
+       "name": "French",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Logística Sorolla",
+       "title": "Product Manager Senior",
+       "start": "2024",
+       "end": null
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Product Manager",
+       "start": "2021",
+       "end": "2024"
+      },
+      {
+       "company": "Grupo Alcorza",
+       "title": "Product Manager Junior",
+       "start": "2020",
+       "end": "2021"
+      },
+      {
+       "company": "Viñedos Altamar",
+       "title": "Analista de Negocio",
+       "start": "2016",
+       "end": "2020"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Zaragoza",
+       "degree": "Grado en Administración y Dirección de Empresas"
+      },
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Física"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     2244
+    ],
+    "latency": 15.856,
+    "cost": 0.028548,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_009",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Grace Calloway",
+     "email": "grace.calloway@example.org",
+     "phone": "+44 (0)7700 900358",
+     "location": "London, UK",
+     "current_title": "Marketing Executive",
+     "years_experience": 2,
+     "skills": [
+      "Google Analytics",
+      "HubSpot",
+      "Google Ads",
+      "Meta Ads",
+      "SEO"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C1"
+      },
+      {
+       "name": "German",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Northwind Analytics",
+       "title": "Marketing Executive",
+       "start": "2025-03",
+       "end": null
+      },
+      {
+       "company": "Harbor & Finch",
+       "title": "Marketing Assistant",
+       "start": "2024-01",
+       "end": "2025-01"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Manchester",
+       "degree": "BA Marketing"
+      },
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Mathematics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1431
+    ],
+    "latency": 12.179,
+    "cost": 0.018792,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_010",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Lucía Soler Cortés",
+     "email": "lucia.soler@example.net",
+     "phone": "(+34) 655743241",
+     "location": "Bilbao, España",
+     "current_title": "Ingeniera de Datos",
+     "years_experience": 3,
+     "skills": [
+      "Kafka",
+      "Python",
+      "Apache Spark",
+      "Airflow",
+      "Tableau"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "C2"
+      },
+      {
+       "name": "French",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Logística Sorolla",
+       "title": "Ingeniera de Datos",
+       "start": "2025-05",
+       "end": null
+      },
+      {
+       "company": "Banca Mirador",
+       "title": "Analista de Datos",
+       "start": "2023-04",
+       "end": "2025-05"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Complutense de Madrid",
+       "degree": "Máster en Ciencia de Datos"
+      },
+      {
+       "institution": "Universidad del País Vasco",
+       "degree": "Grado en Matemáticas"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1287
+    ],
+    "latency": 10.44,
+    "cost": 0.017064,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_011",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Isla Marlowe",
+     "email": "isla.marlowe@example.org",
+     "phone": "+44 7700 900275",
+     "location": "Madrid, Spain",
+     "current_title": "Head of AI",
+     "years_experience": 5,
+     "skills": [
+      "Docker",
+      "Vertex AI",
+      "LLM Evaluation",
+      "NLP",
+      "scikit-learn"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Tidewater Logistics",
+       "title": "Head of AI",
+       "start": "2024-12",
+       "end": null
+      },
+      {
+       "company": "Lumen Mobility",
+       "title": "ML Tech Lead",
+       "start": "2021-08",
+       "end": "2024-11"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Glasgow",
+       "degree": "MSc Artificial Intelligence"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1479
+    ],
+    "latency": 11.614,
+    "cost": 0.019368,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_012",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "no_email"
+     ]
+    },
+    "pred": {
+     "name": "Irene Lozano Cortés",
+     "email": null,
+     "phone": "697 37 36 42",
+     "location": "Málaga, España",
+     "current_title": "Controller Financiera",
+     "years_experience": 8,
+     "skills": [
+      "Budgeting",
+      "Power BI",
+      "SAP FI",
+      "Excel",
+      "Audit"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      },
+      {
+       "name": "Italian",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Clínica Levante",
+       "title": "Controller Financiera",
+       "start": "2024-11",
+       "end": null
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Responsable Financiera",
+       "start": "2021-06",
+       "end": "2024-11"
+      },
+      {
+       "company": "Banca Mirador",
+       "title": "Contable Senior",
+       "start": "2018-04",
+       "end": "2021-04"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Politécnica de Valencia",
+       "degree": "Grado en Finanzas y Contabilidad"
+      },
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Física"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1702
+    ],
+    "latency": 12.877,
+    "cost": 0.022044,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_013",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Noah Ashdown",
+     "email": "noah.ashdown@example.org",
+     "phone": "+44 (0)7700 900737",
+     "location": "Manchester, UK",
+     "current_title": "Finance Manager",
+     "years_experience": 10,
+     "skills": [
+      "Audit",
+      "Treasury",
+      "Budgeting",
+      "SAP FI",
+      "Power BI"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Copperleaf Health",
+       "title": "Finance Manager",
+       "start": "2024-10",
+       "end": null
+      },
+      {
+       "company": "Meridian Retail Group",
+       "title": "Senior Accountant",
+       "start": "2021-05",
+       "end": "2024-09"
+      },
+      {
+       "company": "Tidewater Logistics",
+       "title": "Accountant",
+       "start": "2020-02",
+       "end": "2021-02"
+      },
+      {
+       "company": "Stonebridge Capital",
+       "title": "Accounts Assistant",
+       "start": "2016-06",
+       "end": "2019-11"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Leeds",
+       "degree": "BSc Accounting and Finance"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1455
+    ],
+    "latency": 11.45,
+    "cost": 0.01908,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_014",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "one_col",
+     "edge_cases": [
+      "two_phones",
+      "no_headline",
+      "not_currently_employed"
+     ]
+    },
+    "pred": {
+     "name": "Mateo Lozano García",
+     "email": "mateo.lozano@example.com",
+     "phone": "(+34) 662222486",
+     "location": "Valencia, España",
+     "current_title": "Líder Técnico Frontend",
+     "years_experience": 7,
+     "skills": [
+      "Vite",
+      "Jest",
+      "GraphQL",
+      "Figma",
+      "React"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B2"
+      },
+      {
+       "name": "Italian",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Logística Sorolla",
+       "title": "Líder Técnico Frontend",
+       "start": "2023-11",
+       "end": "2026-08"
+      },
+      {
+       "company": "Banca Mirador",
+       "title": "Desarrollador Frontend Senior",
+       "start": "2020-07",
+       "end": "2023-11"
+      },
+      {
+       "company": "Grupo Alcorza",
+       "title": "Desarrollador Frontend",
+       "start": "2019-01",
+       "end": "2020-05"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Ingeniería del Software"
+      },
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Economía"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1788
+    ],
+    "latency": 14.133,
+    "cost": 0.023076,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_015",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Harry Whitcombe",
+     "email": "harry.whitcombe@example.com",
+     "phone": "+44 (0)7700 900531",
+     "location": "Manchester, UK",
+     "current_title": "Digital Marketing Manager",
+     "years_experience": 10,
+     "skills": [
+      "Meta Ads",
+      "Copywriting",
+      "Email Marketing",
+      "Google Ads",
+      "Looker Studio",
+      "SEO"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Lumen Mobility",
+       "title": "Digital Marketing Manager",
+       "start": "2023-02",
+       "end": null
+      },
+      {
+       "company": "Harbor & Finch",
+       "title": "Digital Marketing Specialist",
+       "start": "2020-07",
+       "end": "2022-11"
+      },
+      {
+       "company": "Brightlane Media",
+       "title": "Marketing Executive",
+       "start": "2016-10",
+       "end": "2020-04"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Glasgow",
+       "degree": "BA Marketing"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1256
+    ],
+    "latency": 10.475,
+    "cost": 0.016692,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_016",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Sergio Soler Beltrán",
+     "email": "sergio.soler@example.net",
+     "phone": "+34 624 169 361",
+     "location": "Bilbao, España",
+     "current_title": "Desarrollador Backend Senior",
+     "years_experience": 7,
+     "skills": [
+      "REST APIs",
+      "Redis",
+      "Kubernetes",
+      "GCP",
+      "Spring Boot",
+      "PostgreSQL",
+      "Terraform"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Movilidad Ebro",
+       "title": "Desarrollador Backend Senior",
+       "start": "2025-10",
+       "end": null
+      },
+      {
+       "company": "Banca Mirador",
+       "title": "Desarrollador Backend",
+       "start": "2022-08",
+       "end": "2025-10"
+      },
+      {
+       "company": "Clínica Levante",
+       "title": "Desarrollador de Software",
+       "start": "2019-03",
+       "end": "2022-05"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Complutense de Madrid",
+       "degree": "Grado en Ingeniería Informática"
+      },
+      {
+       "institution": "Universidad del País Vasco",
+       "degree": "Grado en Economía"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     2054
+    ],
+    "latency": 17.694,
+    "cost": 0.026268,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_017",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Leo Calloway",
+     "email": "leo.calloway@example.org",
+     "phone": "+44 (0)7700 900832",
+     "location": "Madrid, Spain",
+     "current_title": "Finance Manager",
+     "years_experience": 11,
+     "skills": [
+      "Treasury",
+      "SAP FI",
+      "Audit",
+      "Month-end Close",
+      "Excel"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C1"
+      },
+      {
+       "name": "Italian",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Bluepeak Software",
+       "title": "Finance Manager",
+       "start": "2023-05",
+       "end": null
+      },
+      {
+       "company": "Copperleaf Health",
+       "title": "Senior Accountant",
+       "start": "2019-06",
+       "end": "2023-02"
+      },
+      {
+       "company": "Brightlane Media",
+       "title": "Accountant",
+       "start": "2017-05",
+       "end": "2019-03"
+      },
+      {
+       "company": "Northwind Analytics",
+       "title": "Accounts Assistant",
+       "start": "2015-03",
+       "end": "2017-02"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Bristol",
+       "degree": "BSc Accounting and Finance"
+      },
+      {
+       "institution": "University of Leeds",
+       "degree": "BSc Physics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1767
+    ],
+    "latency": 13.823,
+    "cost": 0.022824,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_018",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": [
+      "year_only_dates",
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Sergio Ferrer Martínez",
+     "email": "sergio.ferrer@example.net",
+     "phone": "669 35 85 60",
+     "location": "Madrid, España",
+     "current_title": "Líder Técnico Frontend",
+     "years_experience": 8,
+     "skills": [
+      "Figma",
+      "CSS",
+      "Vite",
+      "React",
+      "GraphQL"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "C2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Tecnologías Albera",
+       "title": "Líder Técnico Frontend",
+       "start": "2025",
+       "end": null
+      },
+      {
+       "company": "Banca Mirador",
+       "title": "Desarrollador Frontend Senior",
+       "start": "2022",
+       "end": "2025"
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Desarrollador Frontend",
+       "start": "2018",
+       "end": "2021"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Zaragoza",
+       "degree": "Grado en Ingeniería del Software"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1442
+    ],
+    "latency": 12.658,
+    "cost": 0.018924,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_019",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Noah Harland",
+     "email": "noah.harland@example.net",
+     "phone": "+44 (0)7700 900609",
+     "location": "Edinburgh, UK",
+     "current_title": "Frontend Tech Lead",
+     "years_experience": 9,
+     "skills": [
+      "CSS",
+      "TypeScript",
+      "Jest",
+      "Vite",
+      "Next.js"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Lumen Mobility",
+       "title": "Frontend Tech Lead",
+       "start": "2024-11",
+       "end": null
+      },
+      {
+       "company": "Copperleaf Health",
+       "title": "Senior Frontend Developer",
+       "start": "2022-07",
+       "end": "2024-08"
+      },
+      {
+       "company": "Quantel Systems",
+       "title": "Frontend Developer",
+       "start": "2019-07",
+       "end": "2022-07"
+      },
+      {
+       "company": "Stonebridge Capital",
+       "title": "Web Developer",
+       "start": "2017-09",
+       "end": "2019-06"
+      }
+     ],
+     "education": [
+      {
+       "institution": "King's College London",
+       "degree": "BSc Software Engineering"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1734
+    ],
+    "latency": 13.701,
+    "cost": 0.022428,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_020",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": [
+      "no_email"
+     ]
+    },
+    "pred": {
+     "name": "Lucía Ferrer Cortés",
+     "email": null,
+     "phone": "+34 687 294 925",
+     "location": "Bilbao, España",
+     "current_title": "Desarrolladora Backend Senior",
+     "years_experience": 9,
+     "skills": [
+      "Go",
+      "gRPC",
+      "Java",
+      "Terraform",
+      "Kubernetes",
+      "REST APIs"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "C1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Banca Mirador",
+       "title": "Desarrolladora Backend Senior",
+       "start": "2024-06",
+       "end": null
+      },
+      {
+       "company": "Soluciones Turia",
+       "title": "Desarrolladora Backend",
+       "start": "2022-01",
+       "end": "2024-05"
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Desarrolladora de Software",
+       "start": "2019-03",
+       "end": "2022-01"
+      },
+      {
+       "company": "Datanova Ibérica",
+       "title": "Desarrolladora Junior",
+       "start": "2017-09",
+       "end": "2018-12"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Zaragoza",
+       "degree": "Grado en Ingeniería Informática"
+      },
+      {
+       "institution": "Universidad Politécnica de Valencia",
+       "degree": "Grado en Economía"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1810
+    ],
+    "latency": 14.391,
+    "cost": 0.02334,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_021",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Noah Kesteven",
+     "email": "noah.kesteven@example.net",
+     "phone": "+44 (0)7700 900507",
+     "location": "Bristol, UK",
+     "current_title": "Senior Backend Engineer",
+     "years_experience": 6,
+     "skills": [
+      "Spring Boot",
+      "REST APIs",
+      "Go",
+      "PostgreSQL",
+      "gRPC",
+      "Redis",
+      "Java"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Harbor & Finch",
+       "title": "Senior Backend Engineer",
+       "start": "2023-11",
+       "end": null
+      },
+      {
+       "company": "Meridian Retail Group",
+       "title": "Backend Engineer",
+       "start": "2019-11",
+       "end": "2023-08"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Computer Science"
+      },
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Physics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     2153
+    ],
+    "latency": 17.277,
+    "cost": 0.027456,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_022",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": [
+      "two_phones",
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Diego Ferrer Navarro",
+     "email": "diego.ferrer@example.org",
+     "phone": "(+34) 657498566",
+     "location": "Madrid, España",
+     "current_title": "Director de Crecimiento",
+     "years_experience": 8,
+     "skills": [
+      "Looker Studio",
+      "Copywriting",
+      "Email Marketing",
+      "SEO",
+      "Meta Ads"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Movilidad Ebro",
+       "title": "Director de Crecimiento",
+       "start": "2025-04",
+       "end": null
+      },
+      {
+       "company": "Soluciones Turia",
+       "title": "Responsable de Marketing Digital",
+       "start": "2021-11",
+       "end": "2025-04"
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Especialista en Marketing Digital",
+       "start": "2019-10",
+       "end": "2021-09"
+      },
+      {
+       "company": "Datanova Ibérica",
+       "title": "Técnico de Marketing",
+       "start": "2018-06",
+       "end": "2019-07"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Zaragoza",
+       "degree": "Grado en Marketing"
+      },
+      {
+       "institution": "Universidad Politécnica de Valencia",
+       "degree": "Grado en Matemáticas"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     2129
+    ],
+    "latency": 18.955,
+    "cost": 0.027168,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_023",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": [
+      "not_currently_employed"
+     ]
+    },
+    "pred": {
+     "name": "Ruby Calloway",
+     "email": "ruby.calloway@example.net",
+     "phone": "+44 7700 900993",
+     "location": "Bristol, UK",
+     "current_title": "Data Analyst",
+     "years_experience": 6,
+     "skills": [
+      "Apache Spark",
+      "Tableau",
+      "Python",
+      "AWS",
+      "Kafka"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Copperleaf Health",
+       "title": "Data Analyst",
+       "start": "2023-02",
+       "end": "2026-05"
+      },
+      {
+       "company": "Quantel Systems",
+       "title": "Junior Data Analyst",
+       "start": "2020-09",
+       "end": "2023-02"
+      }
+     ],
+     "education": [
+      {
+       "institution": "King's College London",
+       "degree": "MSc Data Science"
+      },
+      {
+       "institution": "University of Leeds",
+       "degree": "BA Economics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1351
+    ],
+    "latency": 10.937,
+    "cost": 0.017832,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_024",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Sergio Lozano Beltrán",
+     "email": "sergio.lozano@example.org",
+     "phone": "(+34) 643425994",
+     "location": "Málaga, España",
+     "current_title": "Desarrollador Frontend Senior",
+     "years_experience": 7,
+     "skills": [
+      "Figma",
+      "Accessibility",
+      "CSS",
+      "GraphQL",
+      "TypeScript",
+      "Storybook"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Soluciones Turia",
+       "title": "Desarrollador Frontend Senior",
+       "start": "2023-11",
+       "end": null
+      },
+      {
+       "company": "Viñedos Altamar",
+       "title": "Desarrollador Frontend",
+       "start": "2020-06",
+       "end": "2023-08"
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Desarrollador Web",
+       "start": "2018-12",
+       "end": "2020-04"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Ingeniería del Software"
+      },
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Matemáticas"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1593
+    ],
+    "latency": 11.826,
+    "cost": 0.020736,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_025",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Noah Calloway",
+     "email": "noah.calloway@example.com",
+     "phone": "+44 (0)7700 900104",
+     "location": "Madrid, Spain",
+     "current_title": "Senior Product Manager",
+     "years_experience": 10,
+     "skills": [
+      "Roadmapping",
+      "A/B Testing",
+      "OKRs",
+      "Jira",
+      "SQL",
+      "Stakeholder Management"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C2"
+      },
+      {
+       "name": "Italian",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Brightlane Media",
+       "title": "Senior Product Manager",
+       "start": "2023-11",
+       "end": null
+      },
+      {
+       "company": "Stonebridge Capital",
+       "title": "Product Manager",
+       "start": "2022-02",
+       "end": "2023-08"
+      },
+      {
+       "company": "Copperleaf Health",
+       "title": "Associate Product Manager",
+       "start": "2019-01",
+       "end": "2022-01"
+      },
+      {
+       "company": "Tidewater Logistics",
+       "title": "Business Analyst",
+       "start": "2015-11",
+       "end": "2019-01"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Glasgow",
+       "degree": "BA Business Administration"
+      },
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Physics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1869
+    ],
+    "latency": 14.397,
+    "cost": 0.024048,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_026",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": [
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Marta Iglesias Ferrer",
+     "email": "marta.iglesias@example.com",
+     "phone": "(+34) 653283798",
+     "location": "Sevilla, España",
+     "current_title": "Ingeniera de Datos Senior",
+     "years_experience": 10,
+     "skills": [
+      "Airflow",
+      "Snowflake",
+      "Python",
+      "SQL",
+      "Tableau",
+      "dbt",
+      "Docker"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      },
+      {
+       "name": "French",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Soluciones Turia",
+       "title": "Ingeniera de Datos Senior",
+       "start": "2025-02",
+       "end": null
+      },
+      {
+       "company": "Viñedos Altamar",
+       "title": "Ingeniera de Datos",
+       "start": "2023-08",
+       "end": "2024-12"
+      },
+      {
+       "company": "Clínica Levante",
+       "title": "Analista de Datos",
+       "start": "2020-11",
+       "end": "2023-08"
+      },
+      {
+       "company": "Datanova Ibérica",
+       "title": "Analista de Datos Junior",
+       "start": "2016-10",
+       "end": "2020-10"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Complutense de Madrid",
+       "degree": "Máster en Ciencia de Datos"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     2366
+    ],
+    "latency": 18.049,
+    "cost": 0.030012,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_027",
+    "meta": {
+     "lang": "en",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Harry Thursby",
+     "email": "harry.thursby@example.net",
+     "phone": "+44 (0)7700 900894",
+     "location": "Bristol, UK",
+     "current_title": "Staff Engineer",
+     "years_experience": 12,
+     "skills": [
+      "REST APIs",
+      "Go",
+      "Terraform",
+      "Spring Boot",
+      "gRPC",
+      "Kubernetes"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Quantel Systems",
+       "title": "Staff Engineer",
+       "start": "2022-12",
+       "end": null
+      },
+      {
+       "company": "Tidewater Logistics",
+       "title": "Senior Backend Engineer",
+       "start": "2018-12",
+       "end": "2022-10"
+      },
+      {
+       "company": "Brightlane Media",
+       "title": "Backend Engineer",
+       "start": "2017-06",
+       "end": "2018-12"
+      },
+      {
+       "company": "Copperleaf Health",
+       "title": "Software Developer",
+       "start": "2014-05",
+       "end": "2017-03"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Bristol",
+       "degree": "BSc Computer Science"
+      },
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Physics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1764
+    ],
+    "latency": 13.157,
+    "cost": 0.022788,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_028",
+    "meta": {
+     "lang": "es",
+     "format": "pdf",
+     "layout": "two_col",
+     "edge_cases": [
+      "no_email",
+      "year_only_dates"
+     ]
+    },
+    "pred": {
+     "name": "Lucía Soler Cortés",
+     "email": null,
+     "phone": "689 17 96 38",
+     "location": "Sevilla, España",
+     "current_title": "Desarrolladora de Software",
+     "years_experience": 7,
+     "skills": [
+      "Terraform",
+      "GCP",
+      "Kubernetes",
+      "PostgreSQL",
+      "gRPC"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "C1"
+      },
+      {
+       "name": "Italian",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Movilidad Ebro",
+       "title": "Desarrolladora de Software",
+       "start": "2023",
+       "end": null
+      },
+      {
+       "company": "Soluciones Turia",
+       "title": "Desarrolladora Junior",
+       "start": "2019",
+       "end": "2023"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Politécnica de Valencia",
+       "degree": "Grado en Ingeniería Informática"
+      },
+      {
+       "institution": "Universidad Politécnica de Valencia",
+       "degree": "Grado en Física"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1361
+    ],
+    "latency": 11.21,
+    "cost": 0.017952,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_029",
+    "meta": {
+     "lang": "en",
+     "format": "scanned",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Ethan Brierley",
+     "email": "ethan.brierley@example.com",
+     "phone": "+44 7700 900586",
+     "location": "London, UK",
+     "current_title": "Head of Frontend",
+     "years_experience": 4,
+     "skills": [
+      "React",
+      "Jest",
+      "TypeScript",
+      "Storybook",
+      "GraphQL",
+      "Next.js",
+      "CSS"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Copperleaf Health",
+       "title": "Head of Frontend",
+       "start": "2023-10",
+       "end": null
+      },
+      {
+       "company": "Stonebridge Capital",
+       "title": "Frontend Tech Lead",
+       "start": "2022-08",
+       "end": "2023-09"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Software Engineering"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     818,
+     987
+    ],
+    "latency": 8.872,
+    "cost": 0.01348,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_030",
+    "meta": {
+     "lang": "es",
+     "format": "scanned",
+     "layout": "two_col",
+     "edge_cases": [
+      "two_phones",
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Paula Soler Lozano",
+     "email": "paula.soler@example.net",
+     "phone": "(+34) 610447241",
+     "location": "Zaragoza, España",
+     "current_title": "Directora de Crecimiento",
+     "years_experience": 10,
+     "skills": [
+      "Meta Ads",
+      "Copywriting",
+      "HubSpot",
+      "Google Ads",
+      "Email Marketing",
+      "SEO",
+      "Google Analytics"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Banca Mirador",
+       "title": "Directora de Crecimiento",
+       "start": "2025-04",
+       "end": null
+      },
+      {
+       "company": "Soluciones Turia",
+       "title": "Responsable de Marketing Digital",
+       "start": "2022-03",
+       "end": "2025-02"
+      },
+      {
+       "company": "Viñedos Altamar",
+       "title": "Especialista en Marketing Digital",
+       "start": "2018-11",
+       "end": "2022-01"
+      },
+      {
+       "company": "Editorial Maranta",
+       "title": "Técnica de Marketing",
+       "start": "2015-12",
+       "end": "2018-08"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Marketing"
+      },
+      {
+       "institution": "Universidad Complutense de Madrid",
+       "degree": "Grado en Matemáticas"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     818,
+     1855
+    ],
+    "latency": 16.955,
+    "cost": 0.023896,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_031",
+    "meta": {
+     "lang": "en",
+     "format": "scanned",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Ruby Pennock",
+     "email": "ruby.pennock@example.com",
+     "phone": "+44 (0)7700 900644",
+     "location": "Bristol, UK",
+     "current_title": "Senior Backend Engineer",
+     "years_experience": 6,
+     "skills": [
+      "Java",
+      "Go",
+      "GCP",
+      "PostgreSQL",
+      "Terraform"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Brightlane Media",
+       "title": "Senior Backend Engineer",
+       "start": "2025-06",
+       "end": null
+      },
+      {
+       "company": "Stonebridge Capital",
+       "title": "Backend Engineer",
+       "start": "2023-06",
+       "end": "2025-03"
+      },
+      {
+       "company": "Tidewater Logistics",
+       "title": "Software Developer",
+       "start": "2022-05",
+       "end": "2023-05"
+      },
+      {
+       "company": "Lumen Mobility",
+       "title": "Junior Developer",
+       "start": "2020-06",
+       "end": "2022-04"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Bristol",
+       "degree": "BSc Computer Science"
+      },
+      {
+       "institution": "University of Bristol",
+       "degree": "BA Economics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     2166
+    ],
+    "latency": 19.503,
+    "cost": 0.027612,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_032",
+    "meta": {
+     "lang": "es",
+     "format": "scanned",
+     "layout": "two_col",
+     "edge_cases": [
+      "not_currently_employed"
+     ]
+    },
+    "pred": {
+     "name": "Javier García Iglesias",
+     "email": "javier.garcia@example.net",
+     "phone": "0034 652 133 582",
+     "location": "Málaga, España",
+     "current_title": "Líder Técnico de ML",
+     "years_experience": 7,
+     "skills": [
+      "Vertex AI",
+      "Docker",
+      "PyTorch",
+      "scikit-learn",
+      "NLP",
+      "Pandas",
+      "LLM Evaluation"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B2"
+      },
+      {
+       "name": "French",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Banca Mirador",
+       "title": "Líder Técnico de ML",
+       "start": "2023-03",
+       "end": "2026-08"
+      },
+      {
+       "company": "Clínica Levante",
+       "title": "Ingeniero de Machine Learning Senior",
+       "start": "2021-10",
+       "end": "2023-01"
+      },
+      {
+       "company": "Soluciones Turia",
+       "title": "Ingeniero de Machine Learning",
+       "start": "2019-08",
+       "end": "2021-07"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Máster en Inteligencia Artificial"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     818,
+     2266
+    ],
+    "latency": 17.152,
+    "cost": 0.028828,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_033",
+    "meta": {
+     "lang": "en",
+     "format": "scanned",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Noah Pennock",
+     "email": "noah.pennock@example.net",
+     "phone": "+44 7700 900834",
+     "location": "Edinburgh, UK",
+     "current_title": "Senior Frontend Developer",
+     "years_experience": 5,
+     "skills": [
+      "Vite",
+      "React",
+      "Jest",
+      "TypeScript",
+      "CSS",
+      "Storybook",
+      "Accessibility"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C2"
+      },
+      {
+       "name": "Italian",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Brightlane Media",
+       "title": "Senior Frontend Developer",
+       "start": "2025-07",
+       "end": null
+      },
+      {
+       "company": "Meridian Retail Group",
+       "title": "Frontend Developer",
+       "start": "2024-04",
+       "end": "2025-05"
+      },
+      {
+       "company": "Quantel Systems",
+       "title": "Web Developer",
+       "start": "2021-08",
+       "end": "2024-03"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Glasgow",
+       "degree": "BSc Software Engineering"
+      },
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Physics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1513
+    ],
+    "latency": 11.595,
+    "cost": 0.019776,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_034",
+    "meta": {
+     "lang": "es",
+     "format": "scanned",
+     "layout": "two_col",
+     "edge_cases": [
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Elena Cortés Martínez",
+     "email": "elena.cortes@example.net",
+     "phone": "+34 657 416 183",
+     "location": "Sevilla, España",
+     "current_title": "Líder Técnico de ML",
+     "years_experience": 8,
+     "skills": [
+      "scikit-learn",
+      "Vertex AI",
+      "NLP",
+      "Pandas",
+      "Python",
+      "LLM Evaluation",
+      "MLflow"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "C2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Logística Sorolla",
+       "title": "Líder Técnico de ML",
+       "start": "2025-01",
+       "end": null
+      },
+      {
+       "company": "Grupo Alcorza",
+       "title": "Ingeniera de Machine Learning Senior",
+       "start": "2023-06",
+       "end": "2024-12"
+      },
+      {
+       "company": "Soluciones Turia",
+       "title": "Ingeniera de Machine Learning",
+       "start": "2020-04",
+       "end": "2023-05"
+      },
+      {
+       "company": "Movilidad Ebro",
+       "title": "Asistente de Investigación",
+       "start": "2018-06",
+       "end": "2020-04"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Politécnica de Valencia",
+       "degree": "Máster en Inteligencia Artificial"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     810,
+     1882
+    ],
+    "latency": 16.477,
+    "cost": 0.024204,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_035",
+    "meta": {
+     "lang": "en",
+     "format": "docx",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Amelia Harland",
+     "email": "amelia.harland@example.org",
+     "phone": "+44 (0)7700 900904",
+     "location": "Madrid, Spain",
+     "current_title": "Head of Product",
+     "years_experience": 5,
+     "skills": [
+      "Amplitude",
+      "Jira",
+      "User Research",
+      "Roadmapping",
+      "Stakeholder Management"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "C1"
+      },
+      {
+       "name": "French",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Bluepeak Software",
+       "title": "Head of Product",
+       "start": "2023-10",
+       "end": null
+      },
+      {
+       "company": "Quantel Systems",
+       "title": "Senior Product Manager",
+       "start": "2021-10",
+       "end": "2023-09"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Glasgow",
+       "degree": "BA Business Administration"
+      },
+      {
+       "institution": "University of Leeds",
+       "degree": "BA Economics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     499,
+     1304
+    ],
+    "latency": 10.708,
+    "cost": 0.016646,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_036",
+    "meta": {
+     "lang": "es",
+     "format": "docx",
+     "layout": "two_col",
+     "edge_cases": [
+      "no_email"
+     ]
+    },
+    "pred": {
+     "name": "Sergio Lozano Navarro",
+     "email": null,
+     "phone": "0034 629 671 867",
+     "location": "Valencia, España",
+     "current_title": "Product Manager Junior",
+     "years_experience": 3,
+     "skills": [
+      "A/B Testing",
+      "OKRs",
+      "Roadmapping",
+      "SQL",
+      "Stakeholder Management"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "C2"
+      },
+      {
+       "name": "Italian",
+       "level": "A2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Grupo Alcorza",
+       "title": "Product Manager Junior",
+       "start": "2025-09",
+       "end": null
+      },
+      {
+       "company": "Soluciones Turia",
+       "title": "Analista de Negocio",
+       "start": "2023-04",
+       "end": "2025-08"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad de Sevilla",
+       "degree": "Grado en Administración y Dirección de Empresas"
+      },
+      {
+       "institution": "Universidad de Zaragoza",
+       "degree": "Grado en Economía"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     513,
+     1575
+    ],
+    "latency": 13.977,
+    "cost": 0.019926,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_037",
+    "meta": {
+     "lang": "en",
+     "format": "docx",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Ethan Harland",
+     "email": "ethan.harland@example.com",
+     "phone": "+44 7700 900306",
+     "location": "Edinburgh, UK",
+     "current_title": "Frontend Tech Lead",
+     "years_experience": 9,
+     "skills": [
+      "Vite",
+      "Jest",
+      "Next.js",
+      "Figma",
+      "TypeScript"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B2"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Northwind Analytics",
+       "title": "Frontend Tech Lead",
+       "start": "2025-01",
+       "end": null
+      },
+      {
+       "company": "Bluepeak Software",
+       "title": "Senior Frontend Developer",
+       "start": "2022-03",
+       "end": "2025-01"
+      },
+      {
+       "company": "Copperleaf Health",
+       "title": "Frontend Developer",
+       "start": "2020-07",
+       "end": "2022-01"
+      },
+      {
+       "company": "Quantel Systems",
+       "title": "Web Developer",
+       "start": "2016-11",
+       "end": "2020-05"
+      }
+     ],
+     "education": [
+      {
+       "institution": "University of Glasgow",
+       "degree": "BSc Software Engineering"
+      },
+      {
+       "institution": "University of Manchester",
+       "degree": "BSc Mathematics"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     592,
+     1206
+    ],
+    "latency": 10.52,
+    "cost": 0.015656,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_038",
+    "meta": {
+     "lang": "es",
+     "format": "docx",
+     "layout": "two_col",
+     "edge_cases": [
+      "two_phones",
+      "year_only_dates",
+      "no_headline"
+     ]
+    },
+    "pred": {
+     "name": "Irene Martínez García",
+     "email": "irene.martinez@example.org",
+     "phone": "614 96 33 64",
+     "location": "Bilbao, España",
+     "current_title": "Desarrolladora Backend Senior",
+     "years_experience": 5,
+     "skills": [
+      "PostgreSQL",
+      "Go",
+      "gRPC",
+      "GCP",
+      "Spring Boot",
+      "Redis"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Banca Mirador",
+       "title": "Desarrolladora Backend Senior",
+       "start": "2025",
+       "end": null
+      },
+      {
+       "company": "Logística Sorolla",
+       "title": "Desarrolladora Backend",
+       "start": "2021",
+       "end": "2025"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad Complutense de Madrid",
+       "degree": "Grado en Ingeniería Informática"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     514,
+     1661
+    ],
+    "latency": 14.087,
+    "cost": 0.02096,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_039",
+    "meta": {
+     "lang": "en",
+     "format": "docx",
+     "layout": "one_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Jack Harland",
+     "email": "jack.harland@example.org",
+     "phone": "+44 (0)7700 900070",
+     "location": "Barcelona, Spain",
+     "current_title": "Senior Backend Engineer",
+     "years_experience": 5,
+     "skills": [
+      "PostgreSQL",
+      "Go",
+      "REST APIs",
+      "gRPC",
+      "Spring Boot",
+      "Terraform"
+     ],
+     "languages": [
+      {
+       "name": "English",
+       "level": "native"
+      },
+      {
+       "name": "Spanish",
+       "level": "B1"
+      },
+      {
+       "name": "Portuguese",
+       "level": "B1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Northwind Analytics",
+       "title": "Senior Backend Engineer",
+       "start": "2025-01",
+       "end": null
+      },
+      {
+       "company": "Brightlane Media",
+       "title": "Backend Engineer",
+       "start": "2023-11",
+       "end": "2025-01"
+      },
+      {
+       "company": "Stonebridge Capital",
+       "title": "Software Developer",
+       "start": "2021-04",
+       "end": "2023-09"
+      }
+     ],
+     "education": [
+      {
+       "institution": "King's College London",
+       "degree": "BSc Computer Science"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     536,
+     1573
+    ],
+    "latency": 14.612,
+    "cost": 0.019948,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   {
+    "id": "cv_040",
+    "meta": {
+     "lang": "es",
+     "format": "docx",
+     "layout": "two_col",
+     "edge_cases": []
+    },
+    "pred": {
+     "name": "Álvaro Martínez García",
+     "email": "alvaro.martinez@example.net",
+     "phone": "+34 645 792 914",
+     "location": "Madrid, España",
+     "current_title": "Responsable de IA",
+     "years_experience": 3,
+     "skills": [
+      "Vertex AI",
+      "Docker",
+      "Python",
+      "PyTorch",
+      "scikit-learn",
+      "Pandas"
+     ],
+     "languages": [
+      {
+       "name": "Spanish",
+       "level": "native"
+      },
+      {
+       "name": "Catalan",
+       "level": "native"
+      },
+      {
+       "name": "English",
+       "level": "C1"
+      }
+     ],
+     "experience": [
+      {
+       "company": "Tecnologías Albera",
+       "title": "Responsable de IA",
+       "start": "2024-12",
+       "end": null
+      },
+      {
+       "company": "Datanova Ibérica",
+       "title": "Líder Técnico de ML",
+       "start": "2023-03",
+       "end": "2024-12"
+      }
+     ],
+     "education": [
+      {
+       "institution": "Universidad del País Vasco",
+       "degree": "Máster en Inteligencia Artificial"
+      }
+     ]
+    },
+    "error": null,
+    "tokens": [
+     505,
+     1207
+    ],
+    "latency": 10.837,
+    "cost": 0.015494,
+    "scores": {
+     "name": 1.0,
+     "email": 1.0,
+     "phone": 1.0,
+     "location": 1.0,
+     "current_title": 1.0,
+     "years_experience": 1.0,
+     "skills": 1.0,
+     "languages": 1.0,
+     "experience": 1.0,
+     "experience_dates": 1.0,
+     "education": 1.0
+    },
+    "pr": {
+     "skills": [
+      1.0,
+      1.0
+     ],
+     "languages": [
+      1.0,
+      1.0
+     ],
+     "experience": [
+      1.0,
+      1.0
+     ],
+     "education": [
+      1.0,
+      1.0
+     ]
+    }
+   }
+  ]
+ }
+}
