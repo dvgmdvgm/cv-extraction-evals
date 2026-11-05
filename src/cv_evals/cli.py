@@ -49,7 +49,7 @@ def cmd_run(args):
         if args.models:
             models = [m for m in models if m in args.models.split(",")]
         if not models:
-            print("No provider API key set (GEMINI_API_KEY / ANTHROPIC_API_KEY / OPENAI_API_KEY). "
+            print("No provider API key set (GEMINI_API_KEY / ANTHROPIC_API_KEY). "
                   "Set at least one, or use --fake for an offline dry run.")
             return 2
     dataset = load_dataset()[: args.limit]

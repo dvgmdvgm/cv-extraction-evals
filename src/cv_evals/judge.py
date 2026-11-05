@@ -13,7 +13,7 @@ from .scoring import norm_text
 SPOT_CHECK = Path("data/judge_spotcheck.json")
 # The strongest available model judges. It is also under test; the judge only sees
 # title pairs, never the CV, so self-preference has little to act on.
-PREFERENCE = ["claude-sonnet-5.5", "gpt-6.1-sol", "gemini-3.1-pro"]
+PREFERENCE = ["claude-opus-5.5", "claude-sonnet-5.5", "gemini-3.1-pro"]
 
 JUDGE_PROMPT = """You check a CV extraction system. You get the job title written in a CV (reference) and the title the system extracted.
 Decide whether both name the same role at the same seniority.

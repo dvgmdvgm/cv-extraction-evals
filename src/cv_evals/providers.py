@@ -15,17 +15,17 @@ from pathlib import Path
 from .schema import CV, PROMPT
 
 # name: (provider, model id, USD per 1M input tokens, USD per 1M output tokens).
-# Standard list prices checked 2026-10-07. Thinking/reasoning tokens are billed as output.
+# Standard list prices: Gemini checked 2026-10-07, Claude checked 2026-11-05 on
+# platform.claude.com/docs/en/about-claude/pricing. Thinking/reasoning tokens are billed as output.
 MODELS = {
     "gemini-3.8-flash": ("gemini", "gemini-3.8-flash", 0.75, 3.75),  # intro price until 2026-12-31
     "gemini-3.1-pro": ("gemini", "gemini-3.1-pro-preview", 2.00, 12.00),
-    "claude-haiku-4.5": ("anthropic", "claude-haiku-4-5", 1.00, 5.00),
+    "claude-haiku-5.5": ("anthropic", "claude-haiku-5-5", 0.10, 0.50),  # prompts up to 100k tokens (CVs are far below)
     "claude-sonnet-5.5": ("anthropic", "claude-sonnet-5-5", 2.00, 10.00),
-    "gpt-6-luna": ("openai", "gpt-6-luna", 0.10, 0.50),
-    "gpt-6.1-sol": ("openai", "gpt-6.1-sol", 2.00, 10.00),
+    "claude-opus-5.5": ("anthropic", "claude-opus-5-5", 4.00, 20.00),
     "fake": ("fake", "fake", 0.0, 0.0),  # offline dry run, see fake_extract()
 }
-KEYS = {"gemini": "GEMINI_API_KEY", "anthropic": "ANTHROPIC_API_KEY", "openai": "OPENAI_API_KEY"}
+KEYS = {"gemini": "GEMINI_API_KEY", "anthropic": "ANTHROPIC_API_KEY"}
 MAX_OUTPUT_TOKENS = 16000
 
 
@@ -35,24 +35,14 @@ def call_anthropic(model, system, text, schema, pdf=None):
     content = [{"type": "document", "source": {"type": "base64", "media_type": "application/pdf",
                                                "data": base64.b64encode(pdf).decode()}}] if pdf else []
     content.append({"type": "text", "text": text})
-    r = anthropic.Anthropic().messages.parse(model=model, max_tokens=MAX_OUTPUT_TOKENS, system=system,
-                                             messages=[{"role": "user", "content": content}], output_format=schema)
+    # Keys not scoped to a workspace must name one in a header.
+    ws = os.environ.get("ANTHROPIC_WORKSPACE_ID")
+    client = anthropic.Anthropic(default_headers={"anthropic-workspace-id": ws} if ws else None)
+    r = client.messages.parse(model=model, max_tokens=MAX_OUTPUT_TOKENS, system=system,
+                            messages=[{"role": "user", "content": content}], output_format=schema)
     if r.parsed_output is None:
         raise ValueError(f"no parsed output (stop_reason={r.stop_reason})")
     return r.parsed_output, r.usage.input_tokens, r.usage.output_tokens
-
-
-def call_openai(model, system, text, schema, pdf=None):
-    import openai
-
-    content = [{"type": "input_file", "filename": "cv.pdf",
-                "file_data": "data:application/pdf;base64," + base64.b64encode(pdf).decode()}] if pdf else []
-    content.append({"type": "input_text", "text": text})
-    r = openai.OpenAI().responses.parse(model=model, instructions=system, max_output_tokens=MAX_OUTPUT_TOKENS,
-                                        input=[{"role": "user", "content": content}], text_format=schema)
-    if r.output_parsed is None:
-        raise ValueError(f"no parsed output (status={r.status})")
-    return r.output_parsed, r.usage.input_tokens, r.usage.output_tokens
 
 
 def call_gemini(model, system, text, schema, pdf=None):
@@ -73,7 +63,7 @@ def call_gemini(model, system, text, schema, pdf=None):
     return schema.model_validate_json(r.text), u.prompt_token_count, (u.candidates_token_count or 0) + (u.thoughts_token_count or 0)
 
 
-CALLS = {"anthropic": call_anthropic, "openai": call_openai, "gemini": call_gemini}
+CALLS = {"anthropic": call_anthropic, "gemini": call_gemini}
 
 
 def available_models():
