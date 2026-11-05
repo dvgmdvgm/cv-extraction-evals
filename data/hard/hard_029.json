@@ -1,0 +1,65 @@
+{
+  "id": "hard_029",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": [
+      "ambiguous_dates"
+    ]
+  },
+  "cv": {
+    "name": "Amelia Pennock",
+    "email": "amelia.pennock@example.net",
+    "phone": "+447700900311",
+    "location": "Manchester, UK",
+    "current_title": "Staff Engineer",
+    "years_experience": 4,
+    "skills": [
+      "Spring Boot",
+      "Terraform",
+      "Redis",
+      "Go",
+      "PostgreSQL"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tidewater Logistics",
+        "title": "Staff Engineer",
+        "start": "2026",
+        "end": null
+      },
+      {
+        "company": "Quantel Systems",
+        "title": "Senior Backend Engineer",
+        "start": "2023",
+        "end": "2026"
+      },
+      {
+        "company": "Stonebridge Capital",
+        "title": "Summer Intern",
+        "start": "2022",
+        "end": "2022"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Manchester",
+        "degree": "BSc Computer Science"
+      }
+    ]
+  },
+  "rules": {
+    "year_level_dates": true
+  }
+}

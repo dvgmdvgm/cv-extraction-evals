@@ -1,7 +1,7 @@
 """Single entry point.
 
-    evals run [--baseline results/<date>.json] [--models a,b] [--limit N] [--fake]
-    evals generate        # re-render the synthetic dataset (needs: uv sync --extra render)
+    evals run [--dataset standard|hard] [--baseline results/<date>.json] [--models a,b] [--limit N] [--fake]
+    evals generate [--dataset standard|hard]   # re-render a synthetic dataset (needs: --extra render)
 """
 
 import argparse
@@ -14,17 +14,17 @@ from pathlib import Path
 
 from .judge import pick_judge, spot_check
 from .providers import MODELS, available_models, cost, extract
-from .report import markdown, regressions, summary_table, update_readme, aggregate
+from .report import aggregate, markdown, regressions, results_md, summary_table, update_readme
 from .schema import CV
 from .scoring import score_cv
 
-DATA = Path("data/cvs")
+DATASETS = {"standard": Path("data/cvs"), "hard": Path("data/hard")}
 RESULTS = Path("results")
 
 
-def load_dataset():
+def load_dataset(name="standard"):
     out = []
-    for p in sorted(DATA.glob("cv_*.json")):
+    for p in sorted(DATASETS[name].glob("*.json")):
         doc = next(p.with_suffix(s) for s in (".pdf", ".docx") if p.with_suffix(s).exists())
         out.append((json.loads(p.read_text(encoding="utf-8")), doc))
     return out
@@ -52,7 +52,7 @@ def cmd_run(args):
             print("No provider API key set (GEMINI_API_KEY / ANTHROPIC_API_KEY). "
                   "Set at least one, or use --fake for an offline dry run.")
             return 2
-    dataset = load_dataset()[: args.limit]
+    dataset = load_dataset(args.dataset)[: args.limit]
     judge = pick_judge(models)
     check = spot_check(judge) if judge else None
     if check:
@@ -64,27 +64,33 @@ def cmd_run(args):
         with ThreadPoolExecutor(args.workers) as pool:
             rows = list(pool.map(lambda gd: run_one(m, *gd), dataset))
         for row, (gold, _) in zip(rows, dataset):
-            row["scores"], row["pr"] = score_cv(CV.model_validate(gold["cv"]), row["pred"], judge)
+            row["scores"], row["pr"] = score_cv(CV.model_validate(gold["cv"]), row["pred"], judge, gold.get("rules"))
             row["pred"] = row["pred"].model_dump() if row["pred"] else None
         scored[m] = aggregate(rows) | {"model_id": MODELS[m][1]}
         per_cv[m] = rows
         print(f"  overall {scored[m]['overall']}  cost ${scored[m]['cost_usd']:.3f}  errors {scored[m]['errors']}")
 
     judge_info = check and check | {"calls": judge.calls, "cost_usd": round(judge.cost, 4)}
-    res = dict(date=date.today().isoformat(), dry_run=args.fake, n_cvs=len(dataset), models=scored, skipped=skipped,
+    res = dict(date=date.today().isoformat(), dataset=args.dataset, dry_run=args.fake, n_cvs=len(dataset), models=scored, skipped=skipped,
                judge=judge_info, total_cost_usd=round(sum(s["cost_usd"] for s in scored.values()) + (judge.cost if judge else 0), 4),
                per_cv=per_cv)
     RESULTS.mkdir(exist_ok=True)
-    out = RESULTS / f"{res['date']}{'-fake' if args.fake else ''}.json"
+    suffix = ("" if args.dataset == "standard" else f"-{args.dataset}") + ("-fake" if args.fake else "")
+    out = RESULTS / f"{res['date']}{suffix}.json"
     out.write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
-    Path("RESULTS-fake.md" if args.fake else "RESULTS.md").write_text(markdown(res), encoding="utf-8")
+    md = results_md(args.dataset)
+    Path(md.replace(".md", "-fake.md") if args.fake else md).write_text(markdown(res), encoding="utf-8")
     if not args.fake:
         update_readme(res)
     print("\n" + summary_table(res))
     print(f"\nwrote {out}. Total API spend: ${res['total_cost_usd']:.2f}")
 
     if args.baseline:
-        failed = regressions(json.loads(Path(args.baseline).read_text(encoding="utf-8")), res)
+        try:
+            failed = regressions(json.loads(Path(args.baseline).read_text(encoding="utf-8")), res)
+        except ValueError as e:
+            print("ERROR", e)
+            return 2
         for line in failed:
             print("REGRESSION", line)
         if failed:
@@ -97,15 +103,21 @@ def main(argv=None):
     ap = argparse.ArgumentParser(prog="evals", description="CV extraction evals")
     sub = ap.add_subparsers(dest="cmd", required=True)
     run = sub.add_parser("run", help="extract, score, write results/<date>.json and RESULTS.md")
+    run.add_argument("--dataset", choices=sorted(DATASETS), default="standard",
+                     help="standard: 40 clean CVs; hard: CVs built around specific failure modes")
     run.add_argument("--baseline", help="previous results JSON; exit 1 if any field drops > 2 points")
     run.add_argument("--models", help="comma-separated subset of: " + ", ".join(m for m in MODELS if m != "fake"))
     run.add_argument("--limit", type=int, help="only the first N CVs (cheap smoke test)")
     run.add_argument("--workers", type=int, default=4, help="parallel calls per model")
     run.add_argument("--fake", action="store_true", help="offline dry run with a fake provider, no API keys")
-    sub.add_parser("generate", help="re-render the synthetic CVs in data/cvs")
+    gen = sub.add_parser("generate", help="re-render a synthetic dataset (data/cvs or data/hard)")
+    gen.add_argument("--dataset", choices=sorted(DATASETS), default="standard")
     args = ap.parse_args(argv)
     if args.cmd == "generate":
-        from .generate import main as generate
+        if args.dataset == "hard":
+            from .generate_hard import main as generate
+        else:
+            from .generate import main as generate
         generate()
         return 0
     return cmd_run(args)

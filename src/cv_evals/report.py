@@ -22,20 +22,23 @@ def p95(xs):
 def aggregate(rows):
     """rows: [{id, meta, scores, pr, latency, cost, error}] for one model."""
     pct = lambda xs: round(100 * statistics.mean(xs), 1)
-    fields = {f: pct([r["scores"][f] for r in rows]) for f in FIELDS}
+    # A field excluded for a CV by its gold rules is missing from that row and averaged over the rest.
+    fields = {f: pct([r["scores"][f] for r in rows if f in r["scores"]]) for f in FIELDS}
     by_slice = defaultdict(list)
     for r in rows:
         overall = statistics.mean(r["scores"].values())
         by_slice[slice_name(r["meta"])].append(overall)
         by_slice["lang: " + r["meta"]["lang"].upper()].append(overall)
+        for e in r["meta"]["edge_cases"]:
+            by_slice["case: " + e].append(overall)
     ok = [r["latency"] for r in rows if not r["error"]]
     return dict(
         n=len(rows),
         errors=sum(bool(r["error"]) for r in rows),
         overall=round(statistics.mean(fields.values()), 1),
         fields=fields,
-        precision_recall={f: dict(p=pct([r["pr"][f][0] for r in rows]), r=pct([r["pr"][f][1] for r in rows]))
-                          for f in LIST_FIELDS},
+        precision_recall={f: dict(p=pct([r["pr"][f][0] for r in rows if f in r["pr"]]),
+                                  r=pct([r["pr"][f][1] for r in rows if f in r["pr"]])) for f in LIST_FIELDS},
         by_slice={k: pct(v) for k, v in sorted(by_slice.items())},
         cost_usd=round(sum(r["cost"] for r in rows), 4),
         latency_p50_s=round(statistics.median(ok), 2) if ok else None,
@@ -58,17 +61,21 @@ def summary_table(res):
 def markdown(res):
     ms = res["models"]
     names = sorted(ms, key=lambda m: -ms[m]["overall"])
-    slices = sorted({k for m in names for k in ms[m]["by_slice"]}, key=lambda s: (s.startswith("lang"), s))
+    slices = sorted({k for m in names for k in ms[m]["by_slice"]}, key=lambda s: (s.startswith("case"), s.startswith("lang"), s))
     j = res["judge"]
-    out = [f"# Results — {res['date']}", ""]
+    hard = res.get("dataset") == "hard"
+    out = [f"# Results{' (hard subset)' if hard else ''} — {res['date']}", ""]
     if res["dry_run"]:
         out += ["> **Dry run with the offline fake provider.** Numbers only prove the pipeline works.", ""]
+    if hard:
+        out += ["Hard subset ([`data/hard`](data/hard)): each CV is built around one failure mode (`case:` rows below). "
+                "A few fields are excluded per CV where the document does not settle them; see the gold rules in the README.", ""]
     out += [f"{res['n_cvs']} synthetic CVs. Scores are 0–100 (exact / fuzzy match rate, F1 for list fields). "
             "Overall = mean of the field scores.", "", summary_table(res), ""]
     if res["skipped"]:
         out += ["Skipped providers: " + ", ".join(f"{p} ({why})" for p, why in res["skipped"].items()), ""]
     out += ["## Per field", "", table(["Field"] + names, [[f] + [ms[m]["fields"][f] for m in names] for f in FIELDS]), "",
-            "## Overall by document type and language", "",
+            "## Overall by document type, language and case", "",
             table(["Slice"] + names, [[s] + [ms[m]["by_slice"].get(s, "–") for m in names] for s in slices]), "",
             "## List fields: precision / recall", "",
             table(["Field"] + names, [[f] + [f"{ms[m]['precision_recall'][f]['p']} / {ms[m]['precision_recall'][f]['r']}"
@@ -86,19 +93,30 @@ def markdown(res):
     return "\n".join(out)
 
 
+def results_md(dataset):
+    return "RESULTS.md" if dataset == "standard" else f"RESULTS-{dataset}.md"
+
+
 def update_readme(res, path=Path("README.md")):
-    """Replace the results block in the README with the summary table."""
+    """Replace the dataset's results block in the README with the summary table."""
+    ds = res.get("dataset", "standard")
+    start, end = (README_START, README_END) if ds == "standard" else (f"<!-- results-{ds}:start -->", f"<!-- results-{ds}:end -->")
     text = path.read_text(encoding="utf-8")
-    if README_START not in text:
+    if start not in text:
         return
-    head, rest = text.split(README_START, 1)
-    tail = rest.split(README_END, 1)[1]
-    block = f"\n_Run of {res['date']}, {res['n_cvs']} CVs. Full breakdown in [RESULTS.md](RESULTS.md)._\n\n{summary_table(res)}\n"
-    path.write_text(head + README_START + block + README_END + tail, encoding="utf-8")
+    head, rest = text.split(start, 1)
+    tail = rest.split(end, 1)[1]
+    md = results_md(ds)
+    block = f"\n_Run of {res['date']}, {res['n_cvs']} CVs. Full breakdown in [{md}]({md})._\n\n{summary_table(res)}\n"
+    path.write_text(head + start + block + end + tail, encoding="utf-8")
 
 
 def regressions(baseline, current, points=REGRESSION_POINTS):
-    """Fields that dropped by more than `points` for a model present in both runs."""
+    """Fields that dropped by more than `points` for a model present in both runs.
+    Comparing runs on different datasets is meaningless, so it raises."""
+    b_ds, c_ds = baseline.get("dataset", "standard"), current.get("dataset", "standard")
+    if b_ds != c_ds:
+        raise ValueError(f"baseline is a {b_ds!r} run, this is a {c_ds!r} run: pass a baseline of the same dataset")
     out = []
     for model, cur in current["models"].items():
         base = baseline["models"].get(model)

@@ -1,0 +1,71 @@
+{
+  "id": "hard_026",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "mixed_language"
+    ]
+  },
+  "cv": {
+    "name": "Marta García Iglesias",
+    "email": "marta.garcia@example.com",
+    "phone": "+34636571360",
+    "location": "Lisboa, Portugal",
+    "current_title": "Engenheira de Software Sénior",
+    "years_experience": 8,
+    "skills": [
+      "Month-end Close",
+      "SAP FI",
+      "Budgeting",
+      "IFRS",
+      "Power BI",
+      "Treasury"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B2"
+      },
+      {
+        "name": "Portuguese",
+        "level": "C1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Sistemas Tejo, Lda.",
+        "title": "Engenheira de Software Sénior",
+        "start": "2024-06",
+        "end": null
+      },
+      {
+        "company": "Grupo Alcorza",
+        "title": "Responsable Financiera",
+        "start": "2021-11",
+        "end": "2024-04"
+      },
+      {
+        "company": "Tecnologías Albera",
+        "title": "Contable Senior",
+        "start": "2018-07",
+        "end": "2021-09"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidade de Lisboa",
+        "degree": "Mestrado em Engenharia Informática"
+      },
+      {
+        "institution": "Universidad Complutense de Madrid",
+        "degree": "Grado en Física"
+      }
+    ]
+  }
+}

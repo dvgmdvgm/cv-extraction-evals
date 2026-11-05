@@ -1,0 +1,79 @@
+{
+  "id": "hard_033",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "non_latin_name"
+    ]
+  },
+  "cv": {
+    "name": "Olena Harbuzenko",
+    "email": "olena.harbuzenko@example.com",
+    "phone": "+447700900906",
+    "location": "London, UK",
+    "current_title": "Lead Data Engineer",
+    "years_experience": 9,
+    "skills": [
+      "Tableau",
+      "Snowflake",
+      "dbt",
+      "SQL",
+      "Python"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C2"
+      },
+      {
+        "name": "French",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Lumen Mobility",
+        "title": "Lead Data Engineer",
+        "start": "2022-10",
+        "end": null
+      },
+      {
+        "company": "Bluepeak Software",
+        "title": "Senior Data Engineer",
+        "start": "2021-02",
+        "end": "2022-10"
+      },
+      {
+        "company": "Northwind Analytics",
+        "title": "Data Engineer",
+        "start": "2017-05",
+        "end": "2021-02"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Manchester",
+        "degree": "MSc Data Science"
+      },
+      {
+        "institution": "King's College London",
+        "degree": "BA Economics"
+      }
+    ]
+  },
+  "rules": {
+    "accept": {
+      "name": [
+        "Олена Гарбузенко",
+        "Olena Harbuzenko (Олена Гарбузенко)",
+        "Олена Гарбузенко (Olena Harbuzenko)"
+      ]
+    }
+  }
+}

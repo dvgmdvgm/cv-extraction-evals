@@ -1,0 +1,77 @@
+{
+  "id": "hard_037",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "personal_contact"
+    ]
+  },
+  "cv": {
+    "name": "Amelia Ashdown",
+    "email": "ameliaash14@example.net",
+    "phone": "+447700900572",
+    "location": "Edinburgh, UK",
+    "current_title": "ML Tech Lead",
+    "years_experience": 10,
+    "skills": [
+      "MLflow",
+      "Docker",
+      "NLP",
+      "LLM Evaluation",
+      "scikit-learn",
+      "Vertex AI"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B1"
+      },
+      {
+        "name": "Italian",
+        "level": "A2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Stonebridge Capital",
+        "title": "ML Tech Lead",
+        "start": "2024-06",
+        "end": null
+      },
+      {
+        "company": "Meridian Retail Group",
+        "title": "Senior Machine Learning Engineer",
+        "start": "2021-03",
+        "end": "2024-05"
+      },
+      {
+        "company": "Harbor & Finch",
+        "title": "Machine Learning Engineer",
+        "start": "2020-01",
+        "end": "2021-02"
+      },
+      {
+        "company": "Copperleaf Health",
+        "title": "Research Assistant",
+        "start": "2016-08",
+        "end": "2020-01"
+      }
+    ],
+    "education": [
+      {
+        "institution": "King's College London",
+        "degree": "MSc Artificial Intelligence"
+      },
+      {
+        "institution": "University of Bristol",
+        "degree": "BA Economics"
+      }
+    ]
+  }
+}

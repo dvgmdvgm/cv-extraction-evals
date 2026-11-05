@@ -1,0 +1,60 @@
+{
+  "id": "hard_002",
+  "meta": {
+    "lang": "es",
+    "format": "scanned",
+    "layout": "two_col",
+    "edge_cases": [
+      "phone_photo"
+    ]
+  },
+  "cv": {
+    "name": "Irene Vidal Soler",
+    "email": "irene.vidal@example.net",
+    "phone": "+34662671329",
+    "location": "Zaragoza, España",
+    "current_title": "Técnica de Marketing",
+    "years_experience": 7,
+    "skills": [
+      "Meta Ads",
+      "Email Marketing",
+      "Google Analytics",
+      "HubSpot",
+      "Looker Studio"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B2"
+      },
+      {
+        "name": "French",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Datanova Ibérica",
+        "title": "Técnica de Marketing",
+        "start": "2022-12",
+        "end": null
+      },
+      {
+        "company": "Logística Sorolla",
+        "title": "Asistente de Marketing",
+        "start": "2019-04",
+        "end": "2022-09"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad del País Vasco",
+        "degree": "Grado en Marketing"
+      }
+    ]
+  }
+}

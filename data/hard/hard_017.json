@@ -1,0 +1,67 @@
+{
+  "id": "hard_017",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "contact_page2"
+    ]
+  },
+  "cv": {
+    "name": "Mateo Lozano Soler",
+    "email": "mateo.lozano@example.org",
+    "phone": "+34682793472",
+    "location": "Sevilla, España",
+    "current_title": "Product Manager Senior",
+    "years_experience": 11,
+    "skills": [
+      "User Research",
+      "Roadmapping",
+      "SQL",
+      "Amplitude",
+      "Jira",
+      "OKRs"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B1"
+      },
+      {
+        "name": "German",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Soluciones Turia",
+        "title": "Product Manager Senior",
+        "start": "2022-12",
+        "end": null
+      },
+      {
+        "company": "Grupo Alcorza",
+        "title": "Product Manager",
+        "start": "2018-11",
+        "end": "2022-10"
+      },
+      {
+        "company": "Tecnologías Albera",
+        "title": "Product Manager Junior",
+        "start": "2015-01",
+        "end": "2018-11"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Complutense de Madrid",
+        "degree": "Grado en Administración y Dirección de Empresas"
+      }
+    ]
+  }
+}

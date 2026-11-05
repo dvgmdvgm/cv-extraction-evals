@@ -1,7 +1,7 @@
 import pytest
 
 from cv_evals.schema import CV, Education, Job, Language
-from cv_evals.scoring import FIELDS, fuzzy, norm_date, norm_email, norm_language, norm_phone, prf, score_cv
+from cv_evals.scoring import FIELDS, fuzzy, norm_date, norm_email, norm_language, norm_phone, norm_text, prf, score_cv
 
 
 @pytest.mark.parametrize("raw", ["+34 612 345 678", "612 34 56 78", "(+34) 612345678", "0034 612 345 678", "+34612345678"])
@@ -116,3 +116,53 @@ def test_wrong_fields_lose_points():
     assert scores["email"] == 0 and scores["years_experience"] == 0
     assert scores["experience_dates"] == 0.5 and scores["experience"] == 1.0
     assert pr["skills"] == (0.75, 1.0)
+
+
+# --- hard subset: gold rules, non-Latin text, month names in more languages ----------
+
+@pytest.mark.parametrize("raw, expected", [
+    ("gener 2020", "2020-01"), ("març 2021", "2021-03"), ("juny 2022", "2022-06"), ("setembre 2023", "2023-09"),
+    ("desembre 2019", "2019-12"), ("março de 2017", "2017-03"), ("outubro de 2018", "2018-10"),
+    ("dezembro de 2019", "2019-12"), ("Okt. 2019", "2019-10"), ("16/10/2021", "2021-10"),
+])
+def test_month_names_in_catalan_portuguese_german(raw, expected):
+    assert norm_date(raw) == expected
+
+
+def test_non_latin_text_is_kept_not_erased():
+    assert norm_text("Олена Гарбузенко") == "олена гарбузенко"
+    assert not fuzzy("Олена Гарбузенко", "Андрій Ковтуненко")  # used to normalise both to "" and match
+    assert fuzzy("Νίκος Παπαδάκης", "ΝΙΚΟΣ ΠΑΠΑΔΑΚΗΣ")
+    assert norm_text("Lucía_Ferrer") == "lucia ferrer"
+
+
+def test_rules_exclude_fields_from_scoring():
+    pred = gold_cv().model_copy(deep=True)
+    pred.current_title, pred.languages = "Something else", []
+    scores, pr = score_cv(gold_cv(), pred, rules={"exclude": ["current_title", "languages"]})
+    assert "current_title" not in scores and "languages" not in scores and "languages" not in pr
+    assert all(v == 1.0 for v in scores.values())
+    failed, _ = score_cv(gold_cv(), None, rules={"exclude": ["languages"]})
+    assert "languages" not in failed and set(failed.values()) == {0.0}
+
+
+def test_rules_accept_alternative_name():
+    gold = gold_cv().model_copy(update={"name": "Olena Harbuzenko"})
+    rules = {"accept": {"name": ["Олена Гарбузенко"]}}
+    for name, ok in [("Olena Harbuzenko", True), ("Олена Гарбузенко", True), ("Andrii Kovtunenko", False)]:
+        pred = gold.model_copy(update={"name": name})
+        assert score_cv(gold, pred, rules=rules)[0]["name"] == ok, name
+
+
+def test_year_level_dates_only_when_the_rule_is_set():
+    gold = gold_cv().model_copy(deep=True)
+    gold.experience[1].start, gold.experience[1].end = "2019", "2022"  # "Summer 2019 – Spring 2022"
+    pred = gold.model_copy(deep=True)
+    pred.experience[1].start, pred.experience[1].end = "2019-06", "2022-03"
+    assert score_cv(gold, pred)[0]["experience_dates"] == 0.5
+    assert score_cv(gold, pred, rules={"year_level_dates": True})[0]["experience_dates"] == 1.0
+    pred.experience[1].start = "2018-06"  # wrong year still fails
+    assert score_cv(gold, pred, rules={"year_level_dates": True})[0]["experience_dates"] == 0.5
+    gold.experience[0].start = "2022-03"  # month-precise gold stays exact under the rule
+    pred.experience[0].start = "2022-04"
+    assert score_cv(gold, pred, rules={"year_level_dates": True})[0]["experience_dates"] == 0.0

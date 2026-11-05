@@ -1,0 +1,69 @@
+{
+  "id": "hard_008",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "rating_tables"
+    ]
+  },
+  "cv": {
+    "name": "Ethan Marlowe",
+    "email": "ethan.marlowe@example.com",
+    "phone": "+447700900350",
+    "location": "Edinburgh, UK",
+    "current_title": "Senior Data Engineer",
+    "years_experience": 9,
+    "skills": [
+      "Kafka",
+      "Airflow",
+      "Tableau",
+      "Python",
+      "Snowflake",
+      "SQL",
+      "Apache Spark",
+      "dbt"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Bluepeak Software",
+        "title": "Senior Data Engineer",
+        "start": "2024-01",
+        "end": null
+      },
+      {
+        "company": "Stonebridge Capital",
+        "title": "Data Engineer",
+        "start": "2021-08",
+        "end": "2023-11"
+      },
+      {
+        "company": "Quantel Systems",
+        "title": "Data Analyst",
+        "start": "2017-06",
+        "end": "2021-06"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Leeds",
+        "degree": "MSc Data Science"
+      },
+      {
+        "institution": "University of Leeds",
+        "degree": "BSc Physics"
+      }
+    ]
+  }
+}

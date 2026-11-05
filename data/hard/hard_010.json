@@ -1,0 +1,79 @@
+{
+  "id": "hard_010",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "rating_tables"
+    ]
+  },
+  "cv": {
+    "name": "Isla Marlowe",
+    "email": "isla.marlowe@example.org",
+    "phone": "+447700900555",
+    "location": "London, UK",
+    "current_title": "Head of Growth",
+    "years_experience": 9,
+    "skills": [
+      "Google Ads",
+      "SEO",
+      "HubSpot",
+      "Meta Ads",
+      "Looker Studio",
+      "Email Marketing",
+      "Copywriting",
+      "Google Analytics"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C2"
+      },
+      {
+        "name": "French",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Quantel Systems",
+        "title": "Head of Growth",
+        "start": "2025-04",
+        "end": null
+      },
+      {
+        "company": "Meridian Retail Group",
+        "title": "Digital Marketing Manager",
+        "start": "2022-08",
+        "end": "2025-04"
+      },
+      {
+        "company": "Copperleaf Health",
+        "title": "Digital Marketing Specialist",
+        "start": "2020-09",
+        "end": "2022-06"
+      },
+      {
+        "company": "Brightlane Media",
+        "title": "Marketing Executive",
+        "start": "2017-08",
+        "end": "2020-07"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Glasgow",
+        "degree": "BA Marketing"
+      },
+      {
+        "institution": "University of Bristol",
+        "degree": "BA Economics"
+      }
+    ]
+  }
+}

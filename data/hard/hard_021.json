@@ -1,0 +1,70 @@
+{
+  "id": "hard_021",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "distractors"
+    ]
+  },
+  "cv": {
+    "name": "Paula Vidal Navarro",
+    "email": "paula.vidal@example.com",
+    "phone": "+34680169921",
+    "location": "Málaga, España",
+    "current_title": "Product Manager Senior",
+    "years_experience": 11,
+    "skills": [
+      "Amplitude",
+      "Jira",
+      "User Research",
+      "A/B Testing",
+      "OKRs",
+      "Stakeholder Management",
+      "Roadmapping"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "C2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Grupo Alcorza",
+        "title": "Product Manager Senior",
+        "start": "2024-09",
+        "end": null
+      },
+      {
+        "company": "Logística Sorolla",
+        "title": "Product Manager",
+        "start": "2021-05",
+        "end": "2024-06"
+      },
+      {
+        "company": "Viñedos Altamar",
+        "title": "Product Manager Junior",
+        "start": "2018-07",
+        "end": "2021-04"
+      },
+      {
+        "company": "Banca Mirador",
+        "title": "Analista de Negocio",
+        "start": "2015-03",
+        "end": "2018-06"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Politécnica de Valencia",
+        "degree": "Grado en Administración y Dirección de Empresas"
+      }
+    ]
+  }
+}

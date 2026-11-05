@@ -1,0 +1,62 @@
+{
+  "id": "hard_001",
+  "meta": {
+    "lang": "en",
+    "format": "scanned",
+    "layout": "one_col",
+    "edge_cases": [
+      "phone_photo"
+    ]
+  },
+  "cv": {
+    "name": "Noah Fenwick",
+    "email": "noah.fenwick@example.com",
+    "phone": "+447700900639",
+    "location": "Manchester, UK",
+    "current_title": "Lead Data Engineer",
+    "years_experience": 6,
+    "skills": [
+      "dbt",
+      "Snowflake",
+      "Kafka",
+      "AWS",
+      "SQL",
+      "Tableau",
+      "Python"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B1"
+      },
+      {
+        "name": "Portuguese",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Northwind Analytics",
+        "title": "Lead Data Engineer",
+        "start": "2024-01",
+        "end": null
+      },
+      {
+        "company": "Stonebridge Capital",
+        "title": "Senior Data Engineer",
+        "start": "2020-01",
+        "end": "2023-10"
+      }
+    ],
+    "education": [
+      {
+        "institution": "King's College London",
+        "degree": "MSc Data Science"
+      }
+    ]
+  }
+}

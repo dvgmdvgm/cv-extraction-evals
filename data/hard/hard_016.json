@@ -1,0 +1,60 @@
+{
+  "id": "hard_016",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "contact_page2"
+    ]
+  },
+  "cv": {
+    "name": "Oliver Thursby",
+    "email": "oliver.thursby@example.com",
+    "phone": "+447700900968",
+    "location": "Edinburgh, UK",
+    "current_title": "Accountant",
+    "years_experience": 4,
+    "skills": [
+      "SAP FI",
+      "Treasury",
+      "Audit",
+      "IFRS",
+      "Power BI"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Bluepeak Software",
+        "title": "Accountant",
+        "start": "2024-01",
+        "end": null
+      },
+      {
+        "company": "Brightlane Media",
+        "title": "Accounts Assistant",
+        "start": "2022-10",
+        "end": "2024-01"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Leeds",
+        "degree": "BSc Accounting and Finance"
+      },
+      {
+        "institution": "University of Leeds",
+        "degree": "BSc Mathematics"
+      }
+    ]
+  }
+}

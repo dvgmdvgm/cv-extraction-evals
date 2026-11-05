@@ -1,0 +1,77 @@
+{
+  "id": "hard_019",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "contact_page2"
+    ]
+  },
+  "cv": {
+    "name": "Pablo Soler García",
+    "email": "pablo.soler@example.net",
+    "phone": "+34624119477",
+    "location": "Málaga, España",
+    "current_title": "Desarrollador Backend Senior",
+    "years_experience": 9,
+    "skills": [
+      "Java",
+      "PostgreSQL",
+      "Terraform",
+      "Kubernetes",
+      "REST APIs",
+      "gRPC"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B1"
+      },
+      {
+        "name": "French",
+        "level": "A2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Grupo Alcorza",
+        "title": "Desarrollador Backend Senior",
+        "start": "2024-05",
+        "end": null
+      },
+      {
+        "company": "Datanova Ibérica",
+        "title": "Desarrollador Backend",
+        "start": "2022-04",
+        "end": "2024-04"
+      },
+      {
+        "company": "Soluciones Turia",
+        "title": "Desarrollador de Software",
+        "start": "2019-01",
+        "end": "2022-01"
+      },
+      {
+        "company": "Movilidad Ebro",
+        "title": "Desarrollador Junior",
+        "start": "2016-11",
+        "end": "2018-11"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Politécnica de Valencia",
+        "degree": "Grado en Ingeniería Informática"
+      },
+      {
+        "institution": "Universidad del País Vasco",
+        "degree": "Grado en Economía"
+      }
+    ]
+  }
+}

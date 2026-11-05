@@ -1,0 +1,77 @@
+{
+  "id": "hard_030",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "ambiguous_dates"
+    ]
+  },
+  "cv": {
+    "name": "Elena Cortés Ferrer",
+    "email": "elena.cortes@example.com",
+    "phone": "+34642981967",
+    "location": "Madrid, España",
+    "current_title": "Ingeniera de Datos Senior",
+    "years_experience": 9,
+    "skills": [
+      "SQL",
+      "Python",
+      "Airflow",
+      "Kafka",
+      "dbt"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "Catalan",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "C1"
+      },
+      {
+        "name": "Italian",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Viñedos Altamar",
+        "title": "Ingeniera de Datos Senior",
+        "start": "2020-09",
+        "end": null
+      },
+      {
+        "company": "Universidad de Zaragoza",
+        "title": "Profesora Asociada",
+        "start": "2018",
+        "end": "2020"
+      },
+      {
+        "company": "Fundación Universidad de Zaragoza",
+        "title": "Becaria de Investigación",
+        "start": "2017",
+        "end": "2018"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad del País Vasco",
+        "degree": "Máster en Ciencia de Datos"
+      },
+      {
+        "institution": "Universidad del País Vasco",
+        "degree": "Grado en Economía"
+      }
+    ]
+  },
+  "rules": {
+    "year_level_dates": true
+  }
+}

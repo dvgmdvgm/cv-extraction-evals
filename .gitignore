@@ -5,6 +5,6 @@ __pycache__/
 .env
 # offline dry runs are not results
 results/*-fake.json
-RESULTS-fake.md
+RESULTS*-fake.md
 # internal brief, not part of the public repo
 SPEC.md

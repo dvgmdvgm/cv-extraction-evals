@@ -26,7 +26,7 @@ class Education(BaseModel):
 class CV(BaseModel):
     name: str
     email: str | None
-    phone: str | None  # first number listed
+    phone: str | None  # the one marked personal, else the first listed
     location: str | None
     current_title: str | None
     years_experience: int | None
@@ -40,7 +40,7 @@ PROMPT = """You extract structured data from a CV (résumé). Fill the JSON sche
 
 Rules:
 - Copy names, job titles, company names, institutions and the location as written in the CV. Do not translate them.
-- email, phone, location: null if the CV does not show them. If several phone numbers are listed, return the first one, with its country code if shown.
+- email, phone, location: the candidate's own, null if the CV does not show them. If several emails or phone numbers are listed and one is marked personal or private, return that one; otherwise return the first one listed. Phone with its country code if shown.
 - current_title: the professional title the candidate uses for themselves, usually right under the name. If there is none, the title of the most recent job.
 - years_experience: total years of professional experience as stated in the CV, as an integer.
 - skills: each item from the skills section, as written.

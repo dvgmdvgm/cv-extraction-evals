@@ -1,0 +1,78 @@
+{
+  "id": "hard_020",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "distractors"
+    ]
+  },
+  "cv": {
+    "name": "Grace Thursby",
+    "email": "grace.thursby@example.com",
+    "phone": "+447700900067",
+    "location": "Barcelona, Spain",
+    "current_title": "Senior Data Engineer",
+    "years_experience": 9,
+    "skills": [
+      "Airflow",
+      "AWS",
+      "Apache Spark",
+      "Python",
+      "Docker",
+      "Kafka",
+      "Snowflake"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C2"
+      },
+      {
+        "name": "Portuguese",
+        "level": "A2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Northwind Analytics",
+        "title": "Senior Data Engineer",
+        "start": "2025-05",
+        "end": null
+      },
+      {
+        "company": "Quantel Systems",
+        "title": "Data Engineer",
+        "start": "2022-06",
+        "end": "2025-05"
+      },
+      {
+        "company": "Lumen Mobility",
+        "title": "Data Analyst",
+        "start": "2018-11",
+        "end": "2022-06"
+      },
+      {
+        "company": "Brightlane Media",
+        "title": "Junior Data Analyst",
+        "start": "2017-04",
+        "end": "2018-11"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Bristol",
+        "degree": "MSc Data Science"
+      },
+      {
+        "institution": "University of Leeds",
+        "degree": "BSc Physics"
+      }
+    ]
+  }
+}

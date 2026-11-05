@@ -1,0 +1,77 @@
+{
+  "id": "hard_034",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": [
+      "non_latin_name"
+    ]
+  },
+  "cv": {
+    "name": "Andrii Kovtunenko",
+    "email": "andrii.kovtunenko@example.com",
+    "phone": "+34648622183",
+    "location": "Bilbao, España",
+    "current_title": "Responsable de Marketing Digital",
+    "years_experience": 3,
+    "skills": [
+      "Google Ads",
+      "HubSpot",
+      "Meta Ads",
+      "Copywriting",
+      "Google Analytics"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "Catalan",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B1"
+      },
+      {
+        "name": "French",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Editorial Maranta",
+        "title": "Responsable de Marketing Digital",
+        "start": "2025-10",
+        "end": null
+      },
+      {
+        "company": "Movilidad Ebro",
+        "title": "Especialista en Marketing Digital",
+        "start": "2023-09",
+        "end": "2025-09"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Sevilla",
+        "degree": "Grado en Marketing"
+      },
+      {
+        "institution": "Universidad Complutense de Madrid",
+        "degree": "Grado en Matemáticas"
+      }
+    ]
+  },
+  "rules": {
+    "accept": {
+      "name": [
+        "Андрій Ковтуненко",
+        "Andrii Kovtunenko (Андрій Ковтуненко)",
+        "Андрій Ковтуненко (Andrii Kovtunenko)"
+      ]
+    }
+  }
+}

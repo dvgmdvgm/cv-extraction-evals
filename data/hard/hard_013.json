@@ -1,0 +1,68 @@
+{
+  "id": "hard_013",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "three_col",
+    "edge_cases": [
+      "three_column"
+    ]
+  },
+  "cv": {
+    "name": "Javier Iglesias Soler",
+    "email": "javier.iglesias@example.com",
+    "phone": "+34659519685",
+    "location": "Bilbao, España",
+    "current_title": "Desarrollador Backend Senior",
+    "years_experience": 6,
+    "skills": [
+      "PostgreSQL",
+      "REST APIs",
+      "Go",
+      "GCP",
+      "Spring Boot",
+      "Kubernetes",
+      "Terraform"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "C1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Tecnologías Albera",
+        "title": "Desarrollador Backend Senior",
+        "start": "2024-11",
+        "end": null
+      },
+      {
+        "company": "Editorial Maranta",
+        "title": "Desarrollador Backend",
+        "start": "2022-07",
+        "end": "2024-10"
+      },
+      {
+        "company": "Logística Sorolla",
+        "title": "Desarrollador de Software",
+        "start": "2020-08",
+        "end": "2022-07"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Zaragoza",
+        "degree": "Grado en Ingeniería Informática"
+      },
+      {
+        "institution": "Universidad Politécnica de Valencia",
+        "degree": "Grado en Matemáticas"
+      }
+    ]
+  }
+}

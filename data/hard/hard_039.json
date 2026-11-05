@@ -1,0 +1,71 @@
+{
+  "id": "hard_039",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "personal_contact"
+    ]
+  },
+  "cv": {
+    "name": "Ruby Harland",
+    "email": "rubyhar74@example.net",
+    "phone": "+447700900261",
+    "location": "Manchester, UK",
+    "current_title": "Senior Product Manager",
+    "years_experience": 9,
+    "skills": [
+      "SQL",
+      "OKRs",
+      "Amplitude",
+      "A/B Testing",
+      "User Research",
+      "Roadmapping"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B1"
+      },
+      {
+        "name": "Italian",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Harbor & Finch",
+        "title": "Senior Product Manager",
+        "start": "2024-07",
+        "end": null
+      },
+      {
+        "company": "Meridian Retail Group",
+        "title": "Product Manager",
+        "start": "2021-05",
+        "end": "2024-04"
+      },
+      {
+        "company": "Brightlane Media",
+        "title": "Associate Product Manager",
+        "start": "2017-05",
+        "end": "2021-04"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Leeds",
+        "degree": "BA Business Administration"
+      },
+      {
+        "institution": "University of Leeds",
+        "degree": "BA Economics"
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "hard_007",
+  "meta": {
+    "lang": "en",
+    "format": "scanned",
+    "layout": "one_col",
+    "edge_cases": [
+      "fax_scan"
+    ]
+  },
+  "cv": {
+    "name": "Ethan Pennock",
+    "email": "ethan.pennock@example.com",
+    "phone": "+447700900063",
+    "location": "London, UK",
+    "current_title": "Data Engineer",
+    "years_experience": 5,
+    "skills": [
+      "Docker",
+      "SQL",
+      "Airflow",
+      "Snowflake",
+      "Tableau"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Harbor & Finch",
+        "title": "Data Engineer",
+        "start": "2022-11",
+        "end": null
+      },
+      {
+        "company": "Copperleaf Health",
+        "title": "Data Analyst",
+        "start": "2021-10",
+        "end": "2022-10"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Bristol",
+        "degree": "MSc Data Science"
+      },
+      {
+        "institution": "King's College London",
+        "degree": "BA Economics"
+      }
+    ]
+  }
+}

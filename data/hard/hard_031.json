@@ -1,0 +1,73 @@
+{
+  "id": "hard_031",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": [
+      "ambiguous_dates"
+    ]
+  },
+  "cv": {
+    "name": "Diego Ferrer Beltrán",
+    "email": "diego.ferrer@example.net",
+    "phone": "+34617580955",
+    "location": "Zaragoza, España",
+    "current_title": "Controller Financiero",
+    "years_experience": 9,
+    "skills": [
+      "Month-end Close",
+      "Budgeting",
+      "Power BI",
+      "Excel",
+      "SAP FI",
+      "Audit"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "C2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Logística Sorolla",
+        "title": "Controller Financiero",
+        "start": "2023-10",
+        "end": null
+      },
+      {
+        "company": "Soluciones Turia",
+        "title": "Responsable Financiero",
+        "start": "2021-04",
+        "end": "2023-08"
+      },
+      {
+        "company": "Sistemas Tejo, Lda.",
+        "title": "Contable Senior",
+        "start": "2019-12",
+        "end": "2021-04"
+      },
+      {
+        "company": "Grupo Alcorza",
+        "title": "Contable",
+        "start": "2017-07",
+        "end": "2019-10"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Zaragoza",
+        "degree": "Grado en Finanzas y Contabilidad"
+      },
+      {
+        "institution": "Universidad del País Vasco",
+        "degree": "Grado en Economía"
+      }
+    ]
+  }
+}

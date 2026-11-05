@@ -1,0 +1,72 @@
+{
+  "id": "hard_032",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "ambiguous_dates"
+    ]
+  },
+  "cv": {
+    "name": "Elena Cortés Iglesias",
+    "email": "elena.cortes@example.org",
+    "phone": "+34682904480",
+    "location": "Valencia, España",
+    "current_title": "Ingeniera de Machine Learning",
+    "years_experience": 5,
+    "skills": [
+      "MLflow",
+      "Docker",
+      "Vertex AI",
+      "Pandas",
+      "Python",
+      "scikit-learn",
+      "PyTorch"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "C2"
+      },
+      {
+        "name": "German",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Soluciones Turia",
+        "title": "Ingeniera de Machine Learning",
+        "start": "2024-08",
+        "end": null
+      },
+      {
+        "company": "Editorial Maranta",
+        "title": "Asistente de Investigación",
+        "start": "2023-02",
+        "end": "2024-05"
+      },
+      {
+        "company": "Datanova Ibérica",
+        "title": "Asistente de Investigación",
+        "start": "2021-07",
+        "end": "2023-02"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad de Zaragoza",
+        "degree": "Máster en Inteligencia Artificial"
+      },
+      {
+        "institution": "Universidad de Sevilla",
+        "degree": "Grado en Física"
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "hard_012",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "three_col",
+    "edge_cases": [
+      "three_column"
+    ]
+  },
+  "cv": {
+    "name": "Leo Pennock",
+    "email": "leo.pennock@example.net",
+    "phone": "+447700900452",
+    "location": "Barcelona, Spain",
+    "current_title": "ML Tech Lead",
+    "years_experience": 8,
+    "skills": [
+      "Vertex AI",
+      "Docker",
+      "Python",
+      "MLflow",
+      "LLM Evaluation",
+      "NLP",
+      "scikit-learn"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Bluepeak Software",
+        "title": "ML Tech Lead",
+        "start": "2023-11",
+        "end": null
+      },
+      {
+        "company": "Brightlane Media",
+        "title": "Senior Machine Learning Engineer",
+        "start": "2022-05",
+        "end": "2023-09"
+      },
+      {
+        "company": "Quantel Systems",
+        "title": "Machine Learning Engineer",
+        "start": "2018-10",
+        "end": "2022-05"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Manchester",
+        "degree": "MSc Artificial Intelligence"
+      },
+      {
+        "institution": "King's College London",
+        "degree": "BA Economics"
+      }
+    ]
+  }
+}

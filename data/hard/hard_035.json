@@ -1,0 +1,77 @@
+{
+  "id": "hard_035",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "non_latin_name"
+    ]
+  },
+  "cv": {
+    "name": "Nikos Papadakis",
+    "email": "nikos.papadakis@example.com",
+    "phone": "+447700900799",
+    "location": "Edinburgh, UK",
+    "current_title": "Senior Product Manager",
+    "years_experience": 8,
+    "skills": [
+      "Roadmapping",
+      "OKRs",
+      "SQL",
+      "Jira",
+      "Amplitude",
+      "A/B Testing",
+      "User Research"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Bluepeak Software",
+        "title": "Senior Product Manager",
+        "start": "2025-07",
+        "end": null
+      },
+      {
+        "company": "Stonebridge Capital",
+        "title": "Product Manager",
+        "start": "2021-09",
+        "end": "2025-06"
+      },
+      {
+        "company": "Harbor & Finch",
+        "title": "Associate Product Manager",
+        "start": "2018-01",
+        "end": "2021-06"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Bristol",
+        "degree": "BA Business Administration"
+      },
+      {
+        "institution": "University of Bristol",
+        "degree": "BA Economics"
+      }
+    ]
+  },
+  "rules": {
+    "accept": {
+      "name": [
+        "Νίκος Παπαδάκης",
+        "Nikos Papadakis (Νίκος Παπαδάκης)",
+        "Νίκος Παπαδάκης (Nikos Papadakis)"
+      ]
+    }
+  }
+}

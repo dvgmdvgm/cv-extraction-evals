@@ -1,0 +1,56 @@
+{
+  "id": "hard_018",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "contact_page2"
+    ]
+  },
+  "cv": {
+    "name": "Freya Ashdown",
+    "email": "freya.ashdown@example.com",
+    "phone": "+447700900909",
+    "location": "Madrid, Spain",
+    "current_title": "Head of AI",
+    "years_experience": 4,
+    "skills": [
+      "NLP",
+      "scikit-learn",
+      "Pandas",
+      "Docker",
+      "Python"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Copperleaf Health",
+        "title": "Head of AI",
+        "start": "2025-01",
+        "end": null
+      },
+      {
+        "company": "Northwind Analytics",
+        "title": "ML Tech Lead",
+        "start": "2022-07",
+        "end": "2025-01"
+      }
+    ],
+    "education": [
+      {
+        "institution": "King's College London",
+        "degree": "MSc Artificial Intelligence"
+      }
+    ]
+  }
+}

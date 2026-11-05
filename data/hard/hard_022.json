@@ -1,0 +1,74 @@
+{
+  "id": "hard_022",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "distractors"
+    ]
+  },
+  "cv": {
+    "name": "Leo Calloway",
+    "email": "leo.calloway@example.org",
+    "phone": "+447700900222",
+    "location": "Bristol, UK",
+    "current_title": "Digital Marketing Manager",
+    "years_experience": 11,
+    "skills": [
+      "Looker Studio",
+      "SEO",
+      "HubSpot",
+      "Google Analytics",
+      "Google Ads",
+      "Copywriting",
+      "Email Marketing"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C2"
+      },
+      {
+        "name": "Italian",
+        "level": "A2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Stonebridge Capital",
+        "title": "Digital Marketing Manager",
+        "start": "2023-12",
+        "end": null
+      },
+      {
+        "company": "Quantel Systems",
+        "title": "Digital Marketing Specialist",
+        "start": "2021-08",
+        "end": "2023-09"
+      },
+      {
+        "company": "Meridian Retail Group",
+        "title": "Marketing Executive",
+        "start": "2018-07",
+        "end": "2021-08"
+      },
+      {
+        "company": "Bluepeak Software",
+        "title": "Marketing Assistant",
+        "start": "2015-09",
+        "end": "2018-07"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Glasgow",
+        "degree": "BA Marketing"
+      }
+    ]
+  }
+}

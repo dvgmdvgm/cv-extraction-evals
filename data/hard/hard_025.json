@@ -1,0 +1,75 @@
+{
+  "id": "hard_025",
+  "meta": {
+    "lang": "ca",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": [
+      "mixed_language"
+    ]
+  },
+  "cv": {
+    "name": "Lucía García Navarro",
+    "email": "lucia.garcia@example.com",
+    "phone": "+34628497168",
+    "location": "Girona, Catalunya",
+    "current_title": "Enginyera de Dades Sènior",
+    "years_experience": 7,
+    "skills": [
+      "Docker",
+      "Kafka",
+      "SQL",
+      "Python",
+      "Tableau",
+      "AWS"
+    ],
+    "languages": [
+      {
+        "name": "Catalan",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "C1"
+      },
+      {
+        "name": "French",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Serveis Digitals Montseny",
+        "title": "Enginyera de Dades Sènior",
+        "start": "2023-09",
+        "end": null
+      },
+      {
+        "company": "Cooperativa Garbí",
+        "title": "Enginyera de Dades",
+        "start": "2021-08",
+        "end": "2023-08"
+      },
+      {
+        "company": "Laboratoris Canigó",
+        "title": "Analista de Dades",
+        "start": "2019-07",
+        "end": "2021-05"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universitat Politècnica de Catalunya",
+        "degree": "Grau en Enginyeria Informàtica"
+      },
+      {
+        "institution": "Universitat de Girona",
+        "degree": "Màster en Ciència de Dades"
+      }
+    ]
+  }
+}

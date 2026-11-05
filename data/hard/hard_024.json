@@ -1,0 +1,69 @@
+{
+  "id": "hard_024",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "mixed_language"
+    ]
+  },
+  "cv": {
+    "name": "Pablo Soler Beltrán",
+    "email": "pablo.soler@example.net",
+    "phone": "+34667664486",
+    "location": "Bilbao, España",
+    "current_title": "Head of AI",
+    "years_experience": 11,
+    "skills": [
+      "Python",
+      "Vertex AI",
+      "LLM Evaluation",
+      "PyTorch",
+      "MLflow",
+      "scikit-learn"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Copperleaf Health",
+        "title": "Head of AI",
+        "start": "2024-06",
+        "end": null
+      },
+      {
+        "company": "Brightlane Media",
+        "title": "ML Tech Lead",
+        "start": "2021-01",
+        "end": "2024-05"
+      },
+      {
+        "company": "Banca Mirador",
+        "title": "Ingeniero de Machine Learning Senior",
+        "start": "2018-03",
+        "end": "2021-01"
+      },
+      {
+        "company": "Logística Sorolla",
+        "title": "Ingeniero de Machine Learning",
+        "start": "2015-02",
+        "end": "2018-03"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Bristol",
+        "degree": "MSc Artificial Intelligence"
+      }
+    ]
+  }
+}

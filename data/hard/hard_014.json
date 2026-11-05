@@ -1,0 +1,63 @@
+{
+  "id": "hard_014",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "three_col",
+    "edge_cases": [
+      "three_column"
+    ]
+  },
+  "cv": {
+    "name": "Grace Kesteven",
+    "email": "grace.kesteven@example.com",
+    "phone": "+447700900144",
+    "location": "London, UK",
+    "current_title": "Finance Manager",
+    "years_experience": 9,
+    "skills": [
+      "IFRS",
+      "Budgeting",
+      "Month-end Close",
+      "Excel",
+      "Treasury",
+      "Power BI"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Stonebridge Capital",
+        "title": "Finance Manager",
+        "start": "2023-01",
+        "end": null
+      },
+      {
+        "company": "Copperleaf Health",
+        "title": "Senior Accountant",
+        "start": "2019-02",
+        "end": "2022-10"
+      },
+      {
+        "company": "Brightlane Media",
+        "title": "Accountant",
+        "start": "2016-11",
+        "end": "2019-02"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Glasgow",
+        "degree": "BSc Accounting and Finance"
+      }
+    ]
+  }
+}

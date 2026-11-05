@@ -1,0 +1,68 @@
+{
+  "id": "hard_015",
+  "meta": {
+    "lang": "es",
+    "format": "scanned",
+    "layout": "three_col",
+    "edge_cases": [
+      "three_column",
+      "phone_photo"
+    ]
+  },
+  "cv": {
+    "name": "Nerea Navarro Soler",
+    "email": "nerea.navarro@example.net",
+    "phone": "+34672813991",
+    "location": "Madrid, España",
+    "current_title": "Ingeniera de Datos Senior",
+    "years_experience": 8,
+    "skills": [
+      "Snowflake",
+      "Docker",
+      "AWS",
+      "Tableau",
+      "Kafka",
+      "Apache Spark"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "C2"
+      },
+      {
+        "name": "French",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Clínica Levante",
+        "title": "Ingeniera de Datos Senior",
+        "start": "2023-07",
+        "end": null
+      },
+      {
+        "company": "Banca Mirador",
+        "title": "Ingeniera de Datos",
+        "start": "2020-09",
+        "end": "2023-04"
+      },
+      {
+        "company": "Tecnologías Albera",
+        "title": "Analista de Datos",
+        "start": "2018-02",
+        "end": "2020-08"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad del País Vasco",
+        "degree": "Máster en Ciencia de Datos"
+      }
+    ]
+  }
+}

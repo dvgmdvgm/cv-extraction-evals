@@ -1,0 +1,68 @@
+{
+  "id": "hard_003",
+  "meta": {
+    "lang": "en",
+    "format": "scanned",
+    "layout": "one_col",
+    "edge_cases": [
+      "phone_photo"
+    ]
+  },
+  "cv": {
+    "name": "Oliver Whitcombe",
+    "email": "oliver.whitcombe@example.net",
+    "phone": "+447700900008",
+    "location": "Bristol, UK",
+    "current_title": "Head of AI",
+    "years_experience": 8,
+    "skills": [
+      "Python",
+      "Pandas",
+      "Vertex AI",
+      "MLflow",
+      "NLP"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Brightlane Media",
+        "title": "Head of AI",
+        "start": "2024-10",
+        "end": null
+      },
+      {
+        "company": "Meridian Retail Group",
+        "title": "ML Tech Lead",
+        "start": "2022-11",
+        "end": "2024-08"
+      },
+      {
+        "company": "Bluepeak Software",
+        "title": "Senior Machine Learning Engineer",
+        "start": "2020-06",
+        "end": "2022-09"
+      },
+      {
+        "company": "Stonebridge Capital",
+        "title": "Machine Learning Engineer",
+        "start": "2018-10",
+        "end": "2020-04"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Glasgow",
+        "degree": "MSc Artificial Intelligence"
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "hard_028",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "one_col",
+    "edge_cases": [
+      "ambiguous_dates"
+    ]
+  },
+  "cv": {
+    "name": "Oliver Marlowe",
+    "email": "oliver.marlowe@example.org",
+    "phone": "+447700900833",
+    "location": "Barcelona, Spain",
+    "current_title": "Lead Data Engineer",
+    "years_experience": 7,
+    "skills": [
+      "Tableau",
+      "Kafka",
+      "Airflow",
+      "SQL",
+      "AWS"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "B2"
+      },
+      {
+        "name": "French",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Lumen Mobility",
+        "title": "Lead Data Engineer",
+        "start": "2024-07",
+        "end": null
+      },
+      {
+        "company": "King's College London",
+        "title": "Part-time Lecturer",
+        "start": "2023-09",
+        "end": null
+      },
+      {
+        "company": "Harbor & Finch",
+        "title": "Senior Data Engineer",
+        "start": "2019-10",
+        "end": "2024-10"
+      }
+    ],
+    "education": [
+      {
+        "institution": "King's College London",
+        "degree": "MSc Data Science"
+      }
+    ]
+  },
+  "rules": {
+    "exclude": [
+      "current_title"
+    ]
+  }
+}

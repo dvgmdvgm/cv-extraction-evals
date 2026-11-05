@@ -1,0 +1,78 @@
+{
+  "id": "hard_009",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": [
+      "rating_tables"
+    ]
+  },
+  "cv": {
+    "name": "Mateo Navarro Ferrer",
+    "email": "mateo.navarro@example.com",
+    "phone": "+34656609256",
+    "location": "Madrid, España",
+    "current_title": "Desarrollador Backend",
+    "years_experience": 11,
+    "skills": [
+      "Go",
+      "GCP",
+      "Java",
+      "REST APIs",
+      "gRPC",
+      "Kubernetes",
+      "PostgreSQL",
+      "Terraform"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "Catalan",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B2"
+      },
+      {
+        "name": "French",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Movilidad Ebro",
+        "title": "Desarrollador Backend",
+        "start": "2022-11",
+        "end": null
+      },
+      {
+        "company": "Soluciones Turia",
+        "title": "Desarrollador de Software",
+        "start": "2018-11",
+        "end": "2022-09"
+      },
+      {
+        "company": "Datanova Ibérica",
+        "title": "Desarrollador Junior",
+        "start": "2015-01",
+        "end": "2018-08"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Complutense de Madrid",
+        "degree": "Grado en Ingeniería Informática"
+      }
+    ]
+  },
+  "rules": {
+    "exclude": [
+      "languages"
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "id": "hard_011",
+  "meta": {
+    "lang": "es",
+    "format": "scanned",
+    "layout": "one_col",
+    "edge_cases": [
+      "rating_tables",
+      "phone_photo"
+    ]
+  },
+  "cv": {
+    "name": "Marta Vidal Ferrer",
+    "email": "marta.vidal@example.com",
+    "phone": "+34671455234",
+    "location": "Zaragoza, España",
+    "current_title": "Controller Financiera",
+    "years_experience": 13,
+    "skills": [
+      "SAP FI",
+      "Excel",
+      "Treasury",
+      "Power BI",
+      "Month-end Close",
+      "Audit",
+      "IFRS",
+      "Budgeting"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B1"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Clínica Levante",
+        "title": "Controller Financiera",
+        "start": "2023-06",
+        "end": null
+      },
+      {
+        "company": "Tecnologías Albera",
+        "title": "Responsable Financiera",
+        "start": "2019-05",
+        "end": "2023-05"
+      },
+      {
+        "company": "Viñedos Altamar",
+        "title": "Contable Senior",
+        "start": "2017-01",
+        "end": "2019-03"
+      },
+      {
+        "company": "Logística Sorolla",
+        "title": "Contable",
+        "start": "2013-08",
+        "end": "2016-11"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Politécnica de Valencia",
+        "degree": "Grado en Finanzas y Contabilidad"
+      },
+      {
+        "institution": "Universidad Complutense de Madrid",
+        "degree": "Grado en Economía"
+      }
+    ]
+  }
+}

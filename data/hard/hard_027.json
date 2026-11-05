@@ -1,0 +1,67 @@
+{
+  "id": "hard_027",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": [
+      "mixed_language"
+    ]
+  },
+  "cv": {
+    "name": "Leo Marlowe",
+    "email": "leo.marlowe@example.org",
+    "phone": "+447700900671",
+    "location": "Barcelona, Spain",
+    "current_title": "ML Tech Lead",
+    "years_experience": 8,
+    "skills": [
+      "Python",
+      "LLM Evaluation",
+      "Pandas",
+      "PyTorch",
+      "MLflow",
+      "Vertex AI"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C1"
+      },
+      {
+        "name": "French",
+        "level": "A2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Copperleaf Health",
+        "title": "ML Tech Lead",
+        "start": "2023-07",
+        "end": null
+      },
+      {
+        "company": "Stonebridge Capital",
+        "title": "Senior Machine Learning Engineer",
+        "start": "2021-10",
+        "end": "2023-05"
+      },
+      {
+        "company": "Banca Mirador",
+        "title": "Ingeniero de Machine Learning",
+        "start": "2018-07",
+        "end": "2021-09"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Complutense de Madrid",
+        "degree": "Máster en Inteligencia Artificial"
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "hard_006",
+  "meta": {
+    "lang": "es",
+    "format": "scanned",
+    "layout": "two_col",
+    "edge_cases": [
+      "fax_scan"
+    ]
+  },
+  "cv": {
+    "name": "Marta Cortés Vidal",
+    "email": "marta.cortes@example.org",
+    "phone": "+34682417997",
+    "location": "Sevilla, España",
+    "current_title": "Ingeniera de Datos Senior",
+    "years_experience": 4,
+    "skills": [
+      "SQL",
+      "Apache Spark",
+      "Python",
+      "dbt",
+      "Airflow"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "Catalan",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Datanova Ibérica",
+        "title": "Ingeniera de Datos Senior",
+        "start": "2025-06",
+        "end": null
+      },
+      {
+        "company": "Tecnologías Albera",
+        "title": "Ingeniera de Datos",
+        "start": "2023-08",
+        "end": "2025-06"
+      },
+      {
+        "company": "Movilidad Ebro",
+        "title": "Analista de Datos",
+        "start": "2022-02",
+        "end": "2023-08"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Complutense de Madrid",
+        "degree": "Máster en Ciencia de Datos"
+      },
+      {
+        "institution": "Universidad del País Vasco",
+        "degree": "Grado en Economía"
+      }
+    ]
+  }
+}

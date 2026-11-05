@@ -12,8 +12,9 @@ FIELDS = ["name", "email", "phone", "location", "current_title", "years_experien
           "skills", "languages", "experience", "experience_dates", "education"]
 LIST_FIELDS = ["skills", "languages", "experience", "education"]
 
-MONTHS = dict(jan=1, ene=1, feb=2, mar=3, apr=4, abr=4, may=5, jun=6, jul=7,
-              aug=8, ago=8, sep=9, oct=10, nov=11, dec=12, dic=12)
+# First three letters of month names in English, Spanish, Catalan, Portuguese and German.
+MONTHS = dict(jan=1, ene=1, gen=1, feb=2, fev=2, mar=3, apr=4, abr=4, may=5, mai=5, jun=6, jul=7,
+              aug=8, ago=8, sep=9, set=9, oct=10, out=10, okt=10, nov=11, dec=12, dic=12, des=12, dez=12)
 PRESENT = {"present", "now", "current", "today", "actualidad", "presente", "hoy", "actual"}
 LANG_ALIASES = {"espanol": "spanish", "castellano": "spanish", "ingles": "english", "frances": "french",
                 "aleman": "german", "italiano": "italian", "catala": "catalan", "portugues": "portuguese"}
@@ -23,11 +24,11 @@ NATIVE = {"native", "mother tongue", "bilingual", "nativo", "nativa", "lengua ma
 # --- normalisation -------------------------------------------------------------------
 
 def norm_text(s):
-    """Lowercase, strip accents and punctuation, collapse whitespace."""
+    """Lowercase, strip accents and punctuation, collapse whitespace. Non-Latin letters are kept."""
     if s is None:
         return ""
-    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
-    return " ".join(re.sub(r"[^a-z0-9+#]+", " ", s).split())
+    s = "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c)).casefold()
+    return " ".join(re.sub(r"[^\w+#]+|_", " ", s).split())
 
 
 def norm_email(s):
@@ -106,12 +107,29 @@ def prf(gold, pred, same):
     return p, r, 2 * p * r / (p + r)
 
 
-def score_cv(gold: CV, pred: CV | None, judge=None):
+def same_date(gold, pred, year_level=False):
+    """Dates equal after normalisation. With year_level, a year-only gold ("Summer 2019" -> "2019")
+    matches any month of that year: the CV does not say which month, so the model may pick one."""
+    g, p = norm_date(gold), norm_date(pred)
+    if year_level and g is not None and len(g) == 4:
+        return p is not None and p[:4] == g
+    return g == p
+
+
+def score_cv(gold: CV, pred: CV | None, judge=None, rules=None):
     """Return ({field: score 0..1}, {list_field: (precision, recall)}).
 
-    Titles are compared fuzzily first; the LLM judge is asked only when that fails."""
+    Titles are compared fuzzily first; the LLM judge is asked only when that fails.
+    `rules` (from the gold file, hard subset only; see SPEC.md "Gold rules"):
+      exclude: fields not scored for this CV, because the document does not settle them;
+      accept: {field: [alternatives]} also counted correct (a name written in two scripts);
+      year_level_dates: year-only gold dates are compared at year precision."""
+    rules = rules or {}
+    keep = [f for f in FIELDS if f not in rules.get("exclude", ())]
     if pred is None:  # failed call: everything wrong
-        return {f: 0.0 for f in FIELDS}, {f: (0.0, 0.0) for f in LIST_FIELDS}
+        return {f: 0.0 for f in keep}, {f: (0.0, 0.0) for f in LIST_FIELDS if f in keep}
+    accept = rules.get("accept", {})
+    year_level = rules.get("year_level_dates", False)
 
     def same_title(g, p):
         return fuzzy(g, p) or bool(g and p and judge and judge(g, p))
@@ -128,16 +146,17 @@ def score_cv(gold: CV, pred: CV | None, judge=None):
     # Dates are scored separately, over the jobs whose company was found.
     dated = [(g, next((p for p in pred.experience if fuzzy(g.company, p.company)), None)) for g in gold.experience]
     dated = [(g, p) for g, p in dated if p is not None]
-    dates_ok = sum(norm_date(g.start) == norm_date(p.start) and norm_date(g.end) == norm_date(p.end) for g, p in dated)
+    dates_ok = sum(same_date(g.start, p.start, year_level) and same_date(g.end, p.end, year_level) for g, p in dated)
+    any_of = lambda f, test: any(test(g, getattr(pred, f)) for g in [getattr(gold, f), *accept.get(f, [])])
 
     scores = {
-        "name": fuzzy(gold.name, pred.name),
+        "name": any_of("name", fuzzy),
         "email": norm_email(gold.email) == norm_email(pred.email),
         "phone": norm_phone(gold.phone) == norm_phone(pred.phone),
-        "location": fuzzy(gold.location, pred.location),
-        "current_title": same_title(gold.current_title, pred.current_title),
+        "location": any_of("location", fuzzy),
+        "current_title": any_of("current_title", same_title),
         "years_experience": gold.years_experience == pred.years_experience,
         "experience_dates": dates_ok / len(gold.experience) if gold.experience else 1.0,
         **{f: v[2] for f, v in lists.items()},
     }
-    return {f: float(scores[f]) for f in FIELDS}, {f: v[:2] for f, v in lists.items()}
+    return {f: float(scores[f]) for f in keep}, {f: v[:2] for f, v in lists.items() if f in keep}

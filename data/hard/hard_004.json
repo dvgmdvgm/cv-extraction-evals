@@ -1,0 +1,62 @@
+{
+  "id": "hard_004",
+  "meta": {
+    "lang": "es",
+    "format": "scanned",
+    "layout": "two_col",
+    "edge_cases": [
+      "phone_photo"
+    ]
+  },
+  "cv": {
+    "name": "Sergio Navarro Soler",
+    "email": "sergio.navarro@example.net",
+    "phone": "+34648280599",
+    "location": "Madrid, España",
+    "current_title": "Responsable de Ingeniería de Datos",
+    "years_experience": 8,
+    "skills": [
+      "Tableau",
+      "Airflow",
+      "Apache Spark",
+      "SQL",
+      "Docker"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Movilidad Ebro",
+        "title": "Responsable de Ingeniería de Datos",
+        "start": "2022-12",
+        "end": null
+      },
+      {
+        "company": "Clínica Levante",
+        "title": "Ingeniero de Datos Senior",
+        "start": "2020-09",
+        "end": "2022-09"
+      },
+      {
+        "company": "Soluciones Turia",
+        "title": "Ingeniero de Datos",
+        "start": "2018-02",
+        "end": "2020-08"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Politécnica de Valencia",
+        "degree": "Máster en Ciencia de Datos"
+      }
+    ]
+  }
+}

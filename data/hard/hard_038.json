@@ -1,0 +1,76 @@
+{
+  "id": "hard_038",
+  "meta": {
+    "lang": "es",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": [
+      "personal_contact"
+    ]
+  },
+  "cv": {
+    "name": "Irene Ferrer Cortés",
+    "email": "irenefer50@example.net",
+    "phone": "+34696454656",
+    "location": "Valencia, España",
+    "current_title": "Responsable de IA",
+    "years_experience": 11,
+    "skills": [
+      "LLM Evaluation",
+      "Pandas",
+      "Python",
+      "Vertex AI",
+      "scikit-learn"
+    ],
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "native"
+      },
+      {
+        "name": "English",
+        "level": "B2"
+      },
+      {
+        "name": "Portuguese",
+        "level": "B2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Clínica Levante",
+        "title": "Responsable de IA",
+        "start": "2024-10",
+        "end": null
+      },
+      {
+        "company": "Movilidad Ebro",
+        "title": "Líder Técnico de ML",
+        "start": "2021-01",
+        "end": "2024-10"
+      },
+      {
+        "company": "Tecnologías Albera",
+        "title": "Ingeniera de Machine Learning Senior",
+        "start": "2017-12",
+        "end": "2020-11"
+      },
+      {
+        "company": "Banca Mirador",
+        "title": "Ingeniera de Machine Learning",
+        "start": "2015-10",
+        "end": "2017-12"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad del País Vasco",
+        "degree": "Máster en Inteligencia Artificial"
+      },
+      {
+        "institution": "Universidad de Zaragoza",
+        "degree": "Grado en Física"
+      }
+    ]
+  }
+}

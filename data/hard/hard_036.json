@@ -1,0 +1,79 @@
+{
+  "id": "hard_036",
+  "meta": {
+    "lang": "en",
+    "format": "pdf",
+    "layout": "two_col",
+    "edge_cases": [
+      "non_latin_name"
+    ]
+  },
+  "cv": {
+    "name": "Yutong Lin",
+    "email": "yutong.lin@example.com",
+    "phone": "+447700900763",
+    "location": "Manchester, UK",
+    "current_title": "Staff Engineer",
+    "years_experience": 6,
+    "skills": [
+      "PostgreSQL",
+      "Kubernetes",
+      "Terraform",
+      "gRPC",
+      "Go"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "native"
+      },
+      {
+        "name": "Spanish",
+        "level": "C1"
+      },
+      {
+        "name": "German",
+        "level": "A2"
+      }
+    ],
+    "experience": [
+      {
+        "company": "Brightlane Media",
+        "title": "Staff Engineer",
+        "start": "2024-06",
+        "end": null
+      },
+      {
+        "company": "Tidewater Logistics",
+        "title": "Senior Backend Engineer",
+        "start": "2021-05",
+        "end": "2024-03"
+      },
+      {
+        "company": "Meridian Retail Group",
+        "title": "Backend Engineer",
+        "start": "2020-02",
+        "end": "2021-02"
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of Manchester",
+        "degree": "BSc Computer Science"
+      },
+      {
+        "institution": "University of Leeds",
+        "degree": "BA Economics"
+      }
+    ]
+  },
+  "rules": {
+    "accept": {
+      "name": [
+        "林雨桐",
+        "Yutong Lin (林雨桐)",
+        "林雨桐 (Yutong Lin)"
+      ]
+    }
+  }
+}
